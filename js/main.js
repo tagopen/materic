@@ -17,23 +17,6 @@ $.fn.equialHeight = function() {
   $(this).height($tallestcolumn);
   return $(this);
 }
-/*function setEqualHeight(columns)
-{
-  var $tallestcolumn = 0;
-  var $currentHeight = 0;
-  columns.each(
-    function()
-    {
-      $currentHeight = $(this).height();
-      if($currentHeight > $tallestcolumn)
-      {
-        $tallestcolumn = $currentHeight;
-      }
-    }
-    );
-  columns.height($tallestcolumn);
-}
-*/
 
 // Old browser notification
 $(function() { 
