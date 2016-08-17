@@ -3,6 +3,11 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+ // jQuery for page scrolling feature - requires jQuery Easing plugin
+ $('.toBottom ').click(function(){
+      $("html, body").animate({ scrollTop: $(".intent").offset().top  }, 1500);
+      return false;
+   });
 // Equal Height function
 $.fn.equialHeight = function() {
   var $tallestcolumn = 0;
@@ -37,17 +42,6 @@ $(function() {
     closeLink: 'Закрыть это уведомление',
   });
 });
-
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-/*$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});*/
 
 
 // Fixed navbar on Scroll

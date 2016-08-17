@@ -1,8 +1,9 @@
 +comment('general style')
 +ic
+@each $ic in tag, scrollbottom
+  .ic-#{$ic}
+    +sb(#{$ic})
 +comment("home page style")
-html
-  overflow-x: hidden
 body
   padding-right: 0 !important  
 a,
@@ -39,12 +40,104 @@ a:focus
       color: #006bb3
       font-size: 60px
       margin-right: 10px
+  &__right
+    .fa-phone
+      &:before
+        +rotate(43)    
+  &__call
+    display: inline-block !important
+    border-bottom: 2px dashed #006bb3   
+    &:hover,
+    &:focus,
+    &:active
+      border-color: #000
++comment("offer style")  
+.offer
+  background: url(../img/offerbg.png) no-repeat
+  +cover
+  background-position: center top
+  padding: 160px 0 190px
+  margin-top: -100px
+  color: #fff
+  >.container
+    position: relative
+  &__list
+    padding-right: 30px
+    ul
+      padding-left: 0
+      li
+        font: 400 25px/40px 'Roboto', sans-serif
+        list-style-type: none 
+        margin-bottom: 10px 
+        &:before
+          content: '\2714'
+          margin-right: 10px
+          color: #006bb3
+    &__heading
+      font: 400 40px/52px 'Roboto Slab', sans-serif 
+      text-transform: uppercase 
+      margin-bottom: 50px
+  &__modal
+    width: 100%  
+    margin-top: 0
+    border: 10px solid rgba(0, 0, 0, 0.3)
+    .modal__body 
+      padding: 40px
+    &__text
+      margin-bottom: 35px
+      font: 300 22px/30px 'Roboto', sans-serif
+      span
+        font-weight: 400  
+  .tag
+    position: absolute
+    left: 50%
+    margin-left: -100px   
+    bottom: -50px   
+  .scroll
+    position: absolute  
+    left: 50%
+    margin-left: -65px
+    bottom: -100px
++comment("intent style")     
+.intent
+  padding: 220px 0
+  margin-top: -22vh
+  background: url(../img/intentbg.png) no-repeat
+  +cover
+  background-position: center top
+  &__col
+    float: right
+    padding: 0 10px 0 90px
+  &__heading
+    font: 400 26px/38px 'Roboto', sans-serif
+    color: #222325
+    border-left: 8px solid #1b70b3
+    padding-left: 15px
+    margin-left: -25px
+  &__text
+    font: 300 20px/26px 'Roboto', sans-serif   
+    margin-top: 30px 
++comment("section heading style") 
+.section
+  &__heading
+    font: 400 30px/36px 'Roboto Slab', sans-serif
+    color: #000
+    letter-spacing: 1px
+    text-transform: uppercase  
+    margin-bottom: 25px
+    &--separator
+      height: 4px
+      width: 170px
+      background-color: #006bb3
+      margin: 0 auto 60px
 +comment("modal style")      
 .modal
   &__dialog
     width: 350px  
+    border: 10px solid rgba(0, 0, 0, 0.3)
   &__content
     +br(0)  
+    border: 0
     background-color: #006bb3
     box-shadow: 0 0 5px rgba(0, 75, 125, 0.8) 
   &__body
@@ -88,7 +181,7 @@ a:focus
         &__btn 
           +br(0)
           width: 100%
-          padding: 20px 0
+          padding: 15px 0
           margin-top: 15px
           background-color: #ff9300
           background-image: linear-gradient(to top, #f58d00 0%, #ffae00 100%)

@@ -31,7 +31,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- Font-Roboto CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&subset=cyrillic-ext" rel="stylesheet"> 
 
     <!-- Font-Awesome CSS -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -48,40 +49,7 @@
   </head>
   <body>
 
-  <!--     H E A D E R       M O D A L     -->
-
-<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal__dialog">
-
-    <div class="modal-content modal__content">
-      <div class="modal-body text-center modal__body">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-
-        <form  class="modal__body__form" method="post" action="send.php">
-          <h3 class="form__heading">Укажите ваши контакты</h3>
-          <div class="form__subheading">И наш менеджер свяжется с вами в ближайшее время</div>
-
-          <div class="form-group col-xs-12">
-          <input type="text" class="form-control form__name"  placeholder="Имя" required data-validation-required-message="Please enter your name." name="name">
-          <i class="fa fa-user" aria-hidden="true"></i>
-        </div>
-
-        <div class="form-group col-xs-12">
-         <input type="tel" class="form-control form__phone"  placeholder="Телефон" required data-validation-required-message="Please enter your phone number." name="phone">
-         <i class="fa fa-mobile-phone" aria-hidden="true"></i>
-       </div>
-
-          <div class="text-center">
-          <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
-          </div>
-        </form>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--     H E A D E R       B E G I N    -->
+<!--     HEADER   BEGIN    -->
 
     <header id="top" class="header">
 
@@ -118,8 +86,129 @@
 
         </div>
       </nav>
-
       </header>  
+
+    <!--     OFFER SECTION    -->
+    <section class="offer">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-7">
+            <div class="offer__list">
+              <h1 class="offer__list__heading">Продадим вашу недвижимость под ключ</h1>
+              <ul>
+                <li>Средние сроки реализации объекта - 30 дней</li>
+                <li>На 10% дороже от ожидаемой стоимости благодаря системе аукциона</li>
+                <li>Полное маркетинговое, рекламное и юридическое сопровождение</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+          <div class="modal-dialog offer__modal">
+              <div class="modal-content modal__content">
+                <div class="modal-body text-center modal__body">
+
+                  <form  class="modal__body__form" method="post" action="send.php">
+                    <div class="offer__modal__text">
+                      <span>Оставьте заявку</span> и получите <span>бесплатную оценку</span> рыночной стоимости Вашего объекта
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                      <input type="text" class="form-control form__name"  placeholder="Имя" required data-validation-required-message="Please enter your name." name="name">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                      <input type="tel" class="form-control form__phone"  placeholder="Телефон" required data-validation-required-message="Please enter your phone number." name="phone">
+                      <i class="fa fa-mobile-phone" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                      <input type="email" class="form-control form__mail"  placeholder="Email" required data-validation-required-message="Please enter your email." name="email">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-xl btn form__btn"><p>Узнать стоимость объекта</p></button>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tag"><i class="ic ic-tag"></i></div>
+        <div class="scroll"><a href="" class="toBottom scroll__link"><i class="ic ic-scrollbottom"></i></a></div>
+      </div>
+    </section>
+
+    <!--   INTENT   SECTION    -->
+
+    <section class="intent">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 intent__col">
+            <div class="intent__info">
+              <p class="intent__heading">Для нас важно до конца отстаивать интересы владельца недвижимости и продать объект 
+              в кратчайшие сроки и по максимальной цене. 
+              </p>
+              <p class="intent__text">Большинство же других риелторов нацелены на интересы конкретных покупателей, которые хотят приобрести объект по 
+              как можно меньшей цене.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--   STAGE  SECTION    -->
+
+    <section class="stage">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="text-center section__heading stage__heading">Этапы работы</h2>
+            <div class="section__heading--separator"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+      <!--     HEADER   MODAL    -->
+
+      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal__dialog">
+
+          <div class="modal-content modal__content">
+            <div class="modal-body text-center modal__body">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+              <form  class="modal__body__form" method="post" action="send.php">
+                <h3 class="form__heading">Укажите ваши контакты</h3>
+                <div class="form__subheading">И наш менеджер свяжется с вами в ближайшее время</div>
+
+                <div class="form-group col-xs-12">
+                  <input type="text" class="form-control form__name"  placeholder="Имя" required data-validation-required-message="Please enter your name." name="name">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+
+                <div class="form-group col-xs-12">
+                  <input type="tel" class="form-control form__phone"  placeholder="Телефон" required data-validation-required-message="Please enter your phone number." name="phone">
+                  <i class="fa fa-mobile-phone" aria-hidden="true"></i>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     <!-- jQuery -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
