@@ -116,85 +116,115 @@
 .ic-tag:before {
   width: 199px;
   height: 199px;
-  background: url('../img/icons-s7a69d74ecd.png') 0 -635px no-repeat;
+  background: url('../img/icons-seb4d87bb27.png') 0 -364px no-repeat;
 }
 
 .ic-scrollbottom:before {
   width: 133px;
   height: 10px;
-  background: url('../img/icons-s7a69d74ecd.png') 0 0 no-repeat;
+  background: url('../img/icons-seb4d87bb27.png') -108px -70px no-repeat;
 }
 
 .ic-1etap:before {
   width: 62px;
   height: 56px;
-  background: url('../img/icons-s7a69d74ecd.png') -133px 0 no-repeat;
+  background: url('../img/icons-seb4d87bb27.png') -46px -70px no-repeat;
 }
 
 .ic-2etap:before {
   width: 42px;
   height: 68px;
-  background: url('../img/icons-s7a69d74ecd.png') -46px -56px no-repeat;
+  background: url('../img/icons-seb4d87bb27.png') -251px -126px no-repeat;
 }
 
 .ic-3etap:before {
   width: 46px;
   height: 67px;
-  background: url('../img/icons-s7a69d74ecd.png') 0 -56px no-repeat;
+  background: url('../img/icons-seb4d87bb27.png') -58px 0 no-repeat;
 }
 
 .ic-4etap:before {
   width: 70px;
   height: 59px;
-  background: url('../img/icons-s7a69d74ecd.png') -124px -191px no-repeat;
+  background: url('../img/icons-seb4d87bb27.png') -104px 0 no-repeat;
 }
 
 .ic-5etap:before {
   width: 64px;
   height: 70px;
-  background: url('../img/icons-s7a69d74ecd.png') -88px -56px no-repeat;
+  background: url('../img/icons-seb4d87bb27.png') -174px 0 no-repeat;
 }
 
 .ic-6etap:before {
   width: 58px;
   height: 65px;
-  background: url('../img/icons-s7a69d74ecd.png') -46px -126px no-repeat;
+  background: url('../img/icons-seb4d87bb27.png') 0 0 no-repeat;
 }
 
 .ic-7etap:before {
   width: 46px;
   height: 51px;
-  background: url('../img/icons-s7a69d74ecd.png') 0 -126px no-repeat;
+  background: url('../img/icons-seb4d87bb27.png') 0 -70px no-repeat;
 }
 
 .ic-sale:before {
   width: 200px;
   height: 255px;
-  background: url('../img/icons-s7a69d74ecd.png') 0 -834px no-repeat;
+  background: url('../img/icons-seb4d87bb27.png') 0 -563px no-repeat;
 }
 
 .ic-sale1:before {
   width: 124px;
   height: 123px;
-  background: url('../img/icons-s7a69d74ecd.png') 0 -512px no-repeat;
+  background: url('../img/icons-seb4d87bb27.png') -122px -241px no-repeat;
 }
 
 .ic-sale2:before {
   width: 124px;
   height: 84px;
-  background: url('../img/icons-s7a69d74ecd.png') 0 -191px no-repeat;
+  background: url('../img/icons-seb4d87bb27.png') 0 -126px no-repeat;
 }
 
 .ic-sale3:before {
   width: 122px;
   height: 122px;
-  background: url('../img/icons-s7a69d74ecd.png') 0 -390px no-repeat;
+  background: url('../img/icons-seb4d87bb27.png') 0 -241px no-repeat;
 }
 
 .ic-sale4:before {
   width: 127px;
   height: 115px;
-  background: url('../img/icons-s7a69d74ecd.png') 0 -275px no-repeat;
+  background: url('../img/icons-seb4d87bb27.png') -124px -126px no-repeat;
+}
+
+.ic-faq1:before {
+  width: 308px;
+  height: 308px;
+  background: url('../img/icons-seb4d87bb27.png') 0 -1742px no-repeat;
+}
+
+.ic-faq2:before {
+  width: 308px;
+  height: 308px;
+  background: url('../img/icons-seb4d87bb27.png') 0 -818px no-repeat;
+}
+
+.ic-faq3:before {
+  width: 308px;
+  height: 308px;
+  background: url('../img/icons-seb4d87bb27.png') 0 -1126px no-repeat;
+}
+
+.ic-faq4:before {
+  width: 308px;
+  height: 311px;
+  background: url('../img/icons-seb4d87bb27.png') 0 -2050px no-repeat;
+}
+
+.ic-faq5:before {
+  width: 308px;
+  height: 308px;
+  background: url('../img/icons-seb4d87bb27.png') 0 -1434px no-repeat;
 }
 
 /* ---------------------------------------- */
@@ -773,3 +803,40 @@ a:focus {
 /* ---------------------------------------- */
 /* F A Q    S T Y L E                       */
 /* ---------------------------------------- */
+.faq {
+  background: #f9f9f9 url(../img/faqbg.png) no-repeat center 500px;
+  position: relative;
+  top: -340px;
+  padding: 228px 0 20px;
+}
+.faq__row {
+  margin-bottom: 25px;
+}
+.faq__bg {
+  height: 330px;
+  width: 330px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(0, 107, 179, 0.5);
+}
+.faq__text {
+  line-height: 330px;
+  font-size: 0;
+}
+.faq__text p {
+  font: 400 26px/36px "Roboto", sans-serif;
+  color: #000;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ---------------------------------------- */
+/* C O M P L E T E D    S T Y L E           */
+/* ---------------------------------------- */
+.completed {
+  background: #f9f9f9;
+  position: relative;
+  top: -340px;
+}

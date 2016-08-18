@@ -1,6 +1,6 @@
 +comment('general style')
 +ic
-@each $ic in tag, scrollbottom, 1etap, 2etap, 3etap, 4etap, 5etap, 6etap, 7etap, sale, sale1, sale2, sale3, sale4
+@each $ic in tag, scrollbottom, 1etap, 2etap, 3etap, 4etap, 5etap, 6etap, 7etap, sale, sale1, sale2, sale3, sale4, faq1, faq2, faq3, faq4, faq5
   .ic-#{$ic}
     +sb(#{$ic})
 +comment("modal style")      
@@ -416,4 +416,29 @@ a:focus
       height: 712px
       width: 726px
       background: url(../img/mockup.png) no-repeat 
-+comment("faq style")        
++comment("faq style")   
+.faq
+  background: #f9f9f9 url(../img/faqbg.png) no-repeat center 500px
+  position: relative
+  top: -340px
+  padding: 228px 0 20px
+  &__row
+    margin-bottom: 25px
+  &__bg
+    height: 330px
+    width: 330px
+    +br(50%)
+    background-color: rgba(0, 107, 179, 0.5)
+  &__text
+    line-height: 330px
+    font-size: 0
+    p
+      font: 400 26px/36px 'Roboto', sans-serif
+      color: #000     
+      display: inline-block
+      vertical-align: middle
++comment("completed style")   
+.completed
+  background: #f9f9f9   
+  position: relative
+  top: -340px  
