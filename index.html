@@ -35,7 +35,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&subset=cyrillic-ext" rel="stylesheet"> 
 
     <!-- Font-Awesome CSS -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
 
     <!-- Custom CSS  -->
     <link rel="stylesheet" href="css/style.css">
@@ -311,10 +311,10 @@
 
               <!-- Controls -->
               <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                <i class="fa fa-chevron-left"></i>
+                <i class="fa fa-angle-double-left" aria-hidden="true"></i>
               </a>
               <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
               </a>
             </div>
 
@@ -419,7 +419,7 @@
 
                   <div class="form-group col-xs-12">
                     <input type="tel" class="form-control form__phone"  placeholder="Телефон" required data-validation-required-message="Please enter your phone number." name="phone">
-                    <i class="fa fa-mobile-phone" aria-hidden="true"></i>
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
                   </div>
 
                   <div class="form-group col-xs-12">
@@ -428,7 +428,8 @@
                   </div>
 
                   <div class="text-center">
-                    <button type="submit" class="btn btn-xl btn form__btn"><p>Забронировать место</p></button>
+                    <button type="submit" class="btn btn-xl btn form__btn"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                      <p>Забронировать место</p></button>
                   </div>
                 </form>
 
@@ -440,38 +441,107 @@
       </div>
     </section>
 
-      <!--     HEADER   MODAL    -->
+    <!--     GLOBAL WORK   SECTION   / WORK ADVANTAGE 1 -->
 
-      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal__dialog">
+    <section class="work work__advantage1">
+      <div class="container">
+        <div class="row">
 
-          <div class="modal-content modal__content">
-            <div class="modal-body text-center modal__body">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="col-xs-12">
+            <h2 class="text-center section__heading work__heading">Преимущества работы с нами</h2>
+            <div class="section__heading--separator"></div>
+          </div>
 
-              <form  class="modal__body__form" method="post" action="send.php">
-                <h3 class="form__heading">Укажите ваши контакты</h3>
-                <div class="form__subheading">И наш менеджер свяжется с вами в ближайшее время</div>
+          <div class="col-md-6">
+            <div class="text-right work__info">
+              <div class="work__info--text">
+                <p>Проекты ведут обученные риэлторы с большим опытом работы, которые могут принимать звонки 24/7</p>
+              </div>
+              <button type="submit" class="btn btn-xl btn form__btn"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <span>Узнать подробнее</span></button>
+            </div>
+          </div>
 
-                <div class="form-group col-xs-12">
-                  <input type="text" class="form-control form__name"  placeholder="Имя" required data-validation-required-message="Please enter your name." name="name">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                </div>
+          <div class="pull-right col-md-5">
+            <div class="ignat__img"></div>
+          </div>
 
-                <div class="form-group col-xs-12">
-                  <input type="tel" class="form-control form__phone"  placeholder="Телефон" required data-validation-required-message="Please enter your phone number." name="phone">
-                  <i class="fa fa-mobile-phone" aria-hidden="true"></i>
-                </div>
+        </div>
+      </div>
+    </section>
 
-                <div class="text-center">
-                  <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
-                </div>
-              </form>
+    <!--  WORK ADVANTAGE 2 -->
 
+    <section class="work work__advantage2">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-6">
+            <div class="offer__img"></div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="text-left work__info">
+              <div class="work__info--text">
+                <p>Закрепленный за Вами менеджер занимается сбором и хранением <span>всех документов</span>, ведением портфолио Вашего объекта, сохранением всех статей, объявлений, номеров заинтересовавшихся клиентов и готов в любой момент <span>Вам их предоставить</span>.</p>
+              </div>
+              <button type="submit" class="btn btn-xl btn form__btn"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <span>Узнать подробнее</span></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--  WORK ADVANTAGE 3 -->
+
+    <section class="work work__advantage3">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6">
+            <div class="text-right work__info">
+              <div class="work__info--text">
+                <p>Наши юристы берут на себя решение всех спецефичных вопросов и Вы получаете полную безопасноть при проведении всех сделок</p>
+              </div>
+              <button type="submit" class="btn btn-xl btn form__btn"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                <span>Узнать подробнее</span></button>
+              </div>
+            </div>
+
+            <div class="pull-right col-md-5">
+              <div class="justice__img"></div>
             </div>
           </div>
         </div>
+      </section>
+
+    <!--  WORK ADVANTAGE 4 -->
+
+    <section class="work work__advantage4">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-6">
+            <div class="mockup__img"></div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="text-left work__info">
+              <div class="work__info--text">
+                <p>Вы получаете предложение по цене объекта от потенциальных клиентов, а так же <span>регулярные отчеты</span> о выполненных работах (фото объявлений в газетах, ссылки на сайты с объявлениями, отчеты 
+                  о проведенных показах)</p>
+              </div>
+              <button type="submit" class="btn btn-xl btn form__btn"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <span>Узнать подробнее</span></button>
+            </div>
+          </div>
+
+        </div>
       </div>
+    </section>
+
 
 
     <!-- jQuery -->

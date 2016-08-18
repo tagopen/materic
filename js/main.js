@@ -5,9 +5,10 @@
  */
  // jQuery for page scrolling feature - requires jQuery Easing plugin
  $('.toBottom ').click(function(){
-      $("html, body").animate({ scrollTop: $(".intent").offset().top  }, 1500);
+      $("html, body").animate({ scrollTop: $(".intent").offset().top + .21*$(window).outerHeight() }, 1500);
       return false;
    });
+
 // Equal Height function
 $.fn.equialHeight = function() {
   var $tallestcolumn = 0;

@@ -3,7 +3,95 @@
 @each $ic in tag, scrollbottom, 1etap, 2etap, 3etap, 4etap, 5etap, 6etap, 7etap, sale, sale1, sale2, sale3, sale4
   .ic-#{$ic}
     +sb(#{$ic})
++comment("modal style")      
+.modal
+  &__dialog
+    width: 350px  
+    border: 10px solid rgba(0, 0, 0, 0.3)
+  &__content
+    +br(0)  
+    border: 0
+    background-color: #006bb3
+    +bs( 0 0 5px rgba(0, 75, 125, 0.8) ) 
+  &__body
+    padding: 25px 20px 40px  
+    .close
+      opacity: 1
+    &__form
+      .form
+        &__heading,
+        &__subheading
+          color: #fff
+          font: 400 22px/26px 'Roboto', sans-serif  
+        &__heading
+          margin-top: 0
+        &__subheading
+          margin-bottom: 30px
+          font-weight: 300
+        &-group
+          position: relative
+          padding: 0 
+          input
+            padding-left: 40px
+            color: #ff9300
+          .fa
+            position: absolute
+            top: 6px
+            left: 10px
+            color: #585858
+            font-size: 18px
+          .form-control
+            +br(0)
+            &:focus
+              +bs(' inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(253,255,57,.6) ')
+              border-color: #ff9300 
+              ~.fa
+                color: #ff9300
+            &::-moz-placeholder
+              color: #585858
+            &::-webkit-input-placeholder 
+              color: #585858
+        &__btn 
+          +br(0)
+          width: 100%
+          padding: 15px 0
+          margin-top: 15px
+          background-color: #ff9300
+          background-image: linear-gradient(to top, #f58d00 0%, #ffae00 100%)
+          +bs( inset 0 0 10px rgba(252, 208, 0, 0.75) )
+          p
+            color: #fff
+            text-shadow: 0 0 1px rgba(0, 0, 0, 0.35)
+            font: 400 18px/20px 'Roboto', sans-serif
+            margin-bottom: 0
+.form__btn
+  position: relative
+  .fa
+    position: absolute
+    top: 18px
+    left: 20px  
+  &:hover,
+  &:focus,
+  &:active
+    .fa
+      color: #fff    
++comment("section heading style") 
+.section
+  &__heading
+    font: 400 30px/36px 'Roboto Slab', sans-serif
+    color: #000
+    letter-spacing: 1px
+    text-transform: uppercase  
+    margin-bottom: 25px
+    &--separator
+      height: 4px
+      width: 170px
+      background-color: #006bb3
+      margin: 0 auto 60px
+
 +comment("home page style")
+html
+  overflow-x: hidden
 body
   padding-right: 0 !important  
 a,
@@ -42,8 +130,7 @@ a:focus
       margin-right: 10px
   &__right
     .fa-phone
-      &:before
-        +rotate(43)    
+      +rotate(40)    
   &__call
     display: inline-block !important
     border-bottom: 2px dashed #006bb3   
@@ -181,9 +268,7 @@ a:focus
 +comment("sale style") 
 .sale
   padding: 0 0 100px
-  background: #f9f9f9 url(../img/salebg.png) no-repeat
-  +cover
-  background-position: center 100px
+  background: #f9f9f9 url(../img/salebg.png) no-repeat center 100px
   &__col
     margin-top: 100px
     .ic
@@ -196,7 +281,7 @@ a:focus
     padding: 15px 50px
     background-color: #ff9300
     background-image: linear-gradient(to top, #f58d00 0%, #ffae00 100%)
-    box-shadow: inset 0 0 10px rgba(252, 208, 0, 0.75)
+    +bs( inset 0 0 10px rgba(252, 208, 0, 0.75) )
     +br(0)
     span
       color: #fff
@@ -213,7 +298,7 @@ a:focus
     float: right    
     color: #fff  
     background-color: #fff !important
-    box-shadow: none !important
+    +bs( none !important ) 
     padding: 20px 0
     z-index: 15
     .offer__modal__text
@@ -223,7 +308,7 @@ a:focus
       &__body
         padding: 50px 40px
         background-color: #006bb3
-        box-shadow: 0 0 5px rgba(0, 75, 125, 0.8)
+        +bs( 0 0 5px rgba(0, 75, 125, 0.8) )
         z-index: 20
   &__box
     padding: 25px 0      
@@ -262,84 +347,73 @@ a:focus
     &--text
       padding-left: 95px
       p
-      font: 400 22px/36px "Roboto", sans-serif
-      color: #291818
+        font: 400 22px/36px "Roboto", sans-serif
+        color: #291818
       span
         font-size: 36px
         color: #fff 
         background-color: #006bb3
         padding: 5px
-+comment("section heading style") 
-.section
-  &__heading
-    font: 400 30px/36px 'Roboto Slab', sans-serif
-    color: #000
-    letter-spacing: 1px
-    text-transform: uppercase  
-    margin-bottom: 25px
-    &--separator
-      height: 4px
-      width: 170px
-      background-color: #006bb3
-      margin: 0 auto 60px
-+comment("modal style")      
-.modal
-  &__dialog
-    width: 350px  
-    border: 10px solid rgba(0, 0, 0, 0.3)
-  &__content
-    +br(0)  
-    border: 0
-    background-color: #006bb3
-    box-shadow: 0 0 5px rgba(0, 75, 125, 0.8) 
-  &__body
-    padding: 25px 20px 40px  
-    .close
-      opacity: 1
-    &__form
-      .form
-        &__heading,
-        &__subheading
-          color: #fff
-          font: 400 22px/26px 'Roboto', sans-serif  
-        &__heading
-          margin-top: 0
-        &__subheading
-          margin-bottom: 30px
-          font-weight: 300
-        &-group
-          position: relative
-          padding: 0 
-          input
-            padding-left: 40px
-            color: #ff9300
-          .fa
-            position: absolute
-            top: 6px
-            left: 10px
-            color: #585858
-            font-size: 18px
-          .form-control
-            +br(0)
-            &:focus
-              box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(253,255,57,.6)
-              border-color: #ff9300 
-              ~.fa
-                color: #ff9300
-            &::-moz-placeholder
-              color: #585858
-            &::-webkit-input-placeholder 
-              color: #585858
-        &__btn 
-          +br(0)
-          width: 100%
-          padding: 15px 0
-          margin-top: 15px
-          background-color: #ff9300
-          background-image: linear-gradient(to top, #f58d00 0%, #ffae00 100%)
-          box-shadow: inset 0 0 10px rgba(252, 208, 0, 0.75)
-          p
-            color: #fff
-            text-shadow: 0 0 1px rgba(0, 0, 0, 0.35)
-            font: 400 18px/20px 'Roboto', sans-serif
-            margin-bottom: 0
++comment("work style")       
+.work 
+  padding: 0
+  background: url(../img/work.png) no-repeat center 65px/ 100% 80%
+  &__info
+    padding: 170px 0 228px
+    &--text
+      color: #fff
+      font: 400 26px/36px 'Roboto', sans-serif
+      margin-bottom: 50px
+  .form__btn
+    color: #fff
+    @extend .sale__btn
+    &:hover,
+    &:focus,
+    &:active
+      .fa
+        color: inherit
+  &__advantage1
+    .ignat__img
+      height: 772px
+      width: 478px
+      background: url(../img/ignat.png) no-repeat      
+  &__advantage2
+    position: relative
+    z-index: 10
+    background: url(../img/work2.png) no-repeat center 65px/ 100% 80% 
+    margin-top: -32vh
+    .work
+      &__info
+        &--text
+          color: #000
+          span
+            color: #006bb3
+    .offer__img
+      margin-top: 140px
+      height: 604px
+      width: 523px
+      background: url(../img/offer.png) no-repeat  
+  &__advantage3 
+    margin-top: -150px   
+    .work
+      &__info   
+        padding: 228px 0
+    .justice__img
+      margin-top: -90px
+      height: 769px
+      width: 363px
+      background: url(../img/justice.png) no-repeat 
+  &__advantage4
+    @extend .work__advantage2
+    margin-top: 0   
+    position: relative
+    top: -140px
+    .work
+      &__info
+        padding: 228px 0
+    .mockup__img
+      margin: 140px 0 0 -140px
+      height: 712px
+      width: 726px
+      background: url(../img/mockup.png) no-repeat 
++comment("faq style")        
