@@ -13,6 +13,18 @@
     border: 0
     background-color: #006bb3
     +bs( 0 0 5px rgba(0, 75, 125, 0.8) ) 
+    .modal
+      &__info
+        color: #fff
+        padding: 90px 25px 25px
+        border: 2px solid #fff
+        &--heading
+          font: 500 22px/26px 'Roboto', sans-serif
+          margin-bottom: 30px
+        &--text 
+          p 
+            font: 400 16px/20px 'Roboto', sans-serif
+            margin-bottom: 30px
   &__body
     padding: 25px 20px 40px  
     .close
@@ -28,6 +40,9 @@
         &__subheading
           margin-bottom: 30px
           font-weight: 300
+        &__call--back
+          font: 300 16px/16px 'Roboto', sans-serif
+          color: #fff
         &-group
           position: relative
           padding: 0 
@@ -59,6 +74,7 @@
           background-color: #ff9300
           background-image: linear-gradient(to top, #f58d00 0%, #ffae00 100%)
           +bs( inset 0 0 10px rgba(252, 208, 0, 0.75) )
+          margin-bottom: 15px
           p
             color: #fff
             text-shadow: 0 0 1px rgba(0, 0, 0, 0.35)
@@ -516,11 +532,17 @@ a:focus
     float: right    
     padding-right: 0
     margin-bottom: 25px
+    position: relative
     p
       font: 400 30px/38px 'Roboto', sans-serif
       padding-left: 30px
     span
       font-weight: 500
+    img
+      position: absolute
+      right: -90px
+      z-index: 10
+      top: 70px
   &__row
     background-color: white
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6)

@@ -457,8 +457,8 @@
               <div class="work__info--text">
                 <p>Проекты ведут обученные риэлторы с большим опытом работы, которые могут принимать звонки 24/7</p>
               </div>
-              <button type="submit" class="btn btn-xl btn form__btn"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
-              <span>Узнать подробнее</span></button>
+              <a type="submit" class="btn btn-xl btn form__btn" data-toggle="modal" data-target="#modalwork"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <span>Узнать подробнее</span></a>
             </div>
           </div>
 
@@ -485,8 +485,8 @@
               <div class="work__info--text">
                 <p>Закрепленный за Вами менеджер занимается сбором и хранением <span>всех документов</span>, ведением портфолио Вашего объекта, сохранением всех статей, объявлений, номеров заинтересовавшихся клиентов и готов в любой момент <span>Вам их предоставить</span>.</p>
               </div>
-              <button type="submit" class="btn btn-xl btn form__btn"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
-              <span>Узнать подробнее</span></button>
+              <a type="submit" class="btn btn-xl btn form__btn" data-toggle="modal" data-target="#modalwork2"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <span>Узнать подробнее</span></a>
             </div>
           </div>
 
@@ -505,8 +505,8 @@
               <div class="work__info--text">
                 <p>Наши юристы берут на себя решение всех спецефичных вопросов и Вы получаете полную безопасноть при проведении всех сделок</p>
               </div>
-              <button type="submit" class="btn btn-xl btn form__btn"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                <span>Узнать подробнее</span></button>
+              <a type="submit" class="btn btn-xl btn form__btn" data-toggle="modal" data-target="#modalwork3"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <span>Узнать подробнее</span></a>
               </div>
             </div>
 
@@ -533,8 +533,8 @@
                 <p>Вы получаете предложение по цене объекта от потенциальных клиентов, а так же <span>регулярные отчеты</span> о выполненных работах (фото объявлений в газетах, ссылки на сайты с объявлениями, отчеты 
                   о проведенных показах)</p>
               </div>
-              <button type="submit" class="btn btn-xl btn form__btn"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
-              <span>Узнать подробнее</span></button>
+              <a type="submit" class="btn btn-xl btn form__btn" data-toggle="modal" data-target="#modalwork4"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <span>Узнать подробнее</span></a>
             </div>
           </div>
 
@@ -720,6 +720,7 @@
             <div class="col-md-10 col-md-offset-1">
               <div class="text-center col-md-9 footer__heading">
                 <p>Подпишитесь на рассылку и мгновенно получите на почту статью <span>"7 рекомендаций для подготовки объекта к продаже"</span></p>
+                <img src="img/footerarrow.png" alt="">
               </div>
             </div>
           </div>
@@ -802,6 +803,255 @@
                   <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
                 </div>
               </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--     WORK   MODAL  1 -->
+
+      <div class="modal fade" id="modalwork" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+
+          <div class="modal-content modal__content">
+            <div class="modal-body text-center modal__body">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+              <div class="row">
+
+                <div class="modal__col col-md-7">
+                  <div class="text-left modal__info">
+                    <!-- <p class="modal__info--heading"></p> -->
+                    <div class="modal__info--text">
+                      <p>После тщательной подготовки, наши специалисты будут готовы проводить профессиональную демонстрацию Вашей недвижимости 
+                        потенциальным покупателям.</p>
+                        <p>Многолетний опыт позволит им акцентировать внимание на самых сильных сторонах объекта, 
+                          а отсутствие эмоциональной вовлеченности 
+                          не помешает при общении даже с самым придирчивым покупателем. </p>
+                          <p>Звонки принимают профессиональные риэлторы 
+                            в любое время суток и день недели.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="modal__col col-md-5">
+                  <form  class="modal__body__form" method="post" action="send.php">
+                    <h3 class="form__heading">Консультация</h3>
+                    <div class="form__subheading">нашего специалиста</div>
+
+                    <div class="form-group col-xs-12">
+                      <input type="text" class="form-control form__name"  placeholder="Имя" required data-validation-required-message="Please enter your name." name="name">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                      <input type="tel" class="form-control form__phone"  placeholder="Телефон" required data-validation-required-message="Please enter your phone number." name="phone">
+                      <i class="fa fa-mobile-phone" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                      <input type="email" class="form-control form__mail"  placeholder="Email" required data-validation-required-message="Please enter your email." name="email">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
+                    </div>
+
+                    <div class="form__call--back">
+                      <p>Или позвоните нам по номеру:</p>
+                      <p>+38(050) 796 52 89</p>
+                      <p>+38(067) 596 33 14</p>
+                    </div> 
+                  </form>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--     WORK   MODAL  2 -->
+
+            <div class="modal fade" id="modalwork2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+
+          <div class="modal-content modal__content">
+            <div class="modal-body text-center modal__body">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+              <div class="row">
+
+                <div class="modal__col col-md-7">
+                  <div class="text-left modal__info">
+                    <p class="modal__info--heading">Вы получаете всю сопровождающую документацию</p>
+                    <div class="modal__info--text">
+                      <p>Закрепленный за Вами менеджер занимается сбором и хранением всех документов, ведением портфолио 
+                        Вашего объекта, сохранением всех статей, 
+                        объявлений, номеров заинтересовавшихся клиентов 
+                        и готов в любой момент Вам их предоставить.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="modal__col col-md-5">
+                  <form  class="modal__body__form" method="post" action="send.php">
+                    <h3 class="form__heading">Консультация</h3>
+                    <div class="form__subheading">нашего специалиста</div>
+
+                    <div class="form-group col-xs-12">
+                      <input type="text" class="form-control form__name"  placeholder="Имя" required data-validation-required-message="Please enter your name." name="name">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                      <input type="tel" class="form-control form__phone"  placeholder="Телефон" required data-validation-required-message="Please enter your phone number." name="phone">
+                      <i class="fa fa-mobile-phone" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                      <input type="email" class="form-control form__mail"  placeholder="Email" required data-validation-required-message="Please enter your email." name="email">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
+                    </div>
+
+                    <div class="form__call--back">
+                      <p>Или позвоните нам по номеру:</p>
+                      <p>+38(050) 796 52 89</p>
+                      <p>+38(067) 596 33 14</p>
+                    </div> 
+                  </form>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--     WORK   MODAL  3 -->
+
+            <div class="modal fade" id="modalwork3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+
+          <div class="modal-content modal__content">
+            <div class="modal-body text-center modal__body">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+              <div class="row">
+
+                <div class="modal__col col-md-7">
+                  <div class="text-left modal__info">
+                    <p class="modal__info--heading">Вы получаете полную юридическую поддержку</p>
+                    <div class="modal__info--text">
+                      <p>Наши юристы берут на себя решение 
+                        всех спецефичных вопросов и Вы получаете полную безопасноть при проведении всех сделок.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="modal__col col-md-5">
+                  <form  class="modal__body__form" method="post" action="send.php">
+                    <h3 class="form__heading">Консультация</h3>
+                    <div class="form__subheading">нашего специалиста</div>
+
+                    <div class="form-group col-xs-12">
+                      <input type="text" class="form-control form__name"  placeholder="Имя" required data-validation-required-message="Please enter your name." name="name">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                      <input type="tel" class="form-control form__phone"  placeholder="Телефон" required data-validation-required-message="Please enter your phone number." name="phone">
+                      <i class="fa fa-mobile-phone" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                      <input type="email" class="form-control form__mail"  placeholder="Email" required data-validation-required-message="Please enter your email." name="email">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
+                    </div>
+
+                    <div class="form__call--back">
+                      <p>Или позвоните нам по номеру:</p>
+                      <p>+38(050) 796 52 89</p>
+                      <p>+38(067) 596 33 14</p>
+                    </div> 
+                  </form>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--     WORK   MODAL  4 -->
+
+            <div class="modal fade" id="modalwork4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+
+          <div class="modal-content modal__content">
+            <div class="modal-body text-center modal__body">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+              <div class="row">
+
+                <div class="modal__col col-md-7">
+                  <div class="text-left modal__info">
+                    <div class="modal__info--text">
+                      <p>Вы получаете предложение по цене объекта от потенциальных клиентов, 
+                        а так же регулярные отчеты 
+                        о выполненных работах (фото объявлений в газетах, ссылки на сайты 
+                        с объявлениями, отчеты 
+                        о проведенных показах)</p>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="modal__col col-md-5">
+                  <form  class="modal__body__form" method="post" action="send.php">
+                    <h3 class="form__heading">Консультация</h3>
+                    <div class="form__subheading">нашего специалиста</div>
+
+                    <div class="form-group col-xs-12">
+                      <input type="text" class="form-control form__name"  placeholder="Имя" required data-validation-required-message="Please enter your name." name="name">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                      <input type="tel" class="form-control form__phone"  placeholder="Телефон" required data-validation-required-message="Please enter your phone number." name="phone">
+                      <i class="fa fa-mobile-phone" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                      <input type="email" class="form-control form__mail"  placeholder="Email" required data-validation-required-message="Please enter your email." name="email">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
+                    </div>
+
+                    <div class="form__call--back">
+                      <p>Или позвоните нам по номеру:</p>
+                      <p>+38(050) 796 52 89</p>
+                      <p>+38(067) 596 33 14</p>
+                    </div> 
+                  </form>
+                </div>
+
+              </div>
 
             </div>
           </div>
