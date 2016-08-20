@@ -178,13 +178,13 @@
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
               <!-- Маркеры слайдов -->
               <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"><span>1</span><i class="ic ic-1etap"></i></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"><span>2</span><i class="ic ic-2etap"></i></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"><span>3</span><i class="ic ic-3etap"></i></li>
-                <li data-target="#carousel-example-generic" data-slide-to="3"><span>4</span><i class="ic ic-4etap"></i></li>
-                <li data-target="#carousel-example-generic" data-slide-to="4"><span>5</span><i class="ic ic-5etap"></i></li>
-                <li data-target="#carousel-example-generic" data-slide-to="5"><span>6</span><i class="ic ic-6etap"></i></li>
-                <li data-target="#carousel-example-generic" data-slide-to="6"><span>7</span><i class="ic ic-7etap"></i></li>
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"><div class="stage__item"><span>1</span><i class="ic ic-1etap"></i></div></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"><div class="stage__item"><span>2</span><i class="ic ic-2etap"></i></div></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"><div class="stage__item"><span>3</span><i class="ic ic-3etap"></i></div></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"><div class="stage__item"><span>4</span><i class="ic ic-4etap"></i></div></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"><div class="stage__item"><span>5</span><i class="ic ic-5etap"></i></div></li>
+                <li data-target="#carousel-example-generic" data-slide-to="5"><div class="stage__item"><span>6</span><i class="ic ic-6etap"></i></div></li>
+                <li data-target="#carousel-example-generic" data-slide-to="6"><div class="stage__item"><span>7</span><i class="ic ic-7etap"></i></div></li>
               </ol>
 
               <!-- Содержимое слайдов -->
@@ -556,7 +556,6 @@
           <div class="row faq__row">
             <div class="col-md-4">
               <div class="faq__bg">
-                <div class="faq__bg--round"></div>
                 <i class="ic ic-faq1"></i>
               </div>
             </div>
@@ -831,52 +830,52 @@
                           не помешает при общении даже с самым придирчивым покупателем. </p>
                           <p>Звонки принимают профессиональные риэлторы 
                             в любое время суток и день недели.</p>
+                          </div>
                         </div>
                       </div>
+
+                      <div class="modal__col col-md-5">
+                        <form  class="modal__body__form" method="post" action="send.php">
+                          <h3 class="form__heading">Консультация</h3>
+                          <div class="form__subheading">нашего специалиста</div>
+
+                          <div class="form-group col-xs-12">
+                            <input type="text" class="form-control form__name"  placeholder="Имя" required data-validation-required-message="Please enter your name." name="name">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                          </div>
+
+                          <div class="form-group col-xs-12">
+                            <input type="tel" class="form-control form__phone"  placeholder="Телефон" required data-validation-required-message="Please enter your phone number." name="phone">
+                            <i class="fa fa-mobile-phone" aria-hidden="true"></i>
+                          </div>
+
+                          <div class="form-group col-xs-12">
+                            <input type="email" class="form-control form__mail"  placeholder="Email" required data-validation-required-message="Please enter your email." name="email">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                          </div>
+
+                          <div class="text-center">
+                            <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
+                          </div>
+
+                          <div class="form__call--back">
+                            <p>Или позвоните нам по номеру:</p>
+                            <p>+38(050) 796 52 89</p>
+                            <p>+38(067) 596 33 14</p>
+                          </div> 
+                        </form>
+                      </div>
+
                     </div>
 
-                <div class="modal__col col-md-5">
-                  <form  class="modal__body__form" method="post" action="send.php">
-                    <h3 class="form__heading">Консультация</h3>
-                    <div class="form__subheading">нашего специалиста</div>
-
-                    <div class="form-group col-xs-12">
-                      <input type="text" class="form-control form__name"  placeholder="Имя" required data-validation-required-message="Please enter your name." name="name">
-                      <i class="fa fa-user" aria-hidden="true"></i>
-                    </div>
-
-                    <div class="form-group col-xs-12">
-                      <input type="tel" class="form-control form__phone"  placeholder="Телефон" required data-validation-required-message="Please enter your phone number." name="phone">
-                      <i class="fa fa-mobile-phone" aria-hidden="true"></i>
-                    </div>
-
-                    <div class="form-group col-xs-12">
-                      <input type="email" class="form-control form__mail"  placeholder="Email" required data-validation-required-message="Please enter your email." name="email">
-                      <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </div>
-
-                    <div class="text-center">
-                      <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
-                    </div>
-
-                    <div class="form__call--back">
-                      <p>Или позвоните нам по номеру:</p>
-                      <p>+38(050) 796 52 89</p>
-                      <p>+38(067) 596 33 14</p>
-                    </div> 
-                  </form>
+                  </div>
                 </div>
-
               </div>
-
             </div>
-          </div>
-        </div>
-      </div>
 
       <!--     WORK   MODAL  2 -->
 
-            <div class="modal fade" id="modalwork2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal fade" id="modalwork2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
 
           <div class="modal-content modal__content">
@@ -897,48 +896,48 @@
                     </div>
                   </div>
 
-                <div class="modal__col col-md-5">
-                  <form  class="modal__body__form" method="post" action="send.php">
-                    <h3 class="form__heading">Консультация</h3>
-                    <div class="form__subheading">нашего специалиста</div>
+                  <div class="modal__col col-md-5">
+                    <form  class="modal__body__form" method="post" action="send.php">
+                      <h3 class="form__heading">Консультация</h3>
+                      <div class="form__subheading">нашего специалиста</div>
 
-                    <div class="form-group col-xs-12">
-                      <input type="text" class="form-control form__name"  placeholder="Имя" required data-validation-required-message="Please enter your name." name="name">
-                      <i class="fa fa-user" aria-hidden="true"></i>
-                    </div>
+                      <div class="form-group col-xs-12">
+                        <input type="text" class="form-control form__name"  placeholder="Имя" required data-validation-required-message="Please enter your name." name="name">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                      </div>
 
-                    <div class="form-group col-xs-12">
-                      <input type="tel" class="form-control form__phone"  placeholder="Телефон" required data-validation-required-message="Please enter your phone number." name="phone">
-                      <i class="fa fa-mobile-phone" aria-hidden="true"></i>
-                    </div>
+                      <div class="form-group col-xs-12">
+                        <input type="tel" class="form-control form__phone"  placeholder="Телефон" required data-validation-required-message="Please enter your phone number." name="phone">
+                        <i class="fa fa-mobile-phone" aria-hidden="true"></i>
+                      </div>
 
-                    <div class="form-group col-xs-12">
-                      <input type="email" class="form-control form__mail"  placeholder="Email" required data-validation-required-message="Please enter your email." name="email">
-                      <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </div>
+                      <div class="form-group col-xs-12">
+                        <input type="email" class="form-control form__mail"  placeholder="Email" required data-validation-required-message="Please enter your email." name="email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                      </div>
 
-                    <div class="text-center">
-                      <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
-                    </div>
+                      <div class="text-center">
+                        <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
+                      </div>
 
-                    <div class="form__call--back">
-                      <p>Или позвоните нам по номеру:</p>
-                      <p>+38(050) 796 52 89</p>
-                      <p>+38(067) 596 33 14</p>
-                    </div> 
-                  </form>
+                      <div class="form__call--back">
+                        <p>Или позвоните нам по номеру:</p>
+                        <p>+38(050) 796 52 89</p>
+                        <p>+38(067) 596 33 14</p>
+                      </div> 
+                    </form>
+                  </div>
+
                 </div>
 
               </div>
-
             </div>
           </div>
         </div>
-      </div>
 
       <!--     WORK   MODAL  3 -->
 
-            <div class="modal fade" id="modalwork3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal fade" id="modalwork3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
 
           <div class="modal-content modal__content">
@@ -957,48 +956,48 @@
                     </div>
                   </div>
 
-                <div class="modal__col col-md-5">
-                  <form  class="modal__body__form" method="post" action="send.php">
-                    <h3 class="form__heading">Консультация</h3>
-                    <div class="form__subheading">нашего специалиста</div>
+                  <div class="modal__col col-md-5">
+                    <form  class="modal__body__form" method="post" action="send.php">
+                      <h3 class="form__heading">Консультация</h3>
+                      <div class="form__subheading">нашего специалиста</div>
 
-                    <div class="form-group col-xs-12">
-                      <input type="text" class="form-control form__name"  placeholder="Имя" required data-validation-required-message="Please enter your name." name="name">
-                      <i class="fa fa-user" aria-hidden="true"></i>
-                    </div>
+                      <div class="form-group col-xs-12">
+                        <input type="text" class="form-control form__name"  placeholder="Имя" required data-validation-required-message="Please enter your name." name="name">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                      </div>
 
-                    <div class="form-group col-xs-12">
-                      <input type="tel" class="form-control form__phone"  placeholder="Телефон" required data-validation-required-message="Please enter your phone number." name="phone">
-                      <i class="fa fa-mobile-phone" aria-hidden="true"></i>
-                    </div>
+                      <div class="form-group col-xs-12">
+                        <input type="tel" class="form-control form__phone"  placeholder="Телефон" required data-validation-required-message="Please enter your phone number." name="phone">
+                        <i class="fa fa-mobile-phone" aria-hidden="true"></i>
+                      </div>
 
-                    <div class="form-group col-xs-12">
-                      <input type="email" class="form-control form__mail"  placeholder="Email" required data-validation-required-message="Please enter your email." name="email">
-                      <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </div>
+                      <div class="form-group col-xs-12">
+                        <input type="email" class="form-control form__mail"  placeholder="Email" required data-validation-required-message="Please enter your email." name="email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                      </div>
 
-                    <div class="text-center">
-                      <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
-                    </div>
+                      <div class="text-center">
+                        <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
+                      </div>
 
-                    <div class="form__call--back">
-                      <p>Или позвоните нам по номеру:</p>
-                      <p>+38(050) 796 52 89</p>
-                      <p>+38(067) 596 33 14</p>
-                    </div> 
-                  </form>
+                      <div class="form__call--back">
+                        <p>Или позвоните нам по номеру:</p>
+                        <p>+38(050) 796 52 89</p>
+                        <p>+38(067) 596 33 14</p>
+                      </div> 
+                    </form>
+                  </div>
+
                 </div>
 
               </div>
-
             </div>
           </div>
         </div>
-      </div>
 
       <!--     WORK   MODAL  4 -->
 
-            <div class="modal fade" id="modalwork4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal fade" id="modalwork4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
 
           <div class="modal-content modal__content">
@@ -1019,49 +1018,49 @@
                     </div>
                   </div>
 
-                <div class="modal__col col-md-5">
-                  <form  class="modal__body__form" method="post" action="send.php">
-                    <h3 class="form__heading">Консультация</h3>
-                    <div class="form__subheading">нашего специалиста</div>
+                  <div class="modal__col col-md-5">
+                    <form  class="modal__body__form" method="post" action="send.php">
+                      <h3 class="form__heading">Консультация</h3>
+                      <div class="form__subheading">нашего специалиста</div>
 
-                    <div class="form-group col-xs-12">
-                      <input type="text" class="form-control form__name"  placeholder="Имя" required data-validation-required-message="Please enter your name." name="name">
-                      <i class="fa fa-user" aria-hidden="true"></i>
-                    </div>
+                      <div class="form-group col-xs-12">
+                        <input type="text" class="form-control form__name"  placeholder="Имя" required data-validation-required-message="Please enter your name." name="name">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                      </div>
 
-                    <div class="form-group col-xs-12">
-                      <input type="tel" class="form-control form__phone"  placeholder="Телефон" required data-validation-required-message="Please enter your phone number." name="phone">
-                      <i class="fa fa-mobile-phone" aria-hidden="true"></i>
-                    </div>
+                      <div class="form-group col-xs-12">
+                        <input type="tel" class="form-control form__phone"  placeholder="Телефон" required data-validation-required-message="Please enter your phone number." name="phone">
+                        <i class="fa fa-mobile-phone" aria-hidden="true"></i>
+                      </div>
 
-                    <div class="form-group col-xs-12">
-                      <input type="email" class="form-control form__mail"  placeholder="Email" required data-validation-required-message="Please enter your email." name="email">
-                      <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </div>
+                      <div class="form-group col-xs-12">
+                        <input type="email" class="form-control form__mail"  placeholder="Email" required data-validation-required-message="Please enter your email." name="email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                      </div>
 
-                    <div class="text-center">
-                      <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
-                    </div>
+                      <div class="text-center">
+                        <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
+                      </div>
 
-                    <div class="form__call--back">
-                      <p>Или позвоните нам по номеру:</p>
-                      <p>+38(050) 796 52 89</p>
-                      <p>+38(067) 596 33 14</p>
-                    </div> 
-                  </form>
+                      <div class="form__call--back">
+                        <p>Или позвоните нам по номеру:</p>
+                        <p>+38(050) 796 52 89</p>
+                        <p>+38(067) 596 33 14</p>
+                      </div> 
+                    </form>
+                  </div>
+
                 </div>
 
               </div>
-
             </div>
           </div>
         </div>
-      </div>
 
       <!--     COMPLETED GALLERY  MODAL    -->
 
       <div class="modal fade" id="modal-slider" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-lg completed__modal">
+        <div class="modal-dialog modal-lg completed__modal">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
