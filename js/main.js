@@ -3,40 +3,7 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
- // jQuery for page scrolling feature - requires jQuery Easing plugin
- $('.toBottom ').click(function(){
-      $("html, body").animate({ scrollTop: $(".intent").offset().top + .21*$(window).outerHeight() }, 1500);
-      return false;
-   });
 
-// Equal Height function
-$.fn.equialHeight = function() {
-  var $tallestcolumn = 0;
-  var $currentHeight = 0;
-  $.each($(this), function (index, value) {
-    $currentHeight = $(this).height();
-    if($currentHeight > $tallestcolumn)
-    {
-      $tallestcolumn = $currentHeight;
-    }
-  });
-  $(this).height($tallestcolumn);
-  return $(this);
-} 
-
-$('.sale__box .ic').equialHeight();
-$('.sale__box__info').equialHeight();
-
-$('#carousel-example-generic').hover(function () { 
-  $(this).carousel('pause') 
-}, function () { 
-  $(this).carousel('cycle') 
-})
- $('#carousel-example-generic2').hover(function () { 
-  $(this).carousel('pause') 
-}, function () { 
-  $(this).carousel('cycle') 
-})
 // Old browser notification
 $(function() { 
   $.reject({
@@ -55,4 +22,37 @@ $(function() {
     closeMessage: 'Закрывая это уведомление вы соглашаетесь с тем, что сайт в вашем браузере может отображаться некорректно.',
     closeLink: 'Закрыть это уведомление',
   });
+});
+
+// Equal Height function
+$.fn.equialHeight = function() {
+  var $tallestcolumn = 0;
+  var $currentHeight = 0;
+  $.each($(this), function (index, value) {
+    $currentHeight = $(this).height();
+    if($currentHeight > $tallestcolumn)
+    {
+      $tallestcolumn = $currentHeight;
+    }
+  });
+  $(this).height($tallestcolumn);
+  return $(this);
+} 
+
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+$('.toBottom').click(function(){
+  $("html, body").animate({ scrollTop: $(".intent").offset().top + .21*$(window).outerHeight() }, 1500);
+  return false;
+});
+
+
+$('#carousel-example-generic, #carousel-example-generic2').hover(function () { 
+  $(this).carousel('pause');
+}, function () { 
+  $(this).carousel('cycle');
+});
+
+$(document).ready( function () { 
+  $('.sale__box .ic').equialHeight();
+  $('.sale__box__info').equialHeight();
 });
