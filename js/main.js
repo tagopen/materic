@@ -8,7 +8,7 @@
 $(function() { 
   $.reject({
     reject: {
-      msie: 9
+      msie: 8
     },
     imagePath: 'img/icons/jReject/',
     display: [ 'chrome','firefox','safari','opera' ],
@@ -45,14 +45,12 @@ $('.toBottom').click(function(){
   return false;
 });
 
-
+// Bootstrap carousel pause on hover
 $('#carousel-example-generic, #carousel-example-generic2').hover(function () { 
   $(this).carousel('pause');
 }, function () { 
   $(this).carousel('cycle');
 });
 
-$(document).ready( function () { 
-  $('.sale__box .ic').equialHeight();
-  $('.sale__box__info').equialHeight();
-});
+// Set equial height
+$('.sale__box__info').equialHeight();
