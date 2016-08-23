@@ -178,13 +178,13 @@
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
               <!-- Маркеры слайдов -->
               <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"><div class="stage__item"><span>1</span><i class="ic ic-1etap"></i></div></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"><div class="stage__item"><span>2</span><i class="ic ic-2etap"></i></div></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"><div class="stage__item"><span>3</span><i class="ic ic-3etap"></i></div></li>
-                <li data-target="#carousel-example-generic" data-slide-to="3"><div class="stage__item"><span>4</span><i class="ic ic-4etap"></i></div></li>
-                <li data-target="#carousel-example-generic" data-slide-to="4"><div class="stage__item"><span>5</span><i class="ic ic-5etap"></i></div></li>
-                <li data-target="#carousel-example-generic" data-slide-to="5"><div class="stage__item"><span>6</span><i class="ic ic-6etap"></i></div></li>
-                <li data-target="#carousel-example-generic" data-slide-to="6"><div class="stage__item"><span>7</span><i class="ic ic-7etap"></i></div></li>
+                <li><div data-target="#carousel-example-generic" data-slide-to="0" class="active stage__item"><span>1</span><i class="ic ic-1etap"></i></div></li>
+                <li><div data-target="#carousel-example-generic" data-slide-to="1" class="stage__item"><span>2</span><i class="ic ic-2etap"></i></div></li>
+                <li><div data-target="#carousel-example-generic" data-slide-to="2" class="stage__item"><span>3</span><i class="ic ic-3etap"></i></div></li>
+                <li><div data-target="#carousel-example-generic" data-slide-to="3" class="stage__item"><span>4</span><i class="ic ic-4etap"></i></div></li>
+                <li><div data-target="#carousel-example-generic" data-slide-to="4" class="stage__item"><span>5</span><i class="ic ic-5etap"></i></div></li>
+                <li><div data-target="#carousel-example-generic" data-slide-to="5" class="stage__item"><span>6</span><i class="ic ic-6etap"></i></div></li>
+                <li><div data-target="#carousel-example-generic" data-slide-to="6" class="stage__item"><span>7</span><i class="ic ic-7etap"></i></div></li>
               </ol>
 
               <!-- Содержимое слайдов -->
@@ -192,18 +192,18 @@
 
                 <div class="item active">
                   <div class="row">
-                  <div class="col-md-5">
-                    <img src="img/slider_stage1.jpg" alt="..." class="img-responsive"></div>
-                    <div class="col-md-7 stage__slider__info">
-                      <h3 class="stage__slider__heading">Определяем реальную цену, а не рыночную</h3>
-                      <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-
-                        Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
-
-                        Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
-                      </p>
+                    <div class="col-md-5">
+                      <img src="img/slider_stage1.jpg" alt="..." class="img-responsive"></div>
+                      <div class="col-md-7 stage__slider__info">
+                        <div class="stage__slider--box">
+                          <h3 class="stage__slider__heading">Определяем реальную цену, а не рыночную</h3>
+                          <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                          Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
+                            Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
                   </div>
 
                   <div class="item">
@@ -211,13 +211,15 @@
                       <div class="col-md-5">
                         <img src="img/slider_stage2.jpg" alt="..." class="img-responsive"></div>
                         <div class="col-md-7 stage__slider__info">
-                          <h3 class="stage__slider__heading">Определяем реальную цену, а не рыночную</h3>
-                          <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                          <div class="stage__slider--box">
+                            <h3 class="stage__slider__heading">Определяем реальную цену, а не рыночную</h3>
+                            <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
 
-                        Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
+                              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
 
-                        Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
-                      </p>
+                              Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -228,13 +230,15 @@
                           <img src="img/slider_stage3.jpg" alt="..." class="img-responsive">
                         </div>
                         <div class="col-md-7 stage__slider__info">
-                          <h3 class="stage__slider__heading">Создание качественной презентации объекта</h3>
-                          <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                          <div class="stage__slider--box">
+                            <h3 class="stage__slider__heading">Создание качественной презентации объекта</h3>
+                            <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
 
-                        Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
+                              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
 
-                        Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
-                      </p>
+                              Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -245,13 +249,15 @@
                           <img src="img/slider_stage4.jpg" alt="..." class="img-responsive">
                         </div>
                         <div class="col-md-7 stage__slider__info">
-                          <h3 class="stage__slider__heading">Оффлайн и онлайн реклама с помощью 12 способов</h3>
-                          <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                          <div class="stage__slider--box">
+                            <h3 class="stage__slider__heading">Оффлайн и онлайн реклама с помощью 12 способов</h3>
+                            <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
 
-                        Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
+                              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
 
-                        Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
-                      </p>
+                              Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -262,13 +268,15 @@
                           <img src="img/slider_stage5.jpg" alt="..." class="img-responsive">
                         </div>
                         <div class="col-md-7 stage__slider__info">
-                          <h3 class="stage__slider__heading">Создание спроса</h3>
-                          <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                          <div class="stage__slider--box">
+                            <h3 class="stage__slider__heading">Создание спроса</h3>
+                            <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
 
-                        Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
+                              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
 
-                        Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
-                      </p>
+                              Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -279,13 +287,15 @@
                           <img src="img/slider_stage6.jpg" alt="..." class="img-responsive">
                         </div>
                         <div class="col-md-7 stage__slider__info">
-                          <h3 class="stage__slider__heading">Показы объекта потенциальным покупаетелям</h3>
-                          <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                          <div class="stage__slider--box">
+                            <h3 class="stage__slider__heading">Показы объекта потенциальным покупаетелям</h3>
+                            <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
 
-                        Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
+                              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
 
-                        Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
-                      </p>
+                              Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -293,21 +303,23 @@
                     <div class="item">
                       <div class="row">
                         <div class="col-md-5">
-                        <img src="img/slider_stage7.jpg" alt="..." class="img-responsive">
+                          <img src="img/slider_stage7.jpg" alt="..." class="img-responsive">
                         </div>
                         <div class="col-md-7 stage__slider__info">
-                          <h3 class="stage__slider__heading">Продажа объекта</h3>
-                          <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                          <div class="stage__slider--box">
+                            <h3 class="stage__slider__heading">Продажа объекта</h3>
+                            <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
 
-                        Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
+                              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
 
-                        Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
-                      </p>
+                              Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
 
-              </div>
+                  </div>
 
               <!-- Controls -->
               <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -328,6 +340,73 @@
 
     <section class="sale">
       <div class="container">
+
+        <div class="row collapse_row collapse">  
+        
+          <div class="col-md-4 col-md-offset-2">
+            <div class="text-center sale__box">
+              <i class="ic ic-sale1"></i>
+              <div class="sale__box__heading">
+                <p>Анализ</p>
+              </div>
+              <div class="sale__box__info">
+                <p>Мы проводим анализ реальной стоимости объекта и даем рекомендации по приведениюего к предпродажному виду</p>
+              </div> 
+              </div>
+            </div>
+        
+          <div class="col-md-4">
+            <div class="text-center sale__box">
+              <i class="ic ic-sale2"></i>
+              <div class="sale__box__heading">
+              <p>Съемка</p>
+              </div>
+              <div class="sale__box__info">
+                <p>Мы проводим качественные: фото, видео и при необходимости 3Dсъемку, для лучшей демонстрацииобъекта в интернете</p>
+              </div> 
+            </div>
+          </div>
+        
+        </div>
+        
+        <div class="row collapse_row collapse">
+        
+          <div class="col-md-4 col-md-offset-2">
+            <div class="text-center sale__box">
+              <i class="ic ic-sale3"></i>
+              <div class="sale__box__heading">
+                <p>Маркетинг</p>
+              </div>
+              <div class="sale__box__info">
+                <p>Написание продающих статей и заголовков основанных, как на современных тенденциях в сфере продажи недвижимости, так и многолетнем опыте продаж</p>
+              </div> 
+            </div>
+          </div>
+        
+          <div class="col-md-4">
+            <div class="text-center sale__box">
+              <i class="ic ic-sale4"></i>
+              <div class="sale__box__heading">
+                <p>Реклама</p>
+              </div>
+              <div class="sale__box__info">
+                <p>За свой счет мы размещаемся на:
+                 <i class="fa fa-check" aria-hidden="true"></i>
+                 Газетах, листовках и пр.<br>
+                 <i class="fa fa-check" aria-hidden="true"></i>
+                 Межреелторских базах;<br>
+                 <i class="fa fa-check" aria-hidden="true"></i>
+                 Продвигаемом сайте;<br>
+                 <i class="fa fa-check" aria-hidden="true"></i>
+                 Досках объявлений;<br>
+               </p>
+             </div> 
+           </div>
+         </div>
+        
+        </div>
+         
+
         <div class="row">
           
           <div class="col-xs-12">
@@ -343,40 +422,6 @@
             </div>
           </div>
 
-        </div>
-
-        <div class="row collapse_row collapse">  
-          <div class="col-md-3 col-md-offset-3">
-            <div class="text-center sale__box">
-              <i class="ic ic-sale1"></i>
-              <div class="sale__box__heading">Анализ</div>
-              <div class="sale__box__info"></div> 
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="text-center sale__box">
-              <i class="ic ic-sale2"></i>
-              <div class="sale__box__heading">Съемка</div>
-              <div class="sale__box__info"></div> 
-            </div>
-          </div>
-        </div>
-
-        <div class="row collapse_row collapse">
-          <div class="col-md-3 col-md-offset-3">
-            <div class="text-center sale__box">
-              <i class="ic ic-sale3"></i>
-              <div class="sale__box__heading">Маркетинг</div>
-              <div class="sale__box__info"></div> 
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="text-center sale__box">
-              <i class="ic ic-sale4"></i>
-              <div class="sale__box__heading">Реклама</div>
-              <div class="sale__box__info"></div> 
-            </div>
-          </div>
         </div>
      
       </div>
@@ -636,7 +681,7 @@
 
               <div class="completed__slider">
 
-            <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+            <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel" data-interval="3000">
 
 
               <!-- Содержимое слайдов -->

@@ -548,19 +548,24 @@ a:focus {
 .stage__slider {
   padding: 380px 30px 0;
 }
+.stage__slider--box {
+  border: 5px solid #006bb3;
+  margin-left: -20px;
+  padding: 45px;
+  z-index: 10;
+  height: 400px;
+}
 .stage__slider__info {
-  padding: 40px;
+  padding: 25px 30px 25px 0;
 }
 .stage__slider__heading {
   margin-bottom: 45px;
 }
-.stage__slider .carousel-inner .item {
-  border: 5px solid #006bb3;
-}
 .stage__slider .carousel-inner .item img {
+  position: relative;
+  z-index: 15;
   width: 470px;
   height: 450px;
-  margin: -5px;
 }
 .stage__slider .carousel-control {
   background: none;
@@ -699,9 +704,23 @@ a:focus {
 .sale__btn span, .work .form__btn span {
   color: #fff;
 }
+.sale__box {
+  padding: 40px 25px 30px;
+  background-color: #006bb3;
+}
 .sale__box__heading, .sale__box__info {
   color: #fff;
   text-align: center;
+  font: 400 18px/24px "Roboto", sans-serif;
+}
+.sale__box__heading {
+  padding: 0 50px;
+}
+.sale__box__heading p {
+  font-size: 24px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #fff;
 }
 
 /* ---------------------------------------- */

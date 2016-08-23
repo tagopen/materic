@@ -22,8 +22,21 @@ $.fn.equialHeight = function() {
   });
   $(this).height($tallestcolumn);
   return $(this);
-}
+} 
 
+$('.sale__box .ic').equialHeight();
+$('.sale__box__info').equialHeight();
+
+$('#carousel-example-generic').hover(function () { 
+  $(this).carousel('pause') 
+}, function () { 
+  $(this).carousel('cycle') 
+})
+ $('#carousel-example-generic2').hover(function () { 
+  $(this).carousel('pause') 
+}, function () { 
+  $(this).carousel('cycle') 
+})
 // Old browser notification
 $(function() { 
   $.reject({
