@@ -54,3 +54,8 @@ $('#carousel-example-generic, #carousel-example-generic2').hover(function () {
 
 // Set equial height
 $('.sale__box__info').equialHeight();
+
+// 
+$('').onclick( function () {
+  $(this).addClass('in');
+});
