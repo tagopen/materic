@@ -9,6 +9,7 @@ $(function() {
             event.preventDefault(); // prevent default submit behaviour
             $("[type=submit]").prop("disabled", true); //prevent submit behaviour
             // get values from FORM
+            var form = $form.attr('name');
             var name = $form.find("input[name=name]").val();
             var email = $form.find("input[name=email]").val();
             var phone = $form.find("input[name=phone]").val();
@@ -19,9 +20,10 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "../mail/mail.php",
                 type: "POST",
                 data: {
+                    form: form,
                     name: name,
                     phone: phone,
                     email: email,  
