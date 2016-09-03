@@ -541,7 +541,7 @@ a:focus {
   padding: 0;
 }
 .stage__slider__heading {
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   padding: 0 40px;
 }
 .stage__slider .carousel-inner .item img {
@@ -549,6 +549,9 @@ a:focus {
   z-index: 15;
   width: 470px;
   height: 450px;
+}
+.stage__slider .carousel-inner .item:before {
+  border: 5px solid #006bb3;
 }
 .stage__slider .carousel-inner:before {
   content: "";
@@ -650,15 +653,6 @@ a:focus {
   position: absolute;
   left: -2px;
   top: -2px;
-}
-.stage__slider .carousel-indicators li:nth-child(1), .stage__slider .carousel-indicators li:nth-child(7) {
-  top: 65px;
-}
-.stage__slider .carousel-indicators li:nth-child(2), .stage__slider .carousel-indicators li:nth-child(6) {
-  top: 25px;
-}
-.stage__slider .carousel-indicators li:nth-child(4) {
-  top: -10px;
 }
 
 /* ---------------------------------------- */
@@ -871,7 +865,6 @@ a:focus {
   -o-background-size: cover;
   background-size: cover;
   background-position: 50% 50%;
-  margin-top: -32vh;
 }
 .work__advantage2 .work__info--text, .work__advantage4 .work__info--text {
   color: #000;
@@ -882,14 +875,8 @@ a:focus {
 .work__advantage2 .offer__img, .work__advantage4 .offer__img {
   margin-top: 140px;
 }
-.work__advantage3 {
-  margin-top: -150px;
-}
 .work__advantage3 .work__info {
   padding: 0;
-}
-.work__advantage3 .justice__img {
-  margin-top: -90px;
 }
 .work__advantage4 {
   margin-top: 0;
@@ -906,8 +893,7 @@ a:focus {
 .faq {
   background: #f9f9f9;
   position: relative;
-  top: -140px;
-  padding: 228px 0 20px;
+  padding: 60px 0 20px;
 }
 .faq__row {
   margin-bottom: 25px;
@@ -947,7 +933,6 @@ a:focus {
 .completed {
   background: #f9f9f9;
   position: relative;
-  top: -340px;
 }
 .completed__slider__info {
   padding: 0 30px;
@@ -1042,7 +1027,6 @@ a:focus {
 /* ---------------------------------------- */
 .map {
   background: #f9f9f9;
-  margin-top: -340px;
   padding: 100px 0;
 }
 .map .container-fluid {
@@ -1054,8 +1038,7 @@ a:focus {
 /* ---------------------------------------- */
 .footer {
   background: #f9f9f9 url(../img/footerbg.png) no-repeat center bottom;
-  margin-top: -180px;
-  padding: 80px 0 100px;
+  padding: 0 0 100px;
 }
 .footer__img {
   position: absolute;
@@ -1240,13 +1223,12 @@ a:focus {
     transform: scale(0.4);
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 968px) {
   /* ---------------------------------------- */
   /* M O D A L    S T Y L E                   */
   /* ---------------------------------------- */
   .modal__content .modal__info {
     padding: 25px;
-    min-height: 430px;
   }
 
   /* -------------------------------------------- */
@@ -1278,13 +1260,13 @@ a:focus {
     margin-top: -100px;
   }
   .offer__list {
-    padding-right: 30px;
+    padding-right: 0;
   }
   .offer__list ul li {
-    font: 400 25px/40px "Roboto", sans-serif;
+    font: 400 20px/30px "Roboto", sans-serif;
   }
   .offer__list__heading {
-    font: 400 40px/52px "Roboto Slab", sans-serif;
+    font: 400 32px/50px "Roboto Slab", sans-serif;
     text-align: left;
   }
   .offer__modal .modal__body {
@@ -1299,8 +1281,8 @@ a:focus {
   /* I N T E N T    S T Y L E                 */
   /* ---------------------------------------- */
   .intent {
-    padding: 244px 0;
-    margin-top: -22vh;
+    padding: 244px 0 100px;
+    margin-top: -21vh;
   }
   .intent__col {
     float: right;
@@ -1321,8 +1303,7 @@ a:focus {
   }
   .stage__slider--box {
     margin-left: -20px;
-    padding: 45px;
-    height: 400px;
+    padding: 30px 30px 20px;
     text-align: left;
   }
   .stage__slider__heading {
@@ -1332,8 +1313,10 @@ a:focus {
     padding: 25px 30px 25px 0;
   }
   .stage__slider .carousel-inner:before {
-    height: 88%;
-    margin: 3% 0;
+    border: 0;
+  }
+  .stage__slider .carousel-inner .item img {
+    height: auto;
   }
   .stage__slider .carousel-control {
     top: 150px;
@@ -1348,6 +1331,15 @@ a:focus {
   }
   .stage__slider .carousel-control.left {
     left: -75px;
+  }
+  .stage__slider .carousel-indicators li:nth-child(1), .stage__slider .carousel-indicators li:nth-child(7) {
+    top: 24px;
+  }
+  .stage__slider .carousel-indicators li:nth-child(2), .stage__slider .carousel-indicators li:nth-child(6) {
+    top: 12px;
+  }
+  .stage__slider .carousel-indicators li:nth-child(4) {
+    top: -6px;
   }
 
   /* ---------------------------------------- */
@@ -1382,6 +1374,242 @@ a:focus {
     padding-left: 95px;
     text-align: left;
   }
+  .advantage__content {
+    float: none;
+    margin: 0 auto;
+  }
+  .advantage__content .offer__modal__text p {
+    font: 500 36px/40px "Roboto", sans-serif;
+  }
+  .advantage__content .modal__body {
+    padding: 50px 40pxcomment("work style");
+  }
+
+  .work {
+    background: url(../img/work.png) no-repeat center 65px;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .work__info {
+    padding: 160px 0 200px;
+    text-align: right;
+  }
+  .work__info--text {
+    font: 400 20px/30px "Roboto", sans-serif;
+  }
+  .work__advantage1 .ignat__img img {
+    margin: 0 auto;
+  }
+  .work__advantage2, .work__advantage4 {
+    background: url(../img/work2.png) no-repeat center 65px !important;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-top: -18vh;
+    padding-top: 140px;
+  }
+  .work__advantage3 {
+    margin-top: -46vh;
+  }
+  .work__advantage4 {
+    padding: 265px 0;
+  }
+
+  /* ---------------------------------------- */
+  /* F A Q    S T Y L E                       */
+  /* ---------------------------------------- */
+  .faq {
+    background: #f9f9f9;
+  }
+  .faq__right {
+    float: right;
+  }
+  .faq__bg {
+    height: 280px;
+    width: 280px;
+    margin: 0;
+  }
+  .faq__row .img__right {
+    padding: 0px 0px 20px 20px;
+  }
+  .faq__row .img__left {
+    padding: 0px 20px 20px 0;
+  }
+  .faq__text p {
+    font-size: 18px;
+  }
+
+  /* ---------------------------------------- */
+  /* C O M P L E T E D    S T Y L E           */
+  /* ---------------------------------------- */
+  .completed__slider {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .completed__slider__heading {
+    font: 400 26px/30px "Roboto", sans-serif;
+    padding: 0;
+    text-align: left;
+  }
+  .completed__slider .carousel-control {
+    bottom: auto;
+    top: 300px;
+    width: 70px;
+    height: 70px;
+  }
+  .completed__slider .carousel-control .fa {
+    line-height: 70px;
+  }
+  .completed__slider .carousel-control.right {
+    right: -90px;
+  }
+  .completed__slider .carousel-control.left {
+    left: -90px;
+  }
+  .completed__box {
+    float: right;
+    z-index: 10;
+  }
+
+  /* ---------------------------------------- */
+  /* F O O T E R    S T Y L E                 */
+  /* ---------------------------------------- */
+  .footer {
+    padding: 0 0 100px;
+  }
+  .footer__row {
+    padding: 15px;
+  }
+  .footer__box {
+    float: right;
+  }
+  .footer__heading {
+    padding-right: 0;
+  }
+  .footer__heading p {
+    font: 400 30px/38px "Roboto", sans-serif;
+    padding-left: 30px;
+  }
+  .footer__callback p {
+    text-align: right;
+  }
+  .footer__img {
+    top: -50px;
+    left: -30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* ---------------------------------------- */
+  /* M O D A L    S T Y L E                   */
+  /* ---------------------------------------- */
+  .modal__content .modal__info {
+    padding: 25px;
+    min-height: 430px;
+  }
+
+  /* ---------------------------------------- */
+  /* S T A G E    S T Y L E                   */
+  /* ---------------------------------------- */
+  .stage__slider {
+    padding: 380px 50px 0;
+  }
+  .stage__slider--box {
+    margin-left: -20px;
+    padding: 30px 30px 20px;
+    height: 362px;
+    text-align: left;
+  }
+  .stage__slider__heading {
+    padding: 0;
+  }
+  .stage__slider__info {
+    padding: 25px 30px 25px 0;
+  }
+  .stage__slider .carousel-inner:before {
+    height: 84%;
+    margin: 3% 0;
+    border: 5px solid #006bb3;
+  }
+  .stage__slider .carousel-inner .item img {
+    height: 400px;
+  }
+  .stage__slider .carousel-control {
+    top: 150px;
+    width: 70px;
+    height: 70px;
+  }
+  .stage__slider .carousel-control .fa {
+    line-height: 70px;
+  }
+  .stage__slider .carousel-control.right {
+    right: -75px;
+  }
+  .stage__slider .carousel-control.left {
+    left: -75px;
+  }
+  .stage__slider .carousel-indicators li:nth-child(1), .stage__slider .carousel-indicators li:nth-child(7) {
+    top: 65px;
+  }
+  .stage__slider .carousel-indicators li:nth-child(2), .stage__slider .carousel-indicators li:nth-child(6) {
+    top: 25px;
+  }
+  .stage__slider .carousel-indicators li:nth-child(4) {
+    top: -10px;
+  }
+
+  /* ---------------------------------------- */
+  /* I N T E N T    S T Y L E                 */
+  /* ---------------------------------------- */
+  .intent {
+    padding: 244px 0;
+    margin-top: -20vh;
+  }
+
+  /* ---------------------------------------- */
+  /* S A L E    S T Y L E                     */
+  /* ---------------------------------------- */
+  .sale {
+    padding: 0 0 180px;
+  }
+  .sale__spoiler {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    transition: all 1s ease;
+  }
+  .sale__spoiler.in {
+    bottom: 10px;
+  }
+  .sale__box {
+    padding: 25px;
+  }
+
+  /* ---------------------------------------- */
+  /* A D V A N T A G E    S T Y L E           */
+  /* ---------------------------------------- */
+  .advantage {
+    padding: 100px 0;
+  }
+  .advantage__list {
+    padding: 65px 35px 35px;
+  }
+  .advantage__list ul li {
+    font: 400 22px/36px "Roboto", sans-serif;
+  }
+  .advantage__list--text {
+    padding-left: 95px;
+    text-align: left;
+  }
+  .advantage__content {
+    float: right;
+  }
   .advantage__content .offer__modal__text p {
     font: 500 36px/40px "Roboto", sans-serif;
   }
@@ -1393,40 +1621,32 @@ a:focus {
   /* W O R K    S T Y L E                     */
   /* ---------------------------------------- */
   .work {
-    background: url(../img/work.png) no-repeat center 65px/100% 80%;
-  }
-  .work__info {
-    padding: 170px 0 228px;
-    text-align: right;
+    background: url(../img/work.png) no-repeat center 65px;
   }
   .work__info--text {
-    font: 400 26px/36px "Roboto", sans-serif;
+    font: 400 30px/40px "Roboto", sans-serif;
   }
   .work__advantage2, .work__advantage4 {
-    background: url(../img/work2.png) no-repeat center 65px/100% 80% !important;
+    margin-top: -30vh;
   }
   .work__advantage3 {
-    margin-top: -150px;
+    margin-top: -30vh;
   }
   .work__advantage3 .work__info {
     padding: 228px 0;
   }
   .work__advantage4 {
-    top: -140px;
-  }
-  .work__advantage4 .mockup__img {
-    margin: 140px 0 0 -140px;
+    padding: 252px 0 0;
   }
   .work__advantage4 .work__info {
-    padding: 228px 0;
+    padding: 100px 0;
   }
 
   /* ---------------------------------------- */
   /* F A Q    S T Y L E                       */
   /* ---------------------------------------- */
   .faq {
-    background: #f9f9f9 url(../img/faqbg.png) no-repeat center 500px;
-    top: -340px;
+    background: #f9f9f9 url(../img/faqbg.png) no-repeat center 420px;
   }
   .faq__right {
     float: right;
@@ -1441,6 +1661,9 @@ a:focus {
   }
   .faq__row .img__left {
     padding: 0px 20px 20px 0;
+  }
+  .faq__text p {
+    font: 400 26px/36px "Roboto", sans-serif;
   }
 
   /* ---------------------------------------- */
@@ -1478,7 +1701,7 @@ a:focus {
   /* F O O T E R    S T Y L E                 */
   /* ---------------------------------------- */
   .footer {
-    padding: 160px 0 100px;
+    padding: 0 0 100px;
   }
   .footer__box {
     float: right;
@@ -1492,19 +1715,5 @@ a:focus {
   }
   .footer__callback p {
     text-align: right;
-  }
-}
-@media only screen and (max-width: 1199px) {
-  /* ---------------------------------------- */
-  /* O F F E R    S T Y L E                   */
-  /* ---------------------------------------- */
-  .offer__list {
-    padding-right: 0;
-  }
-  .offer__list ul li {
-    font-size: 20px;
-  }
-  .offer__list__heading {
-    font-size: 32px;
   }
 }

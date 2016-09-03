@@ -76,14 +76,13 @@
       img
         top: 50px
         right: -20px
-        transform: scale(0.4)
-+r(768)  
+        transform: scale(0.4)   
++r(968)  
   +comment("modal style")
   .modal
     &__content 
       .modal__info 
         padding: 25px 
-        min-height: 430px
   +comment("section heading style") 
   .section
     &__heading
@@ -101,12 +100,12 @@
     padding: 160px 0 190px
     margin-top: -100px   
     &__list
-      padding-right: 30px
+      padding-right: 0
       ul
         li
-          font: 400 25px/40px 'Roboto', sans-serif
+          font: 400 20px/30px 'Roboto', sans-serif
       &__heading   
-        font: 400 40px/52px 'Roboto Slab', sans-serif
+        font: 400 32px/50px 'Roboto Slab', sans-serif
         text-align: left
     &__modal
       .modal__body 
@@ -116,8 +115,8 @@
         font: 300 22px/30px 'Roboto', sans-serif       
   +comment("intent style")   
   .intent   
-    padding: 244px 0
-    margin-top: -22vh
+    padding: 244px 0 100px
+    margin-top: -21vh
     &__col
       float: right
       padding: 0 10px 0 90px
@@ -131,8 +130,7 @@
       padding: 380px 50px 0
       &--box
         margin-left: -20px
-        padding: 45px
-        height: 400px
+        padding: 30px 30px 20px
         text-align: left
       &__heading
         padding: 0  
@@ -140,8 +138,10 @@
         padding: 25px 30px 25px 0
       .carousel-inner
         &:before
-          height: 88%
-          margin: 3% 0
+          border: 0
+        .item
+          img
+            height: auto
       .carousel-control
         top: 150px
         width: 70px
@@ -152,6 +152,16 @@
           right: -75px
         &.left
           left: -75px    
+      .carousel-indicators   
+        li
+          &:nth-child(1),
+          &:nth-child(7)  
+            top: 24px
+          &:nth-child(2),
+          &:nth-child(6)  
+            top: 12px
+          &:nth-child(4)  
+            top: -6px  
   +comment("sale style")     
   .sale
     padding: 0 0 180px
@@ -173,6 +183,170 @@
         padding-left: 95px
         text-align: left        
     &__content
+      float: none
+      margin: 0 auto
+      .offer__modal__text
+        p
+          font: 500 36px/40px 'Roboto', sans-serif
+      .modal__body
+        padding: 50px 40px+comment("work style")  
+  .work
+    background: url(../img/work.png) no-repeat center 65px
+    +cover 
+    &__info
+      padding: 160px 0 200px
+      text-align: right
+      &--text
+        font: 400 20px/30px 'Roboto', sans-serif
+    &__advantage1 
+      .ignat__img
+        img
+          margin: 0 auto
+    &__advantage2    
+      background: url(../img/work2.png) no-repeat center 65px!important 
+      +cover 
+      margin-top: -18vh
+      padding-top: 140px
+    &__advantage3 
+      margin-top: -46vh 
+    &__advantage4
+      padding: 265px 0  
+  +comment("faq style") 
+  .faq
+    background: #f9f9f9    
+    &__right
+      float: right
+    &__bg
+      height: 280px
+      width: 280px 
+      margin: 0       
+    &__row
+      .img
+        &__right
+          padding: 0px 0px 20px 20px
+        &__left  
+          padding: 0px 20px 20px 0   
+    &__text
+      p
+        font-size: 18px      
+  +comment("completed style")   
+  .completed
+    &__slider
+      padding-left: 60px
+      padding-right: 60px
+      &__heading
+        font: 400 26px/30px 'Roboto', sans-serif
+        padding: 0
+        text-align: left
+      .carousel
+        &-control 
+          bottom: auto
+          top: 300px
+          width: 70px
+          height: 70px
+          .fa
+            line-height: 70px
+          &.right
+            right: -90px
+          &.left
+            left: -90px    
+    &__box
+      float: right
+      z-index: 10
+  +comment("footer style") 
+  .footer
+    padding: 0 0 100px 
+    &__row
+      padding: 15px
+    &__box
+      float: right
+    &__heading
+      padding-right: 0
+      p
+        font: 400 30px/38px 'Roboto', sans-serif
+        padding-left: 30px
+    &__callback
+      p
+        text-align: right     
+    &__img
+      top: -50px
+      left: -30px               
++r(1200)  
+  +comment("modal style")
+  .modal
+    &__content 
+      .modal__info 
+        padding: 25px 
+        min-height: 430px
+  +comment("stage style")   
+  .stage   
+    &__slider
+      padding: 380px 50px 0
+      &--box
+        margin-left: -20px
+        padding: 30px 30px 20px
+        height: 362px
+        text-align: left
+      &__heading
+        padding: 0  
+      &__info
+        padding: 25px 30px 25px 0
+      .carousel-inner
+        &:before
+          height: 84%
+          margin: 3% 0
+          border: 5px solid #006bb3
+        .item
+          img
+            height: 400px  
+      .carousel-control
+        top: 150px
+        width: 70px
+        height: 70px
+        .fa
+          line-height: 70px
+        &.right
+          right: -75px
+        &.left
+          left: -75px   
+      .carousel-indicators
+        li
+          &:nth-child(1),
+          &:nth-child(7)    
+            top: 65px
+          &:nth-child(2),
+          &:nth-child(6)  
+            top: 25px
+          &:nth-child(4)  
+            top: -10px      
+  +comment("intent style")  
+  .intent
+    padding: 244px 0
+    margin-top: -20vh        
+  +comment("sale style")     
+  .sale
+    padding: 0 0 180px
+    &__spoiler
+      position: absolute
+      bottom: 100%
+      left: 0 
+      transition: all 1s ease
+      &.in
+        bottom: 10px
+    &__box
+      padding: 25px   
+  +comment("advantage style")  
+  .advantage
+    padding: 100px 0     
+    &__list 
+      padding: 65px 35px 35px
+      ul li 
+        font: 400 22px/36px 'Roboto', sans-serif  
+      &--text
+        padding-left: 95px
+        text-align: left        
+    &__content
+      float: right
       .offer__modal__text
         p
           font: 500 36px/40px 'Roboto', sans-serif
@@ -180,30 +354,23 @@
         padding: 50px 40px
   +comment("work style")  
   .work
-    background: url(../img/work.png) no-repeat center 65px/ 100% 80% 
+    background: url(../img/work.png) no-repeat center 65px
     &__info
-      padding: 170px 0 228px
-      text-align: right
       &--text
-        font: 400 26px/36px 'Roboto', sans-serif
-    &__advantage2    
-      background: url(../img/work2.png) no-repeat center 65px/ 100% 80% !important 
-    &__advantage3 
-      margin-top: -150px   
-      .work
-        &__info   
-          padding: 228px 0    
+        font: 400 30px/40px 'Roboto', sans-serif
+    &__advantage2
+      margin-top: -30vh
+    &__advantage3
+      margin-top: -30vh
+      .work__info
+        padding: 228px 0  
     &__advantage4
-      top: -140px
-      .mockup__img
-        margin: 140px 0 0 -140px
-      .work
-        &__info   
-          padding: 228px 0     
+      padding: 252px 0 0
+      .work__info
+        padding: 100px 0
   +comment("faq style") 
   .faq
-    background: #f9f9f9 url(../img/faqbg.png) no-repeat center 500px
-    top: -340px   
+    background: #f9f9f9 url(../img/faqbg.png) no-repeat center 420px 
     &__right
       float: right
     &__bg
@@ -216,6 +383,9 @@
           padding: 0px 0px 20px 20px
         &__left  
           padding: 0px 20px 20px 0   
+    &__text
+      p
+        font: 400 26px/36px 'Roboto', sans-serif      
   +comment("completed style")   
   .completed
     &__slider
@@ -241,7 +411,7 @@
       float: right
   +comment("footer style") 
   .footer
-    padding: 160px 0 100px 
+    padding: 0 0 100px 
     &__box
       float: right
     &__heading
@@ -252,14 +422,3 @@
     &__callback
       p
         text-align: right
-+rx(1199) 
-  +comment("offer style")
-  .offer
-    &__list
-      padding-right: 0
-      ul li
-        font-size: 20px
-      &__heading
-        font-size: 32px      
-
-    
