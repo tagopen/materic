@@ -34,7 +34,7 @@ $headers .= "Content-type: text/html; charset=utf-8\r\n";
 $result = mail('marchik88@rambler.ru', "Материк - ".$theme, $source, $headers);
 
 if ($result) {
-  header("Location: ../thanks.html");
+  header("Location:thanks.html");
 } else {
   header("Location:index.html?status=false");
 }

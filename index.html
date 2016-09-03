@@ -56,29 +56,26 @@
       <nav class="header__nav">
         <div class="container">
 
-          <div class="navbar-header navbar__header">
+          <div class="col-sm-4 col-md-4 navbar-header navbar__header">
             <a href="" class="navbar-brand logo">
               <img src="img/logo/logo.png" alt="" class="logo__img">
             </a>
-            <p class="nav__title">Помощь в продаже недвижимости по Днепропетровску</p>
+            <p class="nav__title">Помощь в продаже недвижимости по Днепру</p>
           </div>
 
-          <div class="col-md-4 text-center nav__center">
+          <div class="col-xs-6 col-sm-4 col-md-5 text-center nav__center">
             <i class="fa fa-map-marker" aria-hidden="true"></i>
             <div class="nav__text">
-              <span class="nav__title--text">г. Днепропетровск</span>
-              <p class="nav__title">Днепропетровская обл.<br> Украина</p>
+              <span class="nav__title--text">г. Днепр</span>
+              <p class="nav__title">ул. Ломана 17<br> Украина</p>
             </div>
           </div>
 
-          <div class="pull-right nav__right">
+          <div class="col-xs-6 col-sm-4 col-md-3 pull-right nav__right">
             <i class="fa fa-phone" aria-hidden="true"></i>
             <div class="nav__phone">
-              <a class="nav__phone--number" href="tel:380507965289">
-                <span class="nav__phone--link nav__title">+38(050) 796 52 89</span>
-              </a>
-              <a class="nav__phone--number" href="tel:+380675963314">
-                <span class="nav__phone--link nav__title">+38(067) 596 33 14</span>
+              <a class="nav__phone--number" href="tel:380966705100">
+                <span class="nav__phone--link nav__title">+38(096) 670 51 00 </span>
               </a>
               <a href="" class="nav__title--text nav__call" data-toggle="modal" data-target="#myModal1">заказать звонок</a>
             </div>
@@ -93,23 +90,23 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-md-7">
+          <div class="col-xs-12 col-sm-6 col-md-7">
             <div class="offer__list">
-              <h1 class="offer__list__heading">Продадим вашу недвижимость под ключ</h1>
+              <h1 class="offer__list__heading">Оперативные и качественные услуги риэлтора</h1>
               <ul>
-                <li>Средние сроки реализации объекта - 30 дней</li>
-                <li>На 10% дороже от ожидаемой стоимости благодаря системе аукциона</li>
+                <li>30 дней - средний срок продажи объекта</li>
+                <li>На 10-15% дороже, чем это можно сделать обычным способом</li>
                 <li>Полное маркетинговое, рекламное и юридическое сопровождение</li>
               </ul>
             </div>
           </div>
 
-          <div class="col-md-5">
+          <div class="col-xs-12 col-sm-6 col-md-5">
           <div class="modal-dialog offer__modal">
               <div class="modal-content modal__content">
                 <div class="modal-body text-center modal__body">
 
-                  <form  class="modal__body__form" method="post" action="send.php">
+                  <form  name="forma228" class="modal__body__form" method="post" action="mail/send.php">
                     <div class="offer__modal__text">
                       <span>Оставьте заявку</span> и получите <span>бесплатную оценку</span> рыночной стоимости Вашего объекта
                     </div>
@@ -130,7 +127,7 @@
                     </div>
 
                     <div class="text-center">
-                      <button type="submit" class="btn btn-xl btn form__btn"><p>Узнать стоимость объекта</p></button>
+                      <button class="btn btn-xl btn form__btn"><span>Узнать стоимость объекта</span></button>
                     </div>
                   </form>
 
@@ -140,27 +137,25 @@
           </div>
         </div>
         <div class="tag"><i class="ic ic-tag"></i></div>
-        <div class="scroll"><a href="" class="toBottom scroll__link"><i class="ic ic-scrollbottom"></i></a></div>
+        <div class="hidden-xs scroll"><a href="" class="toBottom scroll__link"><i class="ic ic-scrollbottom"></i></a></div>
       </div>
     </section>
 
     <!--   INTENT   SECTION    -->
 
-    <section class="intent">
+    <div class="intent">
       <div class="container">
         <div class="row">
-          <div class="col-md-7 intent__col">
+          <div class="col-xs-12 col-md-7 intent__col">
             <div class="intent__info">
-              <p class="intent__heading">Для нас важно до конца отстаивать интересы владельца недвижимости и продать объект 
-              в кратчайшие сроки и по максимальной цене. 
+              <p class="intent__heading">Мы работаем в интересах собственника недвижимости, а значит мы заинтересованы продать объект по максимальной цене.
               </p>
-              <p class="intent__text">Большинство же других риелторов нацелены на интересы конкретных покупателей, которые хотят приобрести объект по 
-              как можно меньшей цене.</p>
+              <p class="intent__text">Большинство же других риэлторов отстаивают интересы покупателей, которые хотят приобрести по минимальной цене, что не выгодно собственнику.</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!--   STAGE  SECTION    -->
 
@@ -175,10 +170,10 @@
 
           <div class="stage__slider">
 
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
               <!-- Маркеры слайдов -->
               <ol class="carousel-indicators">
-                <li><div data-target="#carousel-example-generic" data-slide-to="0" class="active stage__item"><span>1</span><i class="ic ic-1etap"></i></div></li>
+                <li class="active"><div data-target="#carousel-example-generic" data-slide-to="0" class="active stage__item"><span>1</span><i class="ic ic-1etap"></i></div></li>
                 <li><div data-target="#carousel-example-generic" data-slide-to="1" class="stage__item"><span>2</span><i class="ic ic-2etap"></i></div></li>
                 <li><div data-target="#carousel-example-generic" data-slide-to="2" class="stage__item"><span>3</span><i class="ic ic-3etap"></i></div></li>
                 <li><div data-target="#carousel-example-generic" data-slide-to="3" class="stage__item"><span>4</span><i class="ic ic-4etap"></i></div></li>
@@ -192,14 +187,12 @@
 
                 <div class="item active">
                   <div class="row">
-                    <div class="col-md-5">
+                    <div class="hidden-xs col-sm-5">
                       <img src="img/slider_stage1.jpg" alt="..." class="img-responsive"></div>
-                      <div class="col-md-7 stage__slider__info">
+                      <div class="col-xs-12 col-sm-7 stage__slider__info">
                         <div class="stage__slider--box">
-                          <h3 class="stage__slider__heading">Определяем реальную цену, а не рыночную</h3>
-                          <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                          Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
-                            Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
+                          <h3 class="stage__slider__heading">Определяем реальную цену Вашей недвижимости</h3>
+                          <p class="stage__slider__text">Перед началом работ мы ознакамливаем клиента с текущей ситуацией на рынке. Проводим анализ цен по уже совершенным сделками, а так же по имеющимся объектам на данный момент. Даем прогнозы авторитетных экспертов, на основании анализа динамики рынка.
                           </p>
                         </div>
                       </div>
@@ -208,16 +201,12 @@
 
                   <div class="item">
                     <div class="row">
-                      <div class="col-md-5">
+                      <div class="hidden-xs col-sm-5">
                         <img src="img/slider_stage2.jpg" alt="..." class="img-responsive"></div>
-                        <div class="col-md-7 stage__slider__info">
+                        <div class="col-xs-12 col-sm-7 stage__slider__info">
                           <div class="stage__slider--box">
-                            <h3 class="stage__slider__heading">Определяем реальную цену, а не рыночную</h3>
-                            <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-
-                              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
-
-                              Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
+                            <h3 class="stage__slider__heading">Подготовка объекта к продаже</h3>
+                            <p class="stage__slider__text">Для того чтобы продать объект максимально дорого, важно представить его покупателю в “наилучшем свете”. Влюбить человека в объект недвижимости - это целая наука. Наши специалисты знают, как повысить стоимость и ликвидность объекта, при этом приложив минимум усилий с Вашей стороны.
                             </p>
                           </div>
                         </div>
@@ -226,17 +215,20 @@
 
                     <div class="item">
                       <div class="row">
-                        <div class="col-md-5">
+                        <div class="hidden-xs col-sm-5">
                           <img src="img/slider_stage3.jpg" alt="..." class="img-responsive">
                         </div>
-                        <div class="col-md-7 stage__slider__info">
+                        <div class="col-xs-12 col-sm-7 stage__slider__info">
                           <div class="stage__slider--box">
-                            <h3 class="stage__slider__heading">Создание качественной презентации объекта</h3>
-                            <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-
-                              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
-
-                              Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
+                            <h3 class="stage__slider__heading">Создание качественной презентации</h3>
+                            <p class="stage__slider__text">Для ее создания наша команда, профессионально и за свой счет, подберет и реализует следующий набор инструментов: <br>
+                              - Профессиональные фотографии;<br>
+                              - Видеоролик;<br>
+                              - 3D- презентация;<br>
+                              - Написание “продающего текста”; <br>
+                              - Изготовление листовок;<br>
+                              - Наружная реклама;<br>
+                              - и другие составляющие, которые позволят показать все преимущества объекта.
                             </p>
                           </div>
                         </div>
@@ -245,17 +237,19 @@
 
                     <div class="item">
                       <div class="row">
-                        <div class="col-md-5">
+                        <div class="hidden-xs col-sm-5">
                           <img src="img/slider_stage4.jpg" alt="..." class="img-responsive">
                         </div>
-                        <div class="col-md-7 stage__slider__info">
+                        <div class="col-xs-12 col-sm-7 stage__slider__info">
                           <div class="stage__slider--box">
-                            <h3 class="stage__slider__heading">Оффлайн и онлайн реклама с помощью 12 способов</h3>
-                            <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-
-                              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
-
-                              Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
+                            <h3 class="stage__slider__heading">Рекламная кампания, охватывающая максимальное количество потенциальных покупателей.</h3>
+                            <p class="stage__slider__text">- размещение на 100 топовых рекламных площадках;<br>
+                              - оперативное оповещение всех профессиональных риэлторов, с мотивацией активного сотрудничества;<br>
+                              - реклама в печатных изданиях;<br>
+                              - Наружная реклама;<br>
+                              - Организация и проведение «дня открытых дверей» ;<br>
+                              - Размещение информации в межагентских и общедоступных базах;<br>
+                              - Точечные индивидуальные предложения, наиболее вероятным покупателям.
                             </p>
                           </div>
                         </div>
@@ -264,17 +258,14 @@
 
                     <div class="item">
                       <div class="row">
-                        <div class="col-md-5">
+                        <div class="hidden-xs col-sm-5">
                           <img src="img/slider_stage5.jpg" alt="..." class="img-responsive">
                         </div>
-                        <div class="col-md-7 stage__slider__info">
+                        <div class="col-xs-12 col-sm-7 stage__slider__info">
                           <div class="stage__slider--box">
-                            <h3 class="stage__slider__heading">Создание спроса</h3>
-                            <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-
-                              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
-
-                              Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
+                            <h3 class="stage__slider__heading">Создание и управление спросом</h3>
+                            <p class="stage__slider__text">Мы создаем живой интерес у максимального количества потенциальных покупателей. 
+                              Из них мы выделяем одного, готового купить объект по максимальной цене, с помощью аукциона и других специальных методик
                             </p>
                           </div>
                         </div>
@@ -283,17 +274,13 @@
 
                     <div class="item">
                       <div class="row">
-                        <div class="col-md-5">
+                        <div class="hidden-xs col-sm-5">
                           <img src="img/slider_stage6.jpg" alt="..." class="img-responsive">
                         </div>
-                        <div class="col-md-7 stage__slider__info">
+                        <div class="col-xs-12 col-sm-7 stage__slider__info">
                           <div class="stage__slider--box">
-                            <h3 class="stage__slider__heading">Показы объекта потенциальным покупаетелям</h3>
-                            <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-
-                              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
-
-                              Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
+                            <h3 class="stage__slider__heading"> Показы объекта потенциальным покупателям</h3>
+                            <p class="stage__slider__text">Качественный показ объекта профессиональным риэлтором повышает результативность в среднем на 30-40%
                             </p>
                           </div>
                         </div>
@@ -302,17 +289,16 @@
 
                     <div class="item">
                       <div class="row">
-                        <div class="col-md-5">
+                        <div class="hidden-xs col-sm-5">
                           <img src="img/slider_stage7.jpg" alt="..." class="img-responsive">
                         </div>
-                        <div class="col-md-7 stage__slider__info">
+                        <div class="col-xs-12 col-sm-7 stage__slider__info">
                           <div class="stage__slider--box">
-                            <h3 class="stage__slider__heading">Продажа объекта</h3>
-                            <p class="stage__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-
-                              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
-
-                              Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
+                            <h3 class="stage__slider__heading">Сделка купли-продажи</h3>
+                            <p class="stage__slider__text">
+                              - Осуществление подготовки полного пакета документов к сделке (включая все необходимые справки и техническую документацию);<br>
+                              - Обеспечение безопасности сделки;<br>
+                              - Оптимизация расходов при оформлении сделки.
                             </p>
                           </div>
                         </div>
@@ -341,109 +327,125 @@
     <section class="sale">
       <div class="container">
 
-        <div class="row collapse_row collapse">  
-        
-          <div class="col-md-4 col-md-offset-2">
-            <div class="text-center sale__box">
-              <i class="ic ic-sale1"></i>
-              <div class="sale__box__heading">
-                <p>Анализ</p>
-              </div>
-              <div class="sale__box__info">
-                <p>Мы проводим анализ реальной стоимости объекта и даем рекомендации по приведениюего к предпродажному виду</p>
-              </div> 
-              </div>
-            </div>
-        
-          <div class="col-md-4">
-            <div class="text-center sale__box">
-              <i class="ic ic-sale2"></i>
-              <div class="sale__box__heading">
-              <p>Съемка</p>
-              </div>
-              <div class="sale__box__info">
-                <p>Мы проводим качественные: фото, видео и при необходимости 3Dсъемку, для лучшей демонстрацииобъекта в интернете</p>
-              </div> 
-            </div>
-          </div>
-        
-        </div>
-        
-        <div class="row collapse_row collapse">
-        
-          <div class="col-md-4 col-md-offset-2">
-            <div class="text-center sale__box">
-              <i class="ic ic-sale3"></i>
-              <div class="sale__box__heading">
-                <p>Маркетинг</p>
-              </div>
-              <div class="sale__box__info">
-                <p>Написание продающих статей и заголовков основанных, как на современных тенденциях в сфере продажи недвижимости, так и многолетнем опыте продаж</p>
-              </div> 
-            </div>
-          </div>
-        
-          <div class="col-md-4">
-            <div class="text-center sale__box">
-              <i class="ic ic-sale4"></i>
-              <div class="sale__box__heading">
-                <p>Реклама</p>
-              </div>
-              <div class="sale__box__info">
-                <p>За свой счет мы размещаемся на:
-                 <i class="fa fa-check" aria-hidden="true"></i>
-                 Газетах, листовках и пр.<br>
-                 <i class="fa fa-check" aria-hidden="true"></i>
-                 Межреелторских базах;<br>
-                 <i class="fa fa-check" aria-hidden="true"></i>
-                 Продвигаемом сайте;<br>
-                 <i class="fa fa-check" aria-hidden="true"></i>
-                 Досках объявлений;<br>
-               </p>
-             </div> 
-           </div>
-         </div>
-        
-        </div>
-         
+        <div class="row">  
 
-        <div class="row">
-          
           <div class="col-xs-12">
             <h2 class="text-center section__heading sale__heading">Как мы продаем?</h2>
             <div class="section__heading--separator"></div>
           </div>
 
-          <div class="text-center col-md-8 col-md-offset-2 sale__col">
+        </div>
+
+        <div class="sale__spoiler">        
+          <div class="row"> 
+
+            <div class="col-xs-12">
+              <h2 class="hidden-xs text-center sale__subheading">Данные услуги мы оказывем бесплатно</h2>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-sm-offset-2">
+              <div class="text-center sale__box">
+                <i class="ic ic-sale1"></i>
+                <div class="sale__box__heading">
+                  <p>Анализ</p>
+                </div>
+                <div class="sale__box__info sale__box__info--col1">
+                  <p>Мы проводим анализ реальной стоимости объекта и даем рекомендации по приведениюего к предпродажному виду</p>
+                </div> 
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+              <div class="text-center sale__box">
+                <i class="ic ic-sale2"></i>
+                <div class="sale__box__heading">
+                  <p>Съемка</p>
+                </div>
+                <div class="sale__box__info sale__box__info--col1">
+                  <p>Мы проводим качественные: фото, видео и при необходимости 3Dсъемку, для лучшей демонстрации объекта в интернете</p>
+                </div> 
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-xs-12 col-sm-4 col-sm-offset-2">
+              <div class="text-center sale__box">
+                <i class="ic ic-sale3"></i>
+                <div class="sale__box__heading">
+                  <p>Маркетинг</p>
+                </div>
+                <div class="sale__box__info sale__box__info--col2">
+                  <p>Написание продающих статей и заголовков основанных, как на современных тенденциях в сфере продажи недвижимости, так и многолетнем опыте продаж</p>
+                </div> 
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+              <div class="text-center sale__box">
+                <i class="ic ic-sale4"></i>
+                <div class="sale__box__heading">
+                  <p>Реклама</p>
+                </div>
+                <div class="sale__box__info sale__box__info--col2">
+                  <p>За свой счет мы размещаемся на:</p>
+                  <p>
+                   <i class="fa fa-check" aria-hidden="true"></i>
+                   ТОП 100 сайтах<br>
+                   <i class="fa fa-check" aria-hidden="true"></i>
+                   Общегородских базах<br>
+                   <i class="fa fa-check" aria-hidden="true"></i>
+                   Продвигаемом сайте<br>
+                   <i class="fa fa-check" aria-hidden="true"></i>
+                   Страницах в социальных сетях<br>
+                   <i class="fa fa-check" aria-hidden="true"></i>
+                   Газетах, листовках и прочем
+                   привлечение всех агентств<br>
+                 </p>
+               </div> 
+             </div>
+           </div>
+
+         </div>
+       </div>
+
+         
+
+        <div class="hidden-xs sale__col row">
+
+          <div class="text-center col-md-8 col-md-offset-2">
             <i class="ic ic-sale"></i>
             <p class="text-center sale__info">Узнай 4 инструмента которыми пользуются профессиональные риэлторы для осуществления продажи на выгодных условиях.</p>
-            <div class="text-center">
-            <button type="submit" class="btn sale__btn" data-toggle="collapse" data-target=".collapse_row"><span>Узнать инструменты</span></button>
-            </div>
+
+          </div>
+
+          <div class="col-xs-12 text-center">
+            <button  class="sale__spoiler--btn btn sale__btn"><span>Узнать инструменты</span></button>
           </div>
 
         </div>
-     
       </div>
     </section>
 
     <!--     ADVANTAGE FORM SECTION    -->
 
-    <section class="advantage">
+    <div class="advantage">
       <div class="container">
         <div class="row">
 
           <div class="col-md-10">
             <div class="col-md-12 advantage__list">
               <ul class="col-md-9">
-                <li><p>Каждому заказчику выделяется <span>персональный менеджер</span></p></li>
-                <li><p>В нашем агенстве работает <span>9 менеджеров</span> с опытом работы в сфере недвижимости до <span>12 лет</span></p></li></li>
-                <li><p>Что бы продать объект <span>максимально быстро</span> менеджер уделяет ему максимальное количество времени, из-за чего параллельно может вести не более <span>3 проектов</span></p></li>
+                <li><p>Каждому заказчику выделяется <span>персональный риэлтор</span></p></li>
+                <li><p>В нашем агенстве работает <span>9 риэлторов</span> с опытом работы в сфере недвижимости до <span>12 лет</span></p></li>
+                <li><p>Что бы продать объект <span>максимально быстро</span> менеджер уделяет ему максимальное количество времени, из-за чего параллельно может вести не более <span>3 объектов</span></p></li>
               </ul>
 
             <div class="col-md-8 advantage__list--text">
             <p>Мы можем взять в работу</p>
-            <span>7 проектов</span></div>
+            <span>7 объектов</span></div>
               
             </div>
           </div>
@@ -452,7 +454,7 @@
             <div class="modal-content modal__content advantage__content">
               <div class="modal-body text-center modal__body">
 
-                <form  class="modal__body__form" method="post" action="send.php">
+                <form  name="Bron" class="modal__body__form" method="post" action="send.php">
                   <div class="offer__modal__text">
                     <p>Оставьте заявку</p> и мы забронируем место для Вас
                   </div>
@@ -473,8 +475,8 @@
                   </div>
 
                   <div class="text-center">
-                    <button type="submit" class="btn btn-xl btn form__btn"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-                      <p>Забронировать место</p></button>
+                    <button  class="btn btn-xl btn form__btn"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                      <span>Забронировать место</span></button>
                   </div>
                 </form>
 
@@ -484,7 +486,7 @@
 
         </div>
       </div>
-    </section>
+    </div>
 
     <!--     GLOBAL WORK   SECTION   / WORK ADVANTAGE 1 -->
 
@@ -497,18 +499,21 @@
             <div class="section__heading--separator"></div>
           </div>
 
-          <div class="col-md-6">
-            <div class="text-right work__info">
-              <div class="work__info--text">
-                <p>Проекты ведут обученные риэлторы с большим опытом работы, которые могут принимать звонки 24/7</p>
-              </div>
-              <a type="submit" class="btn btn-xl btn form__btn" data-toggle="modal" data-target="#modalwork"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
-              <span>Узнать подробнее</span></a>
+
+          <div class="pull-right col-xs-8 col-md-5">
+            <div class="ignat__img">
+              <img src="img/ignat.png" alt="" class="img-responsive">
             </div>
           </div>
 
-          <div class="pull-right col-md-5">
-            <div class="ignat__img"></div>
+          <div class="col-xs-12 col-md-6">
+            <div class="work__info">
+              <div class="work__info--text">
+                <p>Проекты ведут обученные риэлторы с большим опытом работы, которые могут принимать звонки 24/7</p>
+              </div>
+              <a class="btn btn-xl btn form__btn" data-toggle="modal" data-target="#modalwork"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <span>Узнать подробнее</span></a>
+            </div>
           </div>
 
         </div>
@@ -517,75 +522,82 @@
 
     <!--  WORK ADVANTAGE 2 -->
 
-    <section class="work work__advantage2">
+    <div class="work work__advantage2">
       <div class="container">
         <div class="row">
           
           <div class="col-md-6">
-            <div class="offer__img"></div>
+            <div class="offer__img">
+              <img src="img/offer.png" alt="" class="img-responsive">
+            </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-xs-12 col-md-6">
             <div class="text-left work__info">
               <div class="work__info--text">
                 <p>Закрепленный за Вами менеджер занимается сбором и хранением <span>всех документов</span>, ведением портфолио Вашего объекта, сохранением всех статей, объявлений, номеров заинтересовавшихся клиентов и готов в любой момент <span>Вам их предоставить</span>.</p>
               </div>
-              <a type="submit" class="btn btn-xl btn form__btn" data-toggle="modal" data-target="#modalwork2"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <a  class="btn btn-xl btn form__btn" data-toggle="modal" data-target="#modalwork2"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
               <span>Узнать подробнее</span></a>
             </div>
           </div>
 
         </div>
       </div>
-    </section>
+    </div>
 
     <!--  WORK ADVANTAGE 3 -->
 
-    <section class="work work__advantage3">
+    <div class="work work__advantage3">
       <div class="container">
         <div class="row">
 
-          <div class="col-md-6">
+          <div class="pull-right col-xs-8 col-md-5">
+            <div class="justice__img">
+              <img src="img/justice.png" alt="" class="img-responsive">
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-6">
             <div class="text-right work__info">
               <div class="work__info--text">
                 <p>Наши юристы берут на себя решение всех спецефичных вопросов и Вы получаете полную безопасноть при проведении всех сделок</p>
               </div>
-              <a type="submit" class="btn btn-xl btn form__btn" data-toggle="modal" data-target="#modalwork3"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <a class="btn btn-xl btn form__btn" data-toggle="modal" data-target="#modalwork3"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
               <span>Узнать подробнее</span></a>
               </div>
             </div>
 
-            <div class="pull-right col-md-5">
-              <div class="justice__img"></div>
-            </div>
           </div>
         </div>
-      </section>
+      </div>
 
     <!--  WORK ADVANTAGE 4 -->
 
-    <section class="work work__advantage4">
+    <div class="work work__advantage4">
       <div class="container">
         <div class="row">
           
           <div class="col-md-6">
-            <div class="mockup__img"></div>
+            <div class="mockup__img">
+              <img src="img/mockup.png" alt="" class="img-responsive">
+            </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-xs-12 col-md-6">
             <div class="text-left work__info">
               <div class="work__info--text">
                 <p>Вы получаете предложение по цене объекта от потенциальных клиентов, а так же <span>регулярные отчеты</span> о выполненных работах (фото объявлений в газетах, ссылки на сайты с объявлениями, отчеты 
                   о проведенных показах)</p>
               </div>
-              <a type="submit" class="btn btn-xl btn form__btn" data-toggle="modal" data-target="#modalwork4"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <a  class="btn btn-xl btn form__btn" data-toggle="modal" data-target="#modalwork4"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
               <span>Узнать подробнее</span></a>
             </div>
           </div>
 
         </div>
       </div>
-    </section>
+    </div>
 
     <!--     FAQ   SECTION    -->
 
@@ -598,10 +610,12 @@
             <div class="section__heading--separator"></div>
           </div>
 
+          </div>
+
           <div class="row faq__row">
             <div class="col-md-4">
-              <div class="faq__bg">
-                <i class="ic ic-faq1"></i>
+              <div class="img__left faq__bg">
+                <img src="img/faq1.png" alt="" class="img-responsive">
               </div>
             </div>
             <div class="col-md-8">
@@ -612,9 +626,9 @@
             </div>
 
             <div class="row faq__row">
-              <div class="pull-right col-md-4">
-                <div class="text-right faq__bg">
-                  <i class="ic ic-faq2"></i>
+              <div class="faq__right col-md-4">
+                <div class="img__right faq__bg">
+                  <img src="img/faq2.png" alt="" class="img-responsive">
                 </div>
               </div>
               <div class="col-md-8">
@@ -626,8 +640,8 @@
 
               <div class="row faq__row">
                 <div class="col-md-4">
-                  <div class="faq__bg">
-                    <i class="ic ic-faq3"></i>
+                  <div class="img__left faq__bg">
+                    <img src="img/faq3.png" alt="" class="img-responsive">
                   </div>
                 </div>
                 <div class="col-md-8">
@@ -639,9 +653,9 @@
                 </div>
 
                 <div class="row faq__row">
-                  <div class="pull-right col-md-4">
-                    <div class="text-right faq__bg">
-                      <i class="ic ic-faq4"></i>
+                  <div class="faq__right col-md-4">
+                    <div class="img__right faq__bg">
+                      <img src="img/faq4.png" alt="" class="img-responsive">
                     </div>
                   </div>
                   <div class="col-md-8">
@@ -653,8 +667,8 @@
 
                   <div class="row faq__row">
                     <div class="col-md-4">
-                      <div class="faq__bg">
-                        <i class="ic ic-faq5"></i>
+                      <div class="img__left faq__bg">
+                        <img src="img/faq5.png" alt="" class="img-responsive">
                       </div>
                     </div>
                     <div class="col-md-8">
@@ -664,7 +678,6 @@
                       </div>
                     </div>
 
-                  </div>
                 </div>
               </section>
 
@@ -673,7 +686,7 @@
       <section class="completed">
         <div class="container">
           <div class="row">
-
+          
             <div class="col-xs-12">
             <h2 class="text-center section__heading completed__heading">Завершенные проекты</h2>
               <div class="section__heading--separator"></div>
@@ -681,7 +694,7 @@
 
               <div class="completed__slider">
 
-            <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel" data-interval="false">
 
 
               <!-- Содержимое слайдов -->
@@ -689,6 +702,11 @@
 
                 <div class="item active">
                   <div class="row">
+
+                    <div class="col-md-6 completed__box">
+                    <img src="img/completed.png" alt="..." class="img-responsive"><a data-toggle="modal" data-target="#modal-slider" href="">Смотреть все фото</a>
+                    </div>
+
                     <div class="col-md-6 completed__slider__info">
                       <h3 class="completed__slider__heading">Квартирный дом на ул. Сабурова</h3>
                       <p class="completed__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
@@ -698,14 +716,17 @@
                         <span>7 дней</span>
                       </p>
                     </div>
-                    <div class="col-md-6">
-                    <img src="img/completed.png" alt="..." class="img-responsive"><a data-toggle="modal" data-target="#modal-slider"href="">Смотреть все фото</a>
-                    </div>
+
                   </div>
                 </div>
 
-                <div class="item">
+                <div class="item ">
                   <div class="row">
+
+                    <div class="col-md-6 completed__box">
+                      <img src="img/completed.png" alt="..." class="img-responsive"><a data-toggle="modal" data-target="#modal-slider" href="">Смотреть все фото</a>
+                    </div>
+
                     <div class="col-md-6 completed__slider__info">
                       <h3 class="completed__slider__heading">Квартирный дом на ул. Сабурова</h3>
                       <p class="completed__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
@@ -715,14 +736,17 @@
                         <span>7 дней</span>
                       </p>
                     </div>
-                    <div class="col-md-6">
-                    <img src="img/completed.png" alt="..." class="img-responsive"><a data-toggle="modal" data-target="#modal-slider"href="">Смотреть все фото</a>
-                    </div>
+
                   </div>
                 </div>
 
-                <div class="item">
+                <div class="item ">
                   <div class="row">
+
+                    <div class="col-md-6 completed__box">
+                      <img src="img/completed.png" alt="..." class="img-responsive"><a data-toggle="modal" data-target="#modal-slider" href="">Смотреть все фото</a>
+                    </div>
+
                     <div class="col-md-6 completed__slider__info">
                       <h3 class="completed__slider__heading">Квартирный дом на ул. Сабурова</h3>
                       <p class="completed__slider__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
@@ -732,9 +756,7 @@
                         <span>7 дней</span>
                       </p>
                     </div>
-                    <div class="col-md-6">
-                    <img src="img/completed.png" alt="..." class="img-responsive"><a data-toggle="modal" data-target="#modal-slider"href="">Смотреть все фото</a>
-                    </div>
+
                   </div>
                 </div>
 
@@ -755,14 +777,22 @@
         </div>
       </section>    
 
-      <!--     FOOTER   MODAL    -->
+      <!--     MAP    -->
+
+      <div class="map">
+        <div class="container-fluid">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d169590.6109017044!2d35.10884644023435!3d48.38255435903135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1472757216279" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!--     FOOTER    -->
 
       <footer class="footer">
         <div class="container">
 
           <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <div class="text-center col-md-9 footer__heading">
+            <div class="col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-1">
+              <div class="text-center col-xs-12 col-md-9 footer__heading">
                 <p>Подпишитесь на рассылку и мгновенно получите на почту статью <span>"7 рекомендаций для подготовки объекта к продаже"</span></p>
                 <img src="img/footerarrow.png" alt="">
               </div>
@@ -770,13 +800,33 @@
           </div>
 
           <div class="row">
-            <div class="col-md-10 col-md-offset-1 footer__row">
+            <div class="col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-1 footer__row">
 
-                <div class="col-md-3">
+                <div class="hidden-xs col-md-3">
                   <img src="img/footerimg.png" alt="" class="footer__img">
                 </div>
 
-                <div class="col-md-5">
+                <div class="col-xs-12 col-md-4 footer__box">
+                  <form  class="modal__body__form" method="post" action="send.php">
+
+                    <div class="form-group col-xs-12">
+                      <input type="text" class="form-control form__name"  placeholder="Имя" required data-validation-required-message="Please enter your name." name="name">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                      <input type="email" class="form-control form__mail"  placeholder="Email" required data-validation-required-message="Please enter your email." name="email">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="text-center">
+                      <button  class="btn btn-xl btn form__btn"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                        <span>Получить статью</span></button>
+                      </div>
+                    </form>
+                  </div>
+
+                <div class="col-xs-12 col-md-5">
                   <div class="footer__callback">
                     <p>Свяжитесь с нами или оставьте свои контакты для звонка</p>
                     <div class="text-right nav__right">
@@ -794,26 +844,6 @@
                   </div>
                 </div>
 
-                <div class="col-md-4">
-                  <form  class="modal__body__form" method="post" action="send.php">
-
-                    <div class="form-group col-xs-12">
-                      <input type="text" class="form-control form__name"  placeholder="Имя" required data-validation-required-message="Please enter your name." name="name">
-                      <i class="fa fa-user" aria-hidden="true"></i>
-                    </div>
-
-                    <div class="form-group col-xs-12">
-                      <input type="email" class="form-control form__mail"  placeholder="Email" required data-validation-required-message="Please enter your email." name="email">
-                      <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </div>
-
-                    <div class="text-center">
-                      <button type="submit" class="btn btn-xl btn form__btn"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-                        <p>Получить статью</p></button>
-                      </div>
-                    </form>
-                  </div>
-
             </div>
           </div>
 
@@ -822,12 +852,12 @@
 
       <!--     HEADER   MODAL    -->
 
-      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog"  aria-hidden="true">
         <div class="modal-dialog modal__dialog">
 
           <div class="modal-content modal__content">
             <div class="modal-body text-center modal__body">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="hidden-xs ic ic-close"></i><i class="visible-xs fa fa-times" aria-hidden="true"></i></button>
 
               <form  class="modal__body__form" method="post" action="send.php">
                 <h3 class="form__heading">Укажите ваши контакты</h3>
@@ -844,7 +874,7 @@
                 </div>
 
                 <div class="text-center">
-                  <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
+                  <button  class="btn btn-xl btn form__btn"><span>Заказать обратный звонок</span></button>
                 </div>
               </form>
 
@@ -855,18 +885,17 @@
 
       <!--     WORK   MODAL  1 -->
 
-      <div class="modal fade" id="modalwork" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal fade" id="modalwork" tabindex="-1" role="dialog"  aria-hidden="true">
         <div class="modal-dialog modal-lg">
 
           <div class="modal-content modal__content">
             <div class="modal-body text-center modal__body">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="hidden-xs ic ic-close"></i><i class="visible-xs fa fa-times" aria-hidden="true"></i></button>
 
               <div class="row">
 
                 <div class="modal__col col-md-7">
                   <div class="text-left modal__info">
-                    <!-- <p class="modal__info--heading"></p> -->
                     <div class="modal__info--text">
                       <p>После тщательной подготовки, наши специалисты будут готовы проводить профессиональную демонстрацию Вашей недвижимости 
                         потенциальным покупателям.</p>
@@ -900,7 +929,7 @@
                           </div>
 
                           <div class="text-center">
-                            <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
+                            <button  class="btn btn-xl btn form__btn"><span>Заказать обратный звонок</span></button>
                           </div>
 
                           <div class="form__call--back">
@@ -920,12 +949,12 @@
 
       <!--     WORK   MODAL  2 -->
 
-      <div class="modal fade" id="modalwork2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal fade" id="modalwork2" tabindex="-1" role="dialog"  aria-hidden="true">
         <div class="modal-dialog modal-lg">
 
           <div class="modal-content modal__content">
             <div class="modal-body text-center modal__body">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="hidden-xs ic ic-close"></i><i class="visible-xs fa fa-times" aria-hidden="true"></i></button>
 
               <div class="row">
 
@@ -962,7 +991,7 @@
                       </div>
 
                       <div class="text-center">
-                        <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
+                        <button  class="btn btn-xl btn form__btn"><span>Заказать обратный звонок</span></button>
                       </div>
 
                       <div class="form__call--back">
@@ -982,12 +1011,12 @@
 
       <!--     WORK   MODAL  3 -->
 
-      <div class="modal fade" id="modalwork3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal fade" id="modalwork3" tabindex="-1" role="dialog"  aria-hidden="true">
         <div class="modal-dialog modal-lg">
 
           <div class="modal-content modal__content">
             <div class="modal-body text-center modal__body">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="hidden-xs ic ic-close"></i><i class="visible-xs fa fa-times" aria-hidden="true"></i></button>
 
               <div class="row">
 
@@ -1022,7 +1051,7 @@
                       </div>
 
                       <div class="text-center">
-                        <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
+                        <button  class="btn btn-xl btn form__btn"><span>Заказать обратный звонок</span></button>
                       </div>
 
                       <div class="form__call--back">
@@ -1042,12 +1071,12 @@
 
       <!--     WORK   MODAL  4 -->
 
-      <div class="modal fade" id="modalwork4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal fade" id="modalwork4" tabindex="-1" role="dialog"  aria-hidden="true">
         <div class="modal-dialog modal-lg">
 
           <div class="modal-content modal__content">
             <div class="modal-body text-center modal__body">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="hidden-xs ic ic-close"></i><i class="visible-xs fa fa-times" aria-hidden="true"></i></button>
 
               <div class="row">
 
@@ -1084,7 +1113,7 @@
                       </div>
 
                       <div class="text-center">
-                        <button type="submit" class="btn btn-xl btn form__btn"><p>Заказать обратный звонок</p></button>
+                        <button  class="btn btn-xl btn form__btn"><span>Заказать обратный звонок</span></button>
                       </div>
 
                       <div class="form__call--back">
@@ -1108,7 +1137,7 @@
         <div class="modal-dialog modal-lg completed__modal">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="hidden-xs ic ic-close"></i><i class="visible-xs fa fa-times" aria-hidden="true"></i></button>
               <div id="carousel-example-generic3" data-interval="3000" class="carousel slide" data-ride="carousel">
 
                 <div class="carousel-inner">

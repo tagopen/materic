@@ -116,115 +116,97 @@
 .ic-tag:before {
   width: 199px;
   height: 199px;
-  background: url('../img/icons-seb4d87bb27.png') 0 -364px no-repeat;
+  background: url('../img/icons-s26ade2cdb6.png') 0 -837px no-repeat;
 }
 
 .ic-scrollbottom:before {
   width: 133px;
   height: 10px;
-  background: url('../img/icons-seb4d87bb27.png') -108px -70px no-repeat;
+  background: url('../img/icons-s26ade2cdb6.png') 0 0 no-repeat;
 }
 
 .ic-1etap:before {
   width: 62px;
   height: 56px;
-  background: url('../img/icons-seb4d87bb27.png') -46px -70px no-repeat;
+  background: url('../img/icons-s26ade2cdb6.png') -133px 0 no-repeat;
 }
 
 .ic-2etap:before {
   width: 42px;
   height: 68px;
-  background: url('../img/icons-seb4d87bb27.png') -251px -126px no-repeat;
+  background: url('../img/icons-s26ade2cdb6.png') -113px -56px no-repeat;
 }
 
 .ic-3etap:before {
   width: 46px;
   height: 67px;
-  background: url('../img/icons-seb4d87bb27.png') -58px 0 no-repeat;
+  background: url('../img/icons-s26ade2cdb6.png') -67px -56px no-repeat;
 }
 
 .ic-4etap:before {
   width: 70px;
   height: 59px;
-  background: url('../img/icons-seb4d87bb27.png') -104px 0 no-repeat;
+  background: url('../img/icons-s26ade2cdb6.png') 0 -124px no-repeat;
 }
 
 .ic-5etap:before {
   width: 64px;
   height: 70px;
-  background: url('../img/icons-seb4d87bb27.png') -174px 0 no-repeat;
+  background: url('../img/icons-s26ade2cdb6.png') -128px -124px no-repeat;
 }
 
 .ic-6etap:before {
   width: 58px;
   height: 65px;
-  background: url('../img/icons-seb4d87bb27.png') 0 0 no-repeat;
+  background: url('../img/icons-s26ade2cdb6.png') -70px -124px no-repeat;
 }
 
 .ic-7etap:before {
   width: 46px;
   height: 51px;
-  background: url('../img/icons-seb4d87bb27.png') 0 -70px no-repeat;
+  background: url('../img/icons-s26ade2cdb6.png') -127px -278px no-repeat;
 }
 
 .ic-sale:before {
   width: 200px;
   height: 255px;
-  background: url('../img/icons-seb4d87bb27.png') 0 -563px no-repeat;
+  background: url('../img/icons-s26ade2cdb6.png') 0 -1036px no-repeat;
 }
 
 .ic-sale1:before {
   width: 124px;
   height: 123px;
-  background: url('../img/icons-seb4d87bb27.png') -122px -241px no-repeat;
+  background: url('../img/icons-s26ade2cdb6.png') 0 -515px no-repeat;
 }
 
 .ic-sale2:before {
   width: 124px;
   height: 84px;
-  background: url('../img/icons-seb4d87bb27.png') 0 -126px no-repeat;
+  background: url('../img/icons-s26ade2cdb6.png') 0 -194px no-repeat;
 }
 
 .ic-sale3:before {
   width: 122px;
   height: 122px;
-  background: url('../img/icons-seb4d87bb27.png') 0 -241px no-repeat;
+  background: url('../img/icons-s26ade2cdb6.png') 0 -393px no-repeat;
 }
 
 .ic-sale4:before {
   width: 127px;
   height: 115px;
-  background: url('../img/icons-seb4d87bb27.png') -124px -126px no-repeat;
+  background: url('../img/icons-s26ade2cdb6.png') 0 -278px no-repeat;
 }
 
-.ic-faq1:before {
-  width: 308px;
-  height: 308px;
-  background: url('../img/icons-seb4d87bb27.png') 0 -1742px no-repeat;
+.ic-close:before {
+  width: 67px;
+  height: 67px;
+  background: url('../img/icons-s26ade2cdb6.png') 0 -56px no-repeat;
 }
 
-.ic-faq2:before {
-  width: 308px;
-  height: 308px;
-  background: url('../img/icons-seb4d87bb27.png') 0 -818px no-repeat;
-}
-
-.ic-faq3:before {
-  width: 308px;
-  height: 308px;
-  background: url('../img/icons-seb4d87bb27.png') 0 -1126px no-repeat;
-}
-
-.ic-faq4:before {
-  width: 308px;
-  height: 311px;
-  background: url('../img/icons-seb4d87bb27.png') 0 -2050px no-repeat;
-}
-
-.ic-faq5:before {
-  width: 308px;
-  height: 308px;
-  background: url('../img/icons-seb4d87bb27.png') 0 -1434px no-repeat;
+.ic-done:before {
+  width: 199px;
+  height: 199px;
+  background: url('../img/icons-s26ade2cdb6.png') 0 -638px no-repeat;
 }
 
 /* ---------------------------------------- */
@@ -251,6 +233,7 @@
   color: #fff;
   padding: 90px 25px 25px;
   border: 2px solid #fff;
+  min-height: auto;
 }
 .modal__content .modal__info--heading {
   font: 500 22px/26px "Roboto", sans-serif;
@@ -265,6 +248,9 @@
 }
 .modal__body .close {
   opacity: 1;
+  position: absolute;
+  right: -150px;
+  top: -10px;
 }
 .modal__body__form .form__heading, .modal__body__form .form__subheading {
   color: #fff;
@@ -288,7 +274,7 @@
 }
 .modal__body__form .form-group input {
   padding-left: 40px;
-  color: #ff9300;
+  color: #000;
 }
 .modal__body__form .form-group .fa {
   position: absolute;
@@ -336,7 +322,7 @@
   box-shadow: inset 0 0 10px rgba(252, 208, 0, 0.75);
   margin-bottom: 15px;
 }
-.modal__body__form .form__btn p {
+.modal__body__form .form__btn span {
   color: #fff;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
   font: 400 18px/20px "Roboto", sans-serif;
@@ -359,7 +345,7 @@
 /* S E C T I O N    H E A D I N G    S T Y L E  */
 /* -------------------------------------------- */
 .section__heading {
-  font: 400 30px/36px "Roboto Slab", sans-serif;
+  font: 400 24px/34px "Roboto Slab", sans-serif;
   color: #000;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -393,7 +379,7 @@ a:focus {
 
 .header {
   background: #fff;
-  padding: 20px 0 65px;
+  padding: 20px 0 0;
 }
 .header .logo {
   padding: 0;
@@ -402,11 +388,11 @@ a:focus {
 }
 
 .nav__title {
-  font: 300 16px/22px "Roboto", sans-serif;
+  font: 300 14px/22px "Roboto", sans-serif;
   color: #000;
 }
 .nav__title--text {
-  font: 400 16px/22px "Roboto", sans-serif;
+  font: 400 12px/16px "Roboto", sans-serif;
   color: #006bb3;
 }
 .nav__text {
@@ -450,21 +436,18 @@ a:focus {
   background-size: cover;
   background-position: 50% 50%;
   background-position: center top;
-  padding: 160px 0 190px;
-  margin-top: -100px;
+  padding: 228px 0 0;
+  margin-top: -110px;
   color: #fff;
 }
 .offer > .container {
   position: relative;
 }
-.offer__list {
-  padding-right: 30px;
-}
 .offer__list ul {
   padding-left: 0;
 }
 .offer__list ul li {
-  font: 400 25px/40px "Roboto", sans-serif;
+  font: 400 18px/24px "Roboto", sans-serif;
   list-style-type: none;
   margin-bottom: 10px;
 }
@@ -474,21 +457,22 @@ a:focus {
   color: #006bb3;
 }
 .offer__list__heading {
-  font: 400 40px/52px "Roboto Slab", sans-serif;
+  font: 400 19px/24px "Roboto Slab", sans-serif;
   text-transform: uppercase;
   margin-bottom: 50px;
+  text-align: center;
 }
 .offer__modal {
   width: 100%;
-  margin-top: 0;
+  margin: 0 auto;
   border: 10px solid rgba(0, 0, 0, 0.3);
 }
 .offer__modal .modal__body {
-  padding: 40px;
+  padding: 25px 15px 30px;
 }
 .offer__modal__text {
   margin-bottom: 35px;
-  font: 300 22px/30px "Roboto", sans-serif;
+  font: 300 14px/20px "Roboto", sans-serif;
 }
 .offer__modal__text span {
   font-weight: 400;
@@ -497,21 +481,21 @@ a:focus {
   position: absolute;
   left: 50%;
   margin-left: -100px;
-  bottom: -50px;
+  bottom: -120px;
 }
 .offer .scroll {
   position: absolute;
   left: 50%;
   margin-left: -65px;
-  bottom: -100px;
+  bottom: -140px;
 }
 
 /* ---------------------------------------- */
 /* I N T E N T    S T Y L E                 */
 /* ---------------------------------------- */
 .intent {
-  padding: 220px 0;
-  margin-top: -22vh;
+  padding: 180px 0 80px;
+  margin-top: -15vh;
   background: url(../img/intentbg.png) no-repeat;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -523,17 +507,17 @@ a:focus {
 }
 .intent__col {
   float: right;
-  padding: 0 10px 0 90px;
+  padding: 0 15px 0 40px;
 }
 .intent__heading {
-  font: 400 26px/38px "Roboto", sans-serif;
+  font: 400 19px/24px "Roboto", sans-serif;
   color: #222325;
   border-left: 8px solid #1b70b3;
   padding-left: 15px;
   margin-left: -25px;
 }
 .intent__text {
-  font: 300 20px/26px "Roboto", sans-serif;
+  font: 300 16px/20px "Roboto", sans-serif;
   margin-top: 30px;
 }
 
@@ -546,20 +530,19 @@ a:focus {
   background-position: center 228px;
 }
 .stage__slider {
-  padding: 380px 30px 0;
+  padding: 380px 3px 0;
 }
 .stage__slider--box {
-  border: 5px solid #006bb3;
-  margin-left: -20px;
-  padding: 45px;
+  padding: 0 35px 25px;
+  text-align: center;
   z-index: 10;
-  height: 400px;
 }
 .stage__slider__info {
-  padding: 25px 30px 25px 0;
+  padding: 0;
 }
 .stage__slider__heading {
   margin-bottom: 45px;
+  padding: 0 40px;
 }
 .stage__slider .carousel-inner .item img {
   position: relative;
@@ -567,23 +550,32 @@ a:focus {
   width: 470px;
   height: 450px;
 }
+.stage__slider .carousel-inner:before {
+  content: "";
+  display: block;
+  border: 5px solid #006bb3;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+}
 .stage__slider .carousel-control {
   background: none;
   bottom: auto;
-  top: 150px;
-  width: 70px;
-  height: 70px;
+  top: 20px;
+  width: 25px;
+  height: 25px;
   background-color: #006bb3;
   opacity: 1;
 }
 .stage__slider .carousel-control .fa {
-  line-height: 70px;
+  line-height: 25px;
 }
 .stage__slider .carousel-control.right {
-  right: -75px;
+  right: 30px;
 }
 .stage__slider .carousel-control.left {
-  left: -75px;
+  left: 30px;
 }
 .stage__slider .carousel-indicators {
   bottom: auto;
@@ -673,8 +665,14 @@ a:focus {
 /* S A L E    S T Y L E                     */
 /* ---------------------------------------- */
 .sale {
-  padding: 0 0 100px;
+  padding: 0;
   background: #f9f9f9 url(../img/salebg.png) no-repeat center 100px;
+  position: relative;
+  overflow: hidden;
+}
+.sale__heading.in {
+  opacity: 0;
+  transition: all 1s ease;
 }
 .sale__col {
   margin-top: 100px;
@@ -682,12 +680,28 @@ a:focus {
 .sale__col .ic {
   margin-bottom: 40px;
 }
+.sale__col.in {
+  opacity: 0;
+  transition: all 1s ease;
+}
+.sale__spoiler {
+  position: static;
+  margin: 0 -15px;
+}
+.sale__spoiler--btn.in {
+  position: relative;
+  top: -235px;
+}
+.sale__spoiler.in {
+  bottom: -30px;
+}
 .sale__info {
   color: #fff;
   font: 400 26px/30px "Roboto", sans-serif;
   margin-bottom: 60px;
 }
 .sale__btn, .work .form__btn {
+  z-index: 25;
   padding: 15px 50px;
   background-color: #ff9300;
   background-image: linear-gradient(to top, #f58d00 0%, #ffae00 100%);
@@ -704,14 +718,24 @@ a:focus {
 .sale__btn span, .work .form__btn span {
   color: #fff;
 }
+.sale__subheading {
+  font: 400 30px/32px "Roboto", sans-serif;
+  color: #000;
+  margin-bottom: 30px;
+}
 .sale__box {
-  padding: 40px 25px 30px;
+  padding: 40px 25px 10px;
   background-color: #006bb3;
+  margin-bottom: 30px;
+  border-bottom: 5px solid #004776;
 }
 .sale__box__heading, .sale__box__info {
   color: #fff;
   text-align: center;
   font: 400 18px/24px "Roboto", sans-serif;
+}
+.sale__box__heading p, .sale__box__info p {
+  margin-bottom: 0;
 }
 .sale__box__heading {
   padding: 0 50px;
@@ -727,13 +751,14 @@ a:focus {
 /* A D V A N T A G E    S T Y L E           */
 /* ---------------------------------------- */
 .advantage {
-  padding: 100px 0;
+  padding: 0;
+  background-color: #f9f9f9;
 }
 .advantage__content {
   width: 400px;
   float: right;
   color: #fff;
-  background-color: #fff !important;
+  background-color: #f9f9f9 !important;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   -ms-box-shadow: none !important;
@@ -742,11 +767,7 @@ a:focus {
   padding: 20px 0;
   z-index: 15;
 }
-.advantage__content .offer__modal__text p {
-  font: 500 36px/40px "Roboto", sans-serif;
-}
 .advantage__content .modal__body {
-  padding: 50px 40px;
   background-color: #006bb3;
   -webkit-box-shadow: 0 0 5px rgba(0, 75, 125, 0.8);
   -moz-box-shadow: 0 0 5px rgba(0, 75, 125, 0.8);
@@ -759,7 +780,7 @@ a:focus {
   padding: 25px 0;
 }
 .advantage__list {
-  padding: 65px 35px 35px;
+  padding: 25px 15px;
   border: 5px solid #006bb3;
   z-index: 10;
 }
@@ -775,7 +796,7 @@ a:focus {
 }
 .advantage__list ul li {
   display: inline-block;
-  font: 400 22px/36px "Roboto", sans-serif;
+  font: 400 14px/18px "Roboto", sans-serif;
   color: #000;
   margin-bottom: 20px;
   list-style-type: none;
@@ -797,7 +818,8 @@ a:focus {
   font-weight: 500;
 }
 .advantage__list--text {
-  padding-left: 95px;
+  padding: 0;
+  text-align: center;
 }
 .advantage__list--text p {
   font: 400 22px/36px "Roboto", sans-serif;
@@ -815,14 +837,22 @@ a:focus {
 /* ---------------------------------------- */
 .work {
   padding: 0;
-  background: url(../img/work.png) no-repeat center 65px/100% 80%;
+  background: url(../img/work.png) no-repeat;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-position: center 50px;
 }
 .work__info {
-  padding: 170px 0 228px;
+  padding: 25px 0 160px;
+  text-align: center;
 }
 .work__info--text {
   color: #fff;
-  font: 400 26px/36px "Roboto", sans-serif;
+  font: 400 18px/24px "Roboto", sans-serif;
   margin-bottom: 50px;
 }
 .work .form__btn {
@@ -831,15 +861,16 @@ a:focus {
 .work .form__btn:hover .fa, .work .form__btn:focus .fa, .work .form__btn:active .fa {
   color: inherit;
 }
-.work__advantage1 .ignat__img {
-  height: 772px;
-  width: 478px;
-  background: url(../img/ignat.png) no-repeat;
-}
 .work__advantage2, .work__advantage4 {
   position: relative;
   z-index: 10;
-  background: url(../img/work2.png) no-repeat center 65px/100% 80%;
+  background: url(../img/work2.png) no-repeat center 65px !important;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
   margin-top: -32vh;
 }
 .work__advantage2 .work__info--text, .work__advantage4 .work__info--text {
@@ -850,52 +881,49 @@ a:focus {
 }
 .work__advantage2 .offer__img, .work__advantage4 .offer__img {
   margin-top: 140px;
-  height: 604px;
-  width: 523px;
-  background: url(../img/offer.png) no-repeat;
 }
 .work__advantage3 {
   margin-top: -150px;
 }
 .work__advantage3 .work__info {
-  padding: 228px 0;
+  padding: 0;
 }
 .work__advantage3 .justice__img {
   margin-top: -90px;
-  height: 769px;
-  width: 363px;
-  background: url(../img/justice.png) no-repeat;
 }
 .work__advantage4 {
   margin-top: 0;
   position: relative;
-  top: -140px;
+  top: 0;
 }
 .work__advantage4 .work__info {
-  padding: 228px 0;
-}
-.work__advantage4 .mockup__img {
-  margin: 140px 0 0 -140px;
-  height: 712px;
-  width: 726px;
-  background: url(../img/mockup.png) no-repeat;
+  padding: 0;
 }
 
 /* ---------------------------------------- */
 /* F A Q    S T Y L E                       */
 /* ---------------------------------------- */
 .faq {
-  background: #f9f9f9 url(../img/faqbg.png) no-repeat center 500px;
+  background: #f9f9f9;
   position: relative;
-  top: -340px;
+  top: -140px;
   padding: 228px 0 20px;
 }
 .faq__row {
   margin-bottom: 25px;
 }
+.faq__row .img__right {
+  padding: 0px 0px 10px 10px;
+}
+.faq__row .img__left {
+  padding: 0px 10px 10px 0;
+}
+.faq__row .img__right, .faq__row .img__left {
+  margin: 0 auto 25px;
+}
 .faq__bg {
-  height: 330px;
-  width: 330px;
+  height: 220px;
+  width: 220px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -921,13 +949,14 @@ a:focus {
   position: relative;
   top: -340px;
 }
-.completed__slider {
-  padding-left: 60px;
-  padding-right: 60px;
+.completed__slider__info {
+  padding: 0 30px;
 }
 .completed__slider__heading {
-  font: 400 26px/30px "Roboto", sans-serif;
+  font: 400 18px/22px "Roboto", sans-serif;
   margin-bottom: 35px;
+  padding: 0 50px;
+  text-align: center;
 }
 .completed__slider__text {
   font: 400 18px/24px "Roboto", sans-serif;
@@ -960,20 +989,23 @@ a:focus {
 .completed__slider .carousel-control {
   background: none;
   bottom: auto;
-  top: 300px;
-  width: 70px;
-  height: 70px;
+  top: 475px;
+  width: 35px;
+  height: 35px;
   background-color: #006bb3;
   opacity: 1;
 }
 .completed__slider .carousel-control .fa {
-  line-height: 70px;
+  line-height: 35px;
 }
 .completed__slider .carousel-control.right {
-  right: -90px;
+  right: 15px;
 }
 .completed__slider .carousel-control.left {
-  left: -90px;
+  left: 15px;
+}
+.completed__modal {
+  margin-top: 25px;
 }
 .completed__modal .modal-header {
   padding: 0;
@@ -981,6 +1013,10 @@ a:focus {
 }
 .completed__modal .modal-header .close {
   position: absolute;
+  right: 10px;
+  z-index: 10;
+  top: 10px;
+  opacity: 1;
 }
 .completed__modal .carousel-control {
   background: none;
@@ -1004,10 +1040,22 @@ a:focus {
 /* ---------------------------------------- */
 /* F O O T E R    S T Y L E                 */
 /* ---------------------------------------- */
+.map {
+  background: #f9f9f9;
+  margin-top: -340px;
+  padding: 100px 0;
+}
+.map .container-fluid {
+  padding: 0;
+}
+
+/* ---------------------------------------- */
+/* F O O T E R    S T Y L E                 */
+/* ---------------------------------------- */
 .footer {
   background: #f9f9f9 url(../img/footerbg.png) no-repeat center bottom;
-  margin-top: -340px;
-  padding: 160px 0 100px;
+  margin-top: -180px;
+  padding: 80px 0 100px;
 }
 .footer__img {
   position: absolute;
@@ -1015,13 +1063,12 @@ a:focus {
 }
 .footer__heading {
   float: right;
-  padding-right: 0;
   margin-bottom: 25px;
   position: relative;
+  padding: 0;
 }
 .footer__heading p {
-  font: 400 30px/38px "Roboto", sans-serif;
-  padding-left: 30px;
+  font: 400 20px/30px "Roboto", sans-serif;
 }
 .footer__heading span {
   font-weight: 500;
@@ -1046,7 +1093,7 @@ a:focus {
 }
 .footer__callback p {
   font: 400 16px/20px "Roboto", sans-serif;
-  text-align: right;
+  text-align: center;
   margin-bottom: 20px;
 }
 .footer__callback .nav__right .fa {
@@ -1064,4 +1111,400 @@ a:focus {
 .footer__callback .nav__phone a span {
   color: #006bb3;
   font: 400 18px/24px "Roboto", sans-serif;
+}
+
+/* ---------------------------------------- */
+/* T H A N K S    P A G E    S T Y L E      */
+/* ---------------------------------------- */
+.thanks {
+  color: #fff;
+}
+.thanks__offer {
+  padding: 160px 0 250px !important;
+}
+.thanks__offer .ic {
+  margin-bottom: 65px;
+}
+.thanks__heading {
+  font: 400 40px/52px "Roboto Slab", sans-serif;
+  text-transform: uppercase;
+}
+.thanks__subheading {
+  font: 400 30px/45px "Roboto Slab", sans-serif;
+}
+
+/* ---------------------------------------- */
+/* 3 2 0 - 7 6 7    S T Y L E               */
+/* ---------------------------------------- */
+@media only screen and (max-width: 767px) {
+  /* ---------------------------------------- */
+  /* M O D A L    S T Y L E                   */
+  /* ---------------------------------------- */
+  .offer__modal {
+    width: 290px;
+  }
+
+  .modal__dialog {
+    margin: 20px auto 0;
+    width: 290px;
+  }
+  .modal__body {
+    padding: 30px 15px 30px;
+  }
+  .modal__body .close {
+    right: 10px;
+    top: 10px;
+  }
+  .modal__body__form .form__heading, .modal__body__form .form__subheading {
+    font-size: 16px;
+  }
+  .modal__body__form .form__btn span {
+    font-size: 14px;
+  }
+  .modal__content .modal__info {
+    padding: 25px;
+  }
+  .modal__content .modal__info--heading {
+    font-size: 18px;
+    text-align: center;
+  }
+  .modal__content .modal__info--text {
+    font-size: 14px;
+  }
+
+  /* ---------------------------------------- */
+  /* H E A D E R    S T Y L E                 */
+  /* ---------------------------------------- */
+  .header__nav > .container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .nav__center, .nav__right {
+    padding: 0;
+  }
+  .nav__center .fa, .nav__right .fa {
+    font-size: 36px;
+    line-height: 60px;
+  }
+  .nav__center {
+    float: right;
+  }
+  .nav__right .fa {
+    position: relative;
+    top: -15px;
+  }
+  .nav__phone--link {
+    font-size: 12px;
+  }
+
+  /* ---------------------------------------- */
+  /* O F F E R    S T Y L E                   */
+  /* ---------------------------------------- */
+  .offer .tag {
+    right: 0;
+    top: -375px;
+    margin-left: 20px;
+    transform: scale(0.5);
+  }
+  .offer__modal {
+    border: 0;
+  }
+
+  /* ---------------------------------------- */
+  /* A D V A N T A G E    S T Y L E           */
+  /* ---------------------------------------- */
+  .advantage__content {
+    width: 300px;
+    margin: 0 auto;
+    float: none;
+  }
+
+  /* ---------------------------------------- */
+  /* F A Q    S T Y L E                       */
+  /* ---------------------------------------- */
+  .faq__text {
+    text-align: center;
+    line-height: normal;
+  }
+  .faq__text p {
+    font: 400 18px/24px "Roboto", sans-serif;
+  }
+
+  /* ---------------------------------------- */
+  /* F O O T E R    S T Y L E                 */
+  /* ---------------------------------------- */
+  .footer__heading img {
+    top: 50px;
+    right: -20px;
+    transform: scale(0.4);
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* ---------------------------------------- */
+  /* M O D A L    S T Y L E                   */
+  /* ---------------------------------------- */
+  .modal__content .modal__info {
+    padding: 25px;
+    min-height: 430px;
+  }
+
+  /* -------------------------------------------- */
+  /* S E C T I O N    H E A D I N G    S T Y L E  */
+  /* -------------------------------------------- */
+  .section__heading {
+    font: 400 30px/36px "Roboto Slab", sans-serif;
+  }
+
+  /* ---------------------------------------- */
+  /* H E A D E R    S T Y L E                 */
+  /* ---------------------------------------- */
+  .header {
+    padding: 20px 0 65px;
+  }
+
+  .nav__title {
+    font-size: 16px;
+  }
+  .nav__title--text {
+    font: 400 16px/20px "Roboto", sans-serif;
+  }
+
+  /* ---------------------------------------- */
+  /* O F F E R    S T Y L E                   */
+  /* ---------------------------------------- */
+  .offer {
+    padding: 160px 0 190px;
+    margin-top: -100px;
+  }
+  .offer__list {
+    padding-right: 30px;
+  }
+  .offer__list ul li {
+    font: 400 25px/40px "Roboto", sans-serif;
+  }
+  .offer__list__heading {
+    font: 400 40px/52px "Roboto Slab", sans-serif;
+    text-align: left;
+  }
+  .offer__modal .modal__body {
+    padding: 40px;
+  }
+  .offer__modal__text {
+    margin-bottom: 35px;
+    font: 300 22px/30px "Roboto", sans-serif;
+  }
+
+  /* ---------------------------------------- */
+  /* I N T E N T    S T Y L E                 */
+  /* ---------------------------------------- */
+  .intent {
+    padding: 244px 0;
+    margin-top: -22vh;
+  }
+  .intent__col {
+    float: right;
+    padding: 0 10px 0 90px;
+  }
+  .intent__heading {
+    font: 400 26px/38px "Roboto", sans-serif;
+  }
+  .intent__text {
+    font: 300 20px/26px "Roboto", sans-serif;
+  }
+
+  /* ---------------------------------------- */
+  /* S T A G E    S T Y L E                   */
+  /* ---------------------------------------- */
+  .stage__slider {
+    padding: 380px 50px 0;
+  }
+  .stage__slider--box {
+    margin-left: -20px;
+    padding: 45px;
+    height: 400px;
+    text-align: left;
+  }
+  .stage__slider__heading {
+    padding: 0;
+  }
+  .stage__slider__info {
+    padding: 25px 30px 25px 0;
+  }
+  .stage__slider .carousel-inner:before {
+    height: 88%;
+    margin: 3% 0;
+  }
+  .stage__slider .carousel-control {
+    top: 150px;
+    width: 70px;
+    height: 70px;
+  }
+  .stage__slider .carousel-control .fa {
+    line-height: 70px;
+  }
+  .stage__slider .carousel-control.right {
+    right: -75px;
+  }
+  .stage__slider .carousel-control.left {
+    left: -75px;
+  }
+
+  /* ---------------------------------------- */
+  /* S A L E    S T Y L E                     */
+  /* ---------------------------------------- */
+  .sale {
+    padding: 0 0 180px;
+  }
+  .sale__spoiler {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    transition: all 1s ease;
+  }
+  .sale__box {
+    padding: 25px;
+  }
+
+  /* ---------------------------------------- */
+  /* A D V A N T A G E    S T Y L E           */
+  /* ---------------------------------------- */
+  .advantage {
+    padding: 100px 0;
+  }
+  .advantage__list {
+    padding: 65px 35px 35px;
+  }
+  .advantage__list ul li {
+    font: 400 22px/36px "Roboto", sans-serif;
+  }
+  .advantage__list--text {
+    padding-left: 95px;
+    text-align: left;
+  }
+  .advantage__content .offer__modal__text p {
+    font: 500 36px/40px "Roboto", sans-serif;
+  }
+  .advantage__content .modal__body {
+    padding: 50px 40px;
+  }
+
+  /* ---------------------------------------- */
+  /* W O R K    S T Y L E                     */
+  /* ---------------------------------------- */
+  .work {
+    background: url(../img/work.png) no-repeat center 65px/100% 80%;
+  }
+  .work__info {
+    padding: 170px 0 228px;
+    text-align: right;
+  }
+  .work__info--text {
+    font: 400 26px/36px "Roboto", sans-serif;
+  }
+  .work__advantage2, .work__advantage4 {
+    background: url(../img/work2.png) no-repeat center 65px/100% 80% !important;
+  }
+  .work__advantage3 {
+    margin-top: -150px;
+  }
+  .work__advantage3 .work__info {
+    padding: 228px 0;
+  }
+  .work__advantage4 {
+    top: -140px;
+  }
+  .work__advantage4 .mockup__img {
+    margin: 140px 0 0 -140px;
+  }
+  .work__advantage4 .work__info {
+    padding: 228px 0;
+  }
+
+  /* ---------------------------------------- */
+  /* F A Q    S T Y L E                       */
+  /* ---------------------------------------- */
+  .faq {
+    background: #f9f9f9 url(../img/faqbg.png) no-repeat center 500px;
+    top: -340px;
+  }
+  .faq__right {
+    float: right;
+  }
+  .faq__bg {
+    height: 330px;
+    width: 330px;
+    margin: 0;
+  }
+  .faq__row .img__right {
+    padding: 0px 0px 20px 20px;
+  }
+  .faq__row .img__left {
+    padding: 0px 20px 20px 0;
+  }
+
+  /* ---------------------------------------- */
+  /* C O M P L E T E D    S T Y L E           */
+  /* ---------------------------------------- */
+  .completed__slider {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .completed__slider__heading {
+    font: 400 26px/30px "Roboto", sans-serif;
+    padding: 0;
+    text-align: left;
+  }
+  .completed__slider .carousel-control {
+    bottom: auto;
+    top: 300px;
+    width: 70px;
+    height: 70px;
+  }
+  .completed__slider .carousel-control .fa {
+    line-height: 70px;
+  }
+  .completed__slider .carousel-control.right {
+    right: -90px;
+  }
+  .completed__slider .carousel-control.left {
+    left: -90px;
+  }
+  .completed__box {
+    float: right;
+  }
+
+  /* ---------------------------------------- */
+  /* F O O T E R    S T Y L E                 */
+  /* ---------------------------------------- */
+  .footer {
+    padding: 160px 0 100px;
+  }
+  .footer__box {
+    float: right;
+  }
+  .footer__heading {
+    padding-right: 0;
+  }
+  .footer__heading p {
+    font: 400 30px/38px "Roboto", sans-serif;
+    padding-left: 30px;
+  }
+  .footer__callback p {
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  /* ---------------------------------------- */
+  /* O F F E R    S T Y L E                   */
+  /* ---------------------------------------- */
+  .offer__list {
+    padding-right: 0;
+  }
+  .offer__list ul li {
+    font-size: 20px;
+  }
+  .offer__list__heading {
+    font-size: 32px;
+  }
 }

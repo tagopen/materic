@@ -53,9 +53,13 @@ $('#carousel-example-generic, #carousel-example-generic2').hover(function () {
 });
 
 // Set equial height
-$('.sale__box__info').equialHeight();
+$('.sale__box .ic').equialHeight();
+$('.sale__box__info--col1').equialHeight();
+$('.sale__box__info--col2').equialHeight();
 
 // 
-$('').onclick( function () {
-  $(this).addClass('in');
+$('.sale__spoiler--btn').click( function () {
+  $('.sale__heading').toggleClass('in');
+  $('.sale__spoiler').toggleClass('in');
+  $('.sale__col').toggleClass('in');
 });
