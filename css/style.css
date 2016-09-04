@@ -261,6 +261,9 @@
   right: -150px;
   top: -10px;
 }
+.modal__body .close .ic-close {
+  transform: scale(0.8);
+}
 .modal__body__form .form__heading, .modal__body__form .form__subheading {
   color: #fff;
   font: 400 22px/26px "Roboto", sans-serif;
@@ -796,7 +799,7 @@ a:focus {
   padding: 25px 0;
 }
 .advantage__list {
-  padding: 25px 15px;
+  padding: 40px 15px;
   z-index: 10;
 }
 .advantage__list ul {
@@ -1272,7 +1275,7 @@ a:focus {
   /* M O D A L    S T Y L E                   */
   /* ---------------------------------------- */
   .modal__body .close {
-    right: -75px;
+    right: -70px;
     top: 0;
   }
 
@@ -1294,7 +1297,7 @@ a:focus {
   /* I N T E N T    S T Y L E                 */
   /* ---------------------------------------- */
   .intent {
-    margin-top: -8vh;
+    margin-top: -80px;
     padding: 180px 0 140px;
   }
 
@@ -1348,7 +1351,7 @@ a:focus {
     transition: all 1s ease;
   }
   .sale__spoiler.in {
-    bottom: 10px;
+    bottom: 35px;
   }
   .sale__box {
     padding: 25px;
@@ -1366,7 +1369,7 @@ a:focus {
   /* W O R K    S T Y L E                     */
   /* ---------------------------------------- */
   .work__info--text {
-    padding: 140px 0 0;
+    padding: 240px 0 0;
   }
   .work__advantage2 .offer__img, .work__advantage4 .offer__img {
     margin-top: 280px;
@@ -1481,7 +1484,7 @@ a:focus {
   /* ---------------------------------------- */
   .intent {
     padding: 244px 0 100px;
-    margin-top: -21vh;
+    margin-top: -110px;
   }
   .intent__col {
     float: right;
@@ -1557,7 +1560,7 @@ a:focus {
     transition: all 1s ease;
   }
   .sale__spoiler.in {
-    bottom: 35px;
+    bottom: 30px;
   }
   .sale__box {
     padding: 25px;
@@ -1605,7 +1608,7 @@ a:focus {
     background-position: 50% 50%;
   }
   .work__info {
-    padding: 160px 0 200px;
+    padding: 160px 0 140px;
     text-align: right;
   }
   .work__info--text {
@@ -1622,7 +1625,7 @@ a:focus {
     -o-background-size: cover;
     background-size: cover;
     background-position: 50% 50%;
-    margin-top: -18vh;
+    margin-top: -250px;
     padding-top: 140px;
   }
   .work__advantage3 {
@@ -1821,7 +1824,7 @@ a:focus {
     transition: all 1s ease;
   }
   .sale__spoiler.in {
-    bottom: 10px;
+    bottom: 45px;
   }
   .sale__box {
     padding: 25px;
@@ -1864,13 +1867,13 @@ a:focus {
     padding: 0;
   }
   .work__advantage2, .work__advantage4 {
-    margin-top: -30vh;
+    margin-top: -155px;
   }
   .work__advantage2 .offer__img, .work__advantage4 .offer__img {
     margin-top: 50px;
   }
   .work__advantage3 {
-    margin-top: -30vh;
+    margin-top: -170px;
   }
   .work__advantage3 .work__info {
     padding: 0;
