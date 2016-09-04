@@ -5,6 +5,8 @@
     +sb(#{$ic})
 +comment("modal style")      
 .modal
+  &.fade.in
+    padding-right: 0 !important
   &__dialog
     width: 350px  
     border: 10px solid rgba(0, 0, 0, 0.3)
@@ -209,7 +211,7 @@ a:focus
 +comment("intent style")     
 .intent
   padding: 180px 0 80px
-  margin-top: -15vh
+  margin-top: -7vh
   background: url(../img/intentbg.png) no-repeat
   +cover
   background-position: center top

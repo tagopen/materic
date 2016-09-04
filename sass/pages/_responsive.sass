@@ -2,11 +2,11 @@
 +rx(767)  
   +comment("modal style")
   .offer__modal
-    width: 290px
+    width: 275px
   .modal
     &__dialog
       margin: 20px auto 0
-      width: 290px
+      width: 275px
     &__body
       padding: 30px 15px 30px
       .close
@@ -22,12 +22,13 @@
               font-size: 14px   
     &__content 
       .modal__info 
-        padding: 25px 
+        padding: 8px 
         &--heading
-          font-size: 18px
+          font-size: 14px
           text-align: center
         &--text
-          font-size: 14px
+          p
+            font-size: 14px
   +comment("header style") 
   .header__nav
     >.container
@@ -52,7 +53,11 @@
       margin-left: 20px
       transform: scale(0.5)   
     &__modal
-      border: 0    
+      border: 0 
+  +comment("intent style")
+  .intent
+    background: url(../img/work2.png) no-repeat
+    +cover       
   +comment("advantage style") 
   .advantage
     &__content
@@ -65,7 +70,7 @@
       text-align: center
       line-height: normal
       p
-        font: 400 18px/24px 'Roboto', sans-serif
+        font: 400 14px/18px 'Roboto', sans-serif
   +comment("footer style") 
   .footer
     &__heading
@@ -74,6 +79,12 @@
         right: -20px
         transform: scale(0.4) 
 +r(768) 
+  +comment("modal style") 
+  .modal
+    &__body
+      .close
+        right: -75px
+        top: 0
   +comment("offer style") 
   .offer
     margin-top: -50px
@@ -85,7 +96,7 @@
         text-align: left
   +comment("intent style")    
   .intent
-    margin-top: -7vh   
+    margin-top: -8vh   
     padding: 180px 0 140px
   +comment("stage style") 
   .stage
@@ -164,6 +175,13 @@
       .item
         img
           margin: 40px auto 0
+    &__modal
+      .carousel-control  
+        top: 150px
+        &.right
+          right: -70px
+        &.left   
+          left: -70px 
   +comment("footer style")  
   .footer
     &__img
@@ -351,7 +369,10 @@
           &.right
             right: -90px
           &.left
-            left: -90px    
+            left: -90px  
+    &__modal 
+      .carousel-control      
+        top: 200px    
     &__box
       float: right
       z-index: 10

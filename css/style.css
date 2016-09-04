@@ -116,108 +116,111 @@
 .ic-tag:before {
   width: 199px;
   height: 199px;
-  background: url('../img/icons-s8fea16062e.png') 0 -630px no-repeat;
+  background: url('../img/icons-s88fb7b3aff.png') 0 -589px no-repeat;
 }
 
 .ic-scrollbottom:before {
   width: 133px;
   height: 10px;
-  background: url('../img/icons-s8fea16062e.png') -46px -219px no-repeat;
+  background: url('../img/icons-s88fb7b3aff.png') -46px -152px no-repeat;
 }
 
 .ic-1etap:before {
   width: 62px;
   height: 56px;
-  background: url('../img/icons-s8fea16062e.png') 0 -151px no-repeat;
+  background: url('../img/icons-s88fb7b3aff.png') -53px -68px no-repeat;
 }
 
 .ic-2etap:before {
   width: 42px;
   height: 68px;
-  background: url('../img/icons-s8fea16062e.png') -132px -151px no-repeat;
+  background: url('../img/icons-s88fb7b3aff.png') -241px 0 no-repeat;
 }
 
 .ic-3etap:before {
   width: 46px;
   height: 67px;
-  background: url('../img/icons-s8fea16062e.png') -125px -84px no-repeat;
+  background: url('../img/icons-s88fb7b3aff.png') -58px 0 no-repeat;
 }
 
 .ic-4etap:before {
   width: 70px;
   height: 59px;
-  background: url('../img/icons-s8fea16062e.png') -62px -151px no-repeat;
+  background: url('../img/icons-s88fb7b3aff.png') -104px 0 no-repeat;
 }
 
 .ic-5etap:before {
   width: 64px;
   height: 70px;
-  background: url('../img/icons-s8fea16062e.png') 0 -270px no-repeat;
+  background: url('../img/icons-s88fb7b3aff.png') -115px -68px no-repeat;
 }
 
 .ic-6etap:before {
   width: 58px;
   height: 65px;
-  background: url('../img/icons-s8fea16062e.png') 0 -84px no-repeat;
+  background: url('../img/icons-s88fb7b3aff.png') 0 0 no-repeat;
 }
 
 .ic-7etap:before {
   width: 46px;
   height: 51px;
-  background: url('../img/icons-s8fea16062e.png') 0 -219px no-repeat;
+  background: url('../img/icons-s88fb7b3aff.png') 0 -152px no-repeat;
 }
 
 .ic-8etap:before {
   width: 53px;
   height: 53px;
-  background: url('../img/icons-s8fea16062e.png') 0 0 no-repeat;
+  background: url('../img/icons-s88fb7b3aff.png') 0 -68px no-repeat;
 }
 
 .ic-sale:before {
   width: 200px;
   height: 255px;
-  background: url('../img/icons-s8fea16062e.png') 0 -1028px no-repeat;
+  background: url('../img/icons-s88fb7b3aff.png') 0 -788px no-repeat;
 }
 
 .ic-sale1:before {
   width: 124px;
   height: 123px;
-  background: url('../img/icons-s8fea16062e.png') 0 -507px no-repeat;
+  background: url('../img/icons-s88fb7b3aff.png') -122px -267px no-repeat;
 }
 
 .ic-sale2:before {
   width: 124px;
   height: 84px;
-  background: url('../img/icons-s8fea16062e.png') -53px 0 no-repeat;
+  background: url('../img/icons-s88fb7b3aff.png') -179px -68px no-repeat;
 }
 
 .ic-sale3:before {
   width: 122px;
   height: 122px;
-  background: url('../img/icons-s8fea16062e.png') 0 -385px no-repeat;
+  background: url('../img/icons-s88fb7b3aff.png') 0 -267px no-repeat;
 }
 
 .ic-sale4:before {
   width: 127px;
   height: 115px;
-  background: url('../img/icons-s8fea16062e.png') -64px -270px no-repeat;
+  background: url('../img/icons-s88fb7b3aff.png') -179px -152px no-repeat;
 }
 
 .ic-close:before {
   width: 67px;
   height: 67px;
-  background: url('../img/icons-s8fea16062e.png') -58px -84px no-repeat;
+  background: url('../img/icons-s88fb7b3aff.png') -174px 0 no-repeat;
 }
 
 .ic-done:before {
   width: 199px;
   height: 199px;
-  background: url('../img/icons-s8fea16062e.png') 0 -829px no-repeat;
+  background: url('../img/icons-s88fb7b3aff.png') 0 -390px no-repeat;
 }
 
 /* ---------------------------------------- */
 /* M O D A L    S T Y L E                   */
 /* ---------------------------------------- */
+.modal.fade.in {
+  padding-right: 0 !important;
+}
 .modal__dialog {
   width: 350px;
   border: 10px solid rgba(0, 0, 0, 0.3);
@@ -502,7 +505,7 @@ a:focus {
 /* ---------------------------------------- */
 .intent {
   padding: 180px 0 80px;
-  margin-top: -15vh;
+  margin-top: -7vh;
   background: url(../img/intentbg.png) no-repeat;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -1156,12 +1159,12 @@ a:focus {
   /* M O D A L    S T Y L E                   */
   /* ---------------------------------------- */
   .offer__modal {
-    width: 290px;
+    width: 275px;
   }
 
   .modal__dialog {
     margin: 20px auto 0;
-    width: 290px;
+    width: 275px;
   }
   .modal__body {
     padding: 30px 15px 30px;
@@ -1177,13 +1180,13 @@ a:focus {
     font-size: 14px;
   }
   .modal__content .modal__info {
-    padding: 25px;
+    padding: 8px;
   }
   .modal__content .modal__info--heading {
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
   }
-  .modal__content .modal__info--text {
+  .modal__content .modal__info--text p {
     font-size: 14px;
   }
 
@@ -1223,6 +1226,19 @@ a:focus {
   }
 
   /* ---------------------------------------- */
+  /* I N T E N T    S T Y L E                 */
+  /* ---------------------------------------- */
+  .intent {
+    background: url(../img/work2.png) no-repeat;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  /* ---------------------------------------- */
   /* A D V A N T A G E    S T Y L E           */
   /* ---------------------------------------- */
   .advantage__content {
@@ -1239,7 +1255,7 @@ a:focus {
     line-height: normal;
   }
   .faq__text p {
-    font: 400 18px/24px "Roboto", sans-serif;
+    font: 400 14px/18px "Roboto", sans-serif;
   }
 
   /* ---------------------------------------- */
@@ -1252,6 +1268,14 @@ a:focus {
   }
 }
 @media only screen and (min-width: 768px) {
+  /* ---------------------------------------- */
+  /* M O D A L    S T Y L E                   */
+  /* ---------------------------------------- */
+  .modal__body .close {
+    right: -75px;
+    top: 0;
+  }
+
   /* ---------------------------------------- */
   /* O F F E R    S T Y L E                   */
   /* ---------------------------------------- */
@@ -1270,7 +1294,7 @@ a:focus {
   /* I N T E N T    S T Y L E                 */
   /* ---------------------------------------- */
   .intent {
-    margin-top: -7vh;
+    margin-top: -8vh;
     padding: 180px 0 140px;
   }
 
@@ -1375,6 +1399,15 @@ a:focus {
   /* ---------------------------------------- */
   .completed__slider .item img {
     margin: 40px auto 0;
+  }
+  .completed__modal .carousel-control {
+    top: 150px;
+  }
+  .completed__modal .carousel-control.right {
+    right: -70px;
+  }
+  .completed__modal .carousel-control.left {
+    left: -70px;
   }
 
   /* ---------------------------------------- */
@@ -1649,6 +1682,9 @@ a:focus {
   }
   .completed__slider .carousel-control.left {
     left: -90px;
+  }
+  .completed__modal .carousel-control {
+    top: 200px;
   }
   .completed__box {
     float: right;
