@@ -240,7 +240,7 @@
 }
 .modal__content .modal__info {
   color: #fff;
-  padding: 90px 25px 25px;
+  padding: 60px 25px 25px;
   border: 2px solid #fff;
   min-height: auto;
 }
@@ -508,7 +508,7 @@ a:focus {
 /* ---------------------------------------- */
 .intent {
   padding: 180px 0 80px;
-  margin-top: -7vh;
+  margin-top: -80px;
   background: url(../img/intentbg.png) no-repeat;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -870,8 +870,9 @@ a:focus {
 }
 .work__info--text {
   color: #fff;
-  font: 400 16px/20px "Roboto", sans-serif;
-  margin-bottom: 40px;
+  font: 400 14px/18px "Roboto", sans-serif;
+  margin-bottom: 35px;
+  padding: 0 15px;
 }
 .work .form__btn {
   color: #fff;
@@ -879,10 +880,14 @@ a:focus {
 .work .form__btn:hover .fa, .work .form__btn:focus .fa, .work .form__btn:active .fa {
   color: inherit;
 }
+.work__advantage1 {
+  padding: 0 0 10px;
+}
 .work__advantage2, .work__advantage4 {
+  padding: 50px 0 0;
   position: relative;
   z-index: 10;
-  margin-top: -180px;
+  margin-top: -170px;
   background: url(../img/work2.png) no-repeat center 65px !important;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -901,7 +906,10 @@ a:focus {
   margin-top: 140px;
 }
 .work__advantage3 .work__info {
-  padding: 0;
+  padding: 0 0 50px;
+}
+.work__advantage4 {
+  padding: 180px 0 0;
 }
 .work__advantage4 .work__info {
   padding: 0;
@@ -955,7 +963,7 @@ a:focus {
   position: relative;
 }
 .completed__slider__info {
-  padding: 0 30px;
+  padding: 0 45px;
 }
 .completed__slider__heading {
   font: 400 18px/22px "Roboto", sans-serif;
@@ -1090,7 +1098,7 @@ a:focus {
   position: relative;
 }
 .footer__box {
-  padding: 0 5px;
+  padding: 0 30px;
 }
 .footer__box .form__btn .fa {
   color: #fff;
@@ -1105,8 +1113,8 @@ a:focus {
 }
 .footer__callback .nav__right .fa {
   vertical-align: top;
-  margin-right: -70px;
-  font-size: 72px;
+  margin-right: -60px;
+  font-size: 70px;
 }
 .footer__callback .nav__phone > span {
   display: inline-block;
@@ -1202,7 +1210,8 @@ a:focus {
   }
 
   .nav__center, .nav__right {
-    padding: 0;
+    text-align: center;
+    padding: 8px;
   }
   .nav__center .fa, .nav__right .fa {
     font-size: 36px;
@@ -1214,6 +1223,9 @@ a:focus {
   .nav__phone--link {
     font-size: 12px;
   }
+  .navbar__header {
+    padding: 0 30px;
+  }
 
   /* ---------------------------------------- */
   /* O F F E R    S T Y L E                   */
@@ -1223,6 +1235,9 @@ a:focus {
     top: -400px;
     margin-left: 20px;
     transform: scale(0.5);
+  }
+  .offer__list {
+    padding: 0 15px;
   }
   .offer__modal {
     border: 0;
@@ -1259,6 +1274,7 @@ a:focus {
   }
   .faq__text p {
     font: 400 14px/18px "Roboto", sans-serif;
+    padding: 0 15px;
   }
 
   /* ---------------------------------------- */
@@ -1370,6 +1386,9 @@ a:focus {
   /* ---------------------------------------- */
   .work__info--text {
     padding: 240px 0 0;
+  }
+  .work__advantage1 {
+    padding: 0;
   }
   .work__advantage2 .offer__img, .work__advantage4 .offer__img {
     margin-top: 280px;
@@ -1873,7 +1892,7 @@ a:focus {
     margin-top: 50px;
   }
   .work__advantage3 {
-    margin-top: -170px;
+    margin-top: -155px;
   }
   .work__advantage3 .work__info {
     padding: 0;

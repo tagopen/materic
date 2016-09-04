@@ -18,7 +18,7 @@
     .modal
       &__info
         color: #fff
-        padding: 90px 25px 25px
+        padding: 60px 25px 25px
         border: 2px solid #fff
         min-height: auto
         &--heading
@@ -213,7 +213,7 @@ a:focus
 +comment("intent style")     
 .intent
   padding: 180px 0 80px
-  margin-top: -7vh
+  margin-top: -80px
   background: url(../img/intentbg.png) no-repeat
   +cover
   background-position: center top
@@ -473,8 +473,9 @@ a:focus
     text-align: center
     &--text
       color: #fff
-      font: 400 16px/20px 'Roboto', sans-serif
-      margin-bottom: 40px
+      font: 400 14px/18px 'Roboto', sans-serif
+      margin-bottom: 35px
+      padding: 0 15px
   .form__btn
     color: #fff
     @extend .sale__btn
@@ -482,11 +483,14 @@ a:focus
     &:focus,
     &:active
       .fa
-        color: inherit 
+        color: inherit
+  &__advantage1
+    padding: 0 0 10px       
   &__advantage2
+    padding: 50px 0 0
     position: relative
     z-index: 10
-    margin-top: -180px
+    margin-top: -170px
     background: url(../img/work2.png) no-repeat center 65px !important
     +cover 
     .work
@@ -500,8 +504,9 @@ a:focus
   &__advantage3    
     .work
       &__info   
-        padding: 0
+        padding: 0 0 50px
   &__advantage4
+    padding: 180px 0 0
     @extend .work__advantage2
     .work
       &__info
@@ -540,7 +545,7 @@ a:focus
   position: relative
   &__slider
     &__info
-      padding: 0 30px
+      padding: 0 45px
     &__heading
       font: 400 18px/22px 'Roboto', sans-serif
       margin-bottom: 35px
@@ -641,7 +646,7 @@ a:focus
     padding: 40px 10px
     position: relative
   &__box
-    padding: 0 5px  
+    padding: 0 30px  
     .form__btn
       .fa
         color: #fff
@@ -655,8 +660,8 @@ a:focus
       &__right
         .fa
           vertical-align: top
-          margin-right: -70px
-          font-size: 72px
+          margin-right: -60px
+          font-size: 70px
       &__phone
         >span
           display: inline-block
