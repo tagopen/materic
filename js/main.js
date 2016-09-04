@@ -68,6 +68,7 @@ $('.sale__box__info--col2').equialHeight();
 // 
 $('.sale__spoiler--btn').click( function () {
   $('.sale__heading').toggleClass('in');
+  $('.sale__separator').toggleClass('in');
   $('.sale__spoiler').toggleClass('in');
   $('.sale__col').toggleClass('in');
 });

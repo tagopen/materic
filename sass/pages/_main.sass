@@ -238,7 +238,7 @@ a:focus
   &__slider
     padding: 380px 3px 0
     &--box
-      padding: 0 35px 25px
+      padding: 0 45px 25px
       text-align: center
       z-index: 10
     &__info
@@ -343,10 +343,11 @@ a:focus
 +comment("sale style") 
 .sale
   padding: 0
-  background: #f9f9f9 url(../img/salebg.png) no-repeat center 100px
+  background: #f9f9f9
   position: relative
   overflow: hidden
-  &__heading
+  &__heading,
+  &__separator
     &.in
       opacity: 0
       transition: all 1s ease
@@ -383,7 +384,7 @@ a:focus
     color: #000
     margin-bottom: 30px
   &__box
-    padding: 40px 25px 10px
+    padding: 40px 30px 10px
     background-color: #006bb3
     margin-bottom: 30px
     border-bottom: 5px solid #004776
@@ -391,7 +392,7 @@ a:focus
     &__info
       color: #fff  
       text-align: center  
-      font: 400 18px/24px 'Roboto', sans-serif
+      font: 400 16px/22px 'Roboto', sans-serif
       p
         margin-bottom: 0
     &__heading
