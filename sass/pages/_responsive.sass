@@ -41,18 +41,14 @@
         font-size: 36px
         line-height: 60px
     &__center
-      float: right  
-    &__right
-      .fa
-        position: relative
-        top: -15px    
+      float: right    
     &__phone--link
       font-size: 12px
   +comment("offer style") 
   .offer
     .tag
       right: 0
-      top: -375px
+      top: -400px
       margin-left: 20px
       transform: scale(0.5)   
     &__modal
@@ -76,7 +72,104 @@
       img
         top: 50px
         right: -20px
-        transform: scale(0.4)   
+        transform: scale(0.4) 
++r(768) 
+  +comment("offer style") 
+  .offer
+    margin-top: -50px
+    padding: 180px 0
+    .tag
+      transform: scale(0.6)
+    &__list
+      &__heading
+        text-align: left
+  +comment("intent style")    
+  .intent
+    margin-top: -7vh   
+    padding: 180px 0 140px
+  +comment("stage style") 
+  .stage
+    background-size: contain 
+    &__slider
+      padding: 440px 3px 0
+      .carousel-inner
+        &:before
+          border: 0
+        .item
+          img
+            height: auto
+      .carousel-control
+        top: -80px
+        height: 70px
+        width: 70px
+        line-height: 70px
+      .carousel-indicators
+        top: -230px
+        li
+          &:nth-child(1),
+          &:nth-child(8)  
+            top: 70px
+          &:nth-child(2),
+          &:nth-child(7)  
+            top: 35px
+          &:nth-child(3),
+          &:nth-child(6) 
+            top: 7px 
+          &:nth-child(4),
+          &:nth-child(5) 
+            top: -6px 
+  +comment("sale style")     
+  .sale
+    padding: 0 0 180px
+    &__spoiler
+      position: absolute
+      bottom: 100%
+      left: 0 
+      transition: all 1s ease
+      &.in
+        bottom: 10px
+    &__box
+      padding: 25px  
+  +comment("advantage style")  
+  .advantage
+    &__content 
+      width: 320px
+      padding: 0 
+  +comment("work style")  
+  .work
+    &__info
+      &--text
+        padding: 140px 0 0   
+    &__advantage2
+      .offer__img
+        margin-top: 280px   
+    &__advantage3
+      .work__info--text
+        padding-top: 200px 
+    &__advantage4
+      .mockup__img
+        padding-top: 240px           
+  +comment("faq style")  
+  .faq
+    background: #f9f9f9 url(../img/faqbg760.png) no-repeat center 230px
+    &__right
+      float: right 
+    &__text
+      line-height: 245px  
+      p
+        font: 400 18px/24px 'Roboto', sans-serif 
+  +comment("completed style")         
+  .completed
+    &__slider
+      .item
+        img
+          margin: 40px auto 0
+  +comment("footer style")  
+  .footer
+    &__img
+      transform: scale(0.7)
+      top: -100px
+      left: -60px       
 +r(968)  
   +comment("modal style")
   .modal
@@ -98,7 +191,9 @@
   +comment("offer style") 
   .offer
     padding: 160px 0 190px
-    margin-top: -100px   
+    margin-top: -100px  
+    .tag
+      transform: scale(1) 
     &__list
       padding-right: 0
       ul
@@ -137,11 +232,9 @@
       &__info
         padding: 25px 30px 25px 0
       .carousel-inner
-        &:before
-          border: 0
         .item
           img
-            height: auto
+            padding-top: 30%
       .carousel-control
         top: 150px
         width: 70px
@@ -152,16 +245,21 @@
           right: -75px
         &.left
           left: -75px    
-      .carousel-indicators   
+      .carousel-indicators  
+        top: -170px 
         li
           &:nth-child(1),
-          &:nth-child(7)  
+          &:nth-child(8)  
             top: 24px
           &:nth-child(2),
-          &:nth-child(6)  
+          &:nth-child(7)  
             top: 12px
-          &:nth-child(4)  
-            top: -6px  
+          &:nth-child(3),
+          &:nth-child(6) 
+            top: 0 
+          &:nth-child(4),
+          &:nth-child(5) 
+            top: -6px 
   +comment("sale style")     
   .sale
     padding: 0 0 180px
@@ -170,6 +268,8 @@
       bottom: 100%
       left: 0 
       transition: all 1s ease
+      &.in
+        bottom: 35px
     &__box
       padding: 25px   
   +comment("advantage style")  
@@ -184,12 +284,15 @@
         text-align: left        
     &__content
       float: none
+      width: 400px
       margin: 0 auto
+      padding: 20px 0
       .offer__modal__text
         p
           font: 500 36px/40px 'Roboto', sans-serif
       .modal__body
-        padding: 50px 40px+comment("work style")  
+        padding: 50px 40px
+  +comment("work style")  
   .work
     background: url(../img/work.png) no-repeat center 65px
     +cover 
@@ -213,9 +316,7 @@
       padding: 265px 0  
   +comment("faq style") 
   .faq
-    background: #f9f9f9    
-    &__right
-      float: right
+    background-position: 220px 380px  
     &__bg
       height: 280px
       width: 280px 
@@ -227,6 +328,7 @@
         &__left  
           padding: 0px 20px 20px 0   
     &__text
+      line-height: 320px
       p
         font-size: 18px      
   +comment("completed style")   
@@ -253,9 +355,14 @@
     &__box
       float: right
       z-index: 10
+  +comment("map style")    
+  .map-responsive
+    height: 400px
+    margin-top: 100px
+    overflow: hidden  
   +comment("footer style") 
   .footer
-    padding: 0 0 100px 
+    padding: 50px 0 100px 
     &__row
       padding: 15px
     &__box
@@ -270,7 +377,7 @@
         text-align: right     
     &__img
       top: -50px
-      left: -30px               
+      left: -30px            
 +r(1200)  
   +comment("modal style")
   .modal
@@ -278,8 +385,13 @@
       .modal__info 
         padding: 25px 
         min-height: 430px
+  +comment("offer style")   
+  .offer
+    &__list
+      padding-right: 30px    
   +comment("stage style")   
   .stage   
+    background-size: auto
     &__slider
       padding: 380px 50px 0
       &--box
@@ -298,7 +410,8 @@
           border: 5px solid #006bb3
         .item
           img
-            height: 400px  
+            height: 400px
+            padding-top: 0  
       .carousel-control
         top: 150px
         width: 70px
@@ -312,17 +425,21 @@
       .carousel-indicators
         li
           &:nth-child(1),
-          &:nth-child(7)    
+          &:nth-child(8)    
             top: 65px
           &:nth-child(2),
-          &:nth-child(6)  
+          &:nth-child(7)  
             top: 25px
-          &:nth-child(4)  
-            top: -10px      
+          &:nth-child(3),
+          &:nth-child(6)  
+            top: 5px  
+          &:nth-child(4),
+          &:nth-child(5)  
+            top: -5px  
   +comment("intent style")  
   .intent
     padding: 244px 0
-    margin-top: -20vh        
+    margin-top: -105px        
   +comment("sale style")     
   .sale
     padding: 0 0 180px
@@ -358,16 +475,21 @@
     &__info
       &--text
         font: 400 30px/40px 'Roboto', sans-serif
+        padding: 0
     &__advantage2
       margin-top: -30vh
+      .offer__img
+        margin-top: 50px
     &__advantage3
       margin-top: -30vh
       .work__info
-        padding: 228px 0  
+        padding: 0  
     &__advantage4
       padding: 252px 0 0
       .work__info
         padding: 100px 0
+      .mockup__img
+        padding: 0  
   +comment("faq style") 
   .faq
     background: #f9f9f9 url(../img/faqbg.png) no-repeat center 420px 
@@ -411,7 +533,11 @@
       float: right
   +comment("footer style") 
   .footer
-    padding: 0 0 100px 
+    padding: 50px 0 100px 
+    &__img
+      transform: scale(1)
+      top: -170px
+      left: -10px
     &__box
       float: right
     &__heading

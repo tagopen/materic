@@ -40,10 +40,18 @@ $.fn.equialHeight = function() {
 } 
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
-$('.toBottom').click(function(){
-  $("html, body").animate({ scrollTop: $(".intent").offset().top + .21*$(window).outerHeight() }, 1500);
-  return false;
-});
+if( $( window ).width() <= 967 ) {
+  $('.toBottom').click(function(){
+    $("html, body").animate({ scrollTop: $(".intent").offset().top + .07*$(window).outerHeight() }, 1500);
+    return false;
+  });
+}
+if( $( window ).width() >= 968 ) {
+  $('.toBottom').click(function(){
+    $("html, body").animate({ scrollTop: $(".intent").offset().top + .10*$(window).outerHeight() }, 1500);
+    return false;
+  });
+}
 
 // Bootstrap carousel pause on hover
 $('#carousel-example-generic, #carousel-example-generic2').hover(function () { 
