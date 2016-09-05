@@ -231,9 +231,8 @@ a:focus
     margin-top: 30px 
 +comment("stage style") 
 .stage
-  padding: 0 0 100px
-  background: #f9f9f9 url(../img/stagebg.png) no-repeat
-  background-position: center 228px
+  padding: 0 0 50px
+  background: #f9f9f9 
   background-size: contain
   &__slider
     padding: 380px 3px 0
@@ -340,6 +339,45 @@ a:focus
               position: absolute
               left: -2px
               top: -2px  
+    &--small
+      margin-top: 270px
+      .slider__small--info
+        border: 5px solid #006bb3
+        .stage__slider
+          &__heading
+            padding: 0 10px
+          &--box
+            padding: 0 20px
+    &--marker
+      .slick
+        &-track
+          padding-top: 25px
+        &-slide
+          text-align: center
+      .stage__item
+        display: inline-block
+        height: 44px
+        width: 44px
+        +br(50%)
+        background-color: #006bb3
+        border: 4px solid #7cb3d8  
+        color: #fff
+        text-align: center
+        line-height: 36px
+        .ic
+          display: none
+      .slick-current
+        .stage__item
+          height: 90px
+          width: 90px
+          background-color: #fff
+          margin-top: -21px
+          border: 4px solid rgba(124, 179, 216, 0.5)
+          line-height: 70px
+          .ic
+            display: inline-block   
+          span
+            display: none  
 +comment("sale style") 
 .sale
   padding: 0
@@ -679,9 +717,7 @@ a:focus
 .thanks
   color: #fff
   &__offer
-    padding: 160px 0 250px !important   
-    .ic
-      margin-bottom: 65px
+    padding: 150px 0 165px !important   
   &__heading
     font: 400 40px/52px 'Roboto Slab', sans-serif
     text-transform: uppercase

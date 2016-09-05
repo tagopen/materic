@@ -40,6 +40,8 @@ $(function() {
                     $('.success > .alert-success')
                         .append('</div>');
 
+                    // Redirect success
+                    document.location.href='./thanks.html';
                     // remove prevent submit behaviour
                     $("[type=submit]").prop("disabled", false);  
 

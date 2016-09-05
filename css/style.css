@@ -538,9 +538,8 @@ a:focus {
 /* S T A G E    S T Y L E                   */
 /* ---------------------------------------- */
 .stage {
-  padding: 0 0 100px;
-  background: #f9f9f9 url(../img/stagebg.png) no-repeat;
-  background-position: center 228px;
+  padding: 0 0 50px;
+  background: #f9f9f9;
   background-size: contain;
 }
 .stage__slider {
@@ -676,6 +675,55 @@ a:focus {
   position: absolute;
   left: -2px;
   top: -2px;
+}
+.stage__slider--small {
+  margin-top: 270px;
+}
+.stage__slider--small .slider__small--info {
+  border: 5px solid #006bb3;
+}
+.stage__slider--small .slider__small--info .stage__slider__heading {
+  padding: 0 10px;
+}
+.stage__slider--small .slider__small--info .stage__slider--box {
+  padding: 0 20px;
+}
+.stage__slider--marker .slick-track {
+  padding-top: 25px;
+}
+.stage__slider--marker .slick-slide {
+  text-align: center;
+}
+.stage__slider--marker .stage__item {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #006bb3;
+  border: 4px solid #7cb3d8;
+  color: #fff;
+  text-align: center;
+  line-height: 36px;
+}
+.stage__slider--marker .stage__item .ic {
+  display: none;
+}
+.stage__slider--marker .slick-current .stage__item {
+  height: 90px;
+  width: 90px;
+  background-color: #fff;
+  margin-top: -21px;
+  border: 4px solid rgba(124, 179, 216, 0.5);
+  line-height: 70px;
+}
+.stage__slider--marker .slick-current .stage__item .ic {
+  display: inline-block;
+}
+.stage__slider--marker .slick-current .stage__item span {
+  display: none;
 }
 
 /* ---------------------------------------- */
@@ -1139,10 +1187,7 @@ a:focus {
   color: #fff;
 }
 .thanks__offer {
-  padding: 160px 0 250px !important;
-}
-.thanks__offer .ic {
-  margin-bottom: 65px;
+  padding: 150px 0 165px !important;
 }
 .thanks__heading {
   font: 400 40px/52px "Roboto Slab", sans-serif;
@@ -1214,6 +1259,9 @@ a:focus {
   .nav__center .fa, .nav__right .fa {
     font-size: 36px;
     line-height: 60px;
+  }
+  .nav__right {
+    padding: 0 8px;
   }
   .nav__center {
     float: right;
@@ -1326,6 +1374,7 @@ a:focus {
   /* S T A G E    S T Y L E                   */
   /* ---------------------------------------- */
   .stage {
+    background: #f9f9f9 url(../img/stagebg.png) no-repeat center 228px;
     background-size: contain;
   }
   .stage__slider {

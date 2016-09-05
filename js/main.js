@@ -72,3 +72,23 @@ $('.sale__spoiler--btn').click( function () {
   $('.sale__spoiler').toggleClass('in');
   $('.sale__col').toggleClass('in');
 });
+
+$('.stage__slider--small').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  adaptiveHeight: true,
+  centerMode: true,
+  asNavFor: '.stage__slider--marker'
+});
+$('.stage__slider--marker').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.stage__slider--small',
+  dots: false,
+  centerPadding: '10px',
+  arrows: false,
+  centerMode: true,
+  focusOnSelect: true,
+});
