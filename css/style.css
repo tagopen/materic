@@ -687,7 +687,7 @@ a:focus {
   position: relative;
   overflow: hidden;
 }
-.sale__heading.in, .sale__separatator.in {
+.sale__heading.in, .sale__separator.in {
   opacity: 0;
   transition: all 1s ease;
 }
@@ -828,7 +828,7 @@ a:focus {
 }
 .advantage__list ul li p {
   float: right;
-  width: 85%;
+  width: 82%;
   margin-top: -8px;
 }
 .advantage__list ul li span {
@@ -907,6 +907,10 @@ a:focus {
 }
 .work__advantage3 .work__info {
   padding: 0 0 50px;
+}
+.work__advantage3 .justice__img {
+  position: relative;
+  z-index: 20;
 }
 .work__advantage4 {
   padding: 180px 0 0;
@@ -1098,7 +1102,7 @@ a:focus {
   position: relative;
 }
 .footer__box {
-  padding: 0 30px;
+  padding: 0 10px;
 }
 .footer__box .form__btn .fa {
   color: #fff;
@@ -1245,6 +1249,16 @@ a:focus {
     -o-background-size: cover;
     background-size: cover;
     background-position: 50% 50%;
+  }
+
+  /* ---------------------------------------- */
+  /* S T A G E    S T Y L E                   */
+  /* ---------------------------------------- */
+  .stage__slider .carousel-indicators li.prev .stage__item {
+    background-color: red;
+  }
+  .stage__slider .carousel-indicators li.next .stage__item {
+    background-color: green;
   }
 
   /* ---------------------------------------- */
@@ -1546,16 +1560,16 @@ a:focus {
     top: -170px;
   }
   .stage__slider .carousel-indicators li:nth-child(1), .stage__slider .carousel-indicators li:nth-child(8) {
-    top: 24px;
+    top: 50px;
   }
   .stage__slider .carousel-indicators li:nth-child(2), .stage__slider .carousel-indicators li:nth-child(7) {
-    top: 12px;
+    top: 22px;
   }
   .stage__slider .carousel-indicators li:nth-child(3), .stage__slider .carousel-indicators li:nth-child(6) {
-    top: 0;
+    top: 5px;
   }
   .stage__slider .carousel-indicators li:nth-child(4), .stage__slider .carousel-indicators li:nth-child(5) {
-    top: -6px;
+    top: -1px;
   }
 
   /* ---------------------------------------- */
@@ -1584,7 +1598,7 @@ a:focus {
     padding: 100px 0;
   }
   .advantage__list {
-    padding: 65px 35px 35px;
+    padding: 55px 15px 35px;
   }
   .advantage__list ul li {
     font: 400 22px/36px "Roboto", sans-serif;
@@ -1594,8 +1608,8 @@ a:focus {
     text-align: left;
   }
   .advantage__content {
-    float: none;
-    width: 400px;
+    float: right;
+    width: 350px;
     margin: 0 auto;
     padding: 20px 0;
   }
@@ -1624,6 +1638,7 @@ a:focus {
   }
   .work__info--text {
     font: 400 20px/30px "Roboto", sans-serif;
+    padding: 0;
   }
   .work__advantage1 .ignat__img img {
     margin: 0 auto;
@@ -1637,13 +1652,22 @@ a:focus {
     background-size: cover;
     background-position: 50% 50%;
     margin-top: -250px;
-    padding-top: 140px;
+    padding-top: 175px;
+  }
+  .work__advantage2 .work__info, .work__advantage4 .work__info {
+    padding: 0 0 210px;
+  }
+  .work__advantage2 .offer__img, .work__advantage4 .offer__img {
+    margin-top: 120px;
   }
   .work__advantage3 {
-    margin-top: -46vh;
+    margin-top: -200px;
   }
   .work__advantage4 {
-    padding: 265px 0;
+    padding: 265px 0 0;
+  }
+  .work__advantage4 .mockup__img {
+    padding: 0;
   }
 
   /* ---------------------------------------- */
@@ -1858,7 +1882,7 @@ a:focus {
     text-align: left;
   }
   .advantage__content {
-    float: right;
+    width: 400px;
   }
   .advantage__content .offer__modal__text p {
     font: 500 36px/40px "Roboto", sans-serif;
@@ -1874,17 +1898,20 @@ a:focus {
     background: url(../img/work.png) no-repeat center 65px;
   }
   .work__info--text {
-    font: 400 30px/40px "Roboto", sans-serif;
+    font: 400 28px/40px "Roboto", sans-serif;
     padding: 0;
   }
   .work__advantage2, .work__advantage4 {
     margin-top: -155px;
   }
+  .work__advantage2 .work__info, .work__advantage4 .work__info {
+    padding: 120px 0;
+  }
   .work__advantage2 .offer__img, .work__advantage4 .offer__img {
     margin-top: 50px;
   }
   .work__advantage3 {
-    margin-top: -155px;
+    margin-top: -130px;
   }
   .work__advantage3 .work__info {
     padding: 0;
@@ -1945,10 +1972,10 @@ a:focus {
     line-height: 70px;
   }
   .completed__slider .carousel-control.right {
-    right: -90px;
+    right: -75px;
   }
   .completed__slider .carousel-control.left {
-    left: -90px;
+    left: -75px;
   }
   .completed__box {
     float: right;
