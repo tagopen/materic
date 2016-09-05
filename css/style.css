@@ -494,13 +494,13 @@ a:focus {
   position: absolute;
   left: 50%;
   margin-left: -100px;
-  bottom: -120px;
+  bottom: -100px;
 }
 .offer .scroll {
   position: absolute;
   left: 50%;
   margin-left: -65px;
-  bottom: -140px;
+  bottom: -120px;
 }
 
 /* ---------------------------------------- */
@@ -715,7 +715,7 @@ a:focus {
 .sale__info {
   color: #fff;
   font: 400 26px/30px "Roboto", sans-serif;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 .sale__btn, .work .form__btn {
   z-index: 25;
@@ -759,8 +759,8 @@ a:focus {
 }
 .sale__box__heading p {
   font-size: 24px;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
   border-bottom: 1px solid #fff;
 }
 
@@ -1480,11 +1480,11 @@ a:focus {
   /* O F F E R    S T Y L E                   */
   /* ---------------------------------------- */
   .offer {
-    padding: 160px 0 190px;
+    padding: 130px 0 150px;
     margin-top: -100px;
   }
   .offer .tag {
-    transform: scale(1);
+    transform: scale(0.9);
   }
   .offer__list {
     padding-right: 0;
@@ -1587,6 +1587,9 @@ a:focus {
   .sale__spoiler.in {
     bottom: 30px;
   }
+  .sale__col {
+    margin-top: 100px;
+  }
   .sale__box {
     padding: 25px;
   }
@@ -1624,13 +1627,14 @@ a:focus {
   /* W O R K    S T Y L E                     */
   /* ---------------------------------------- */
   .work {
-    background: url(../img/work.png) no-repeat center 65px;
+    background: url(../img/work.png) no-repeat;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-position: 50% 50%;
+    background-position: center 40px;
   }
   .work__info {
     padding: 160px 0 140px;
@@ -1651,17 +1655,17 @@ a:focus {
     -o-background-size: cover;
     background-size: cover;
     background-position: 50% 50%;
-    margin-top: -250px;
+    margin-top: -175px;
     padding-top: 175px;
   }
   .work__advantage2 .work__info, .work__advantage4 .work__info {
-    padding: 0 0 210px;
+    padding: 70px 0 140px;
   }
   .work__advantage2 .offer__img, .work__advantage4 .offer__img {
-    margin-top: 120px;
+    margin-top: 20px;
   }
   .work__advantage3 {
-    margin-top: -200px;
+    margin-top: -60px;
   }
   .work__advantage4 {
     padding: 265px 0 0;
@@ -1674,11 +1678,11 @@ a:focus {
   /* F A Q    S T Y L E                       */
   /* ---------------------------------------- */
   .faq {
-    background-position: 220px 380px;
+    background-position: 250px 350px;
   }
   .faq__bg {
-    height: 280px;
-    width: 280px;
+    height: 290px;
+    width: 290px;
     margin: 0;
   }
   .faq__row .img__right {
@@ -1777,6 +1781,15 @@ a:focus {
   /* ---------------------------------------- */
   /* O F F E R    S T Y L E                   */
   /* ---------------------------------------- */
+  .offer {
+    padding: 100px 0;
+  }
+  .offer .tag {
+    bottom: -50px;
+  }
+  .offer .scroll {
+    bottom: -70px;
+  }
   .offer__list {
     padding-right: 30px;
   }
@@ -1786,9 +1799,10 @@ a:focus {
   /* ---------------------------------------- */
   .stage {
     background-size: auto;
+    background-position: center 158px;
   }
   .stage__slider {
-    padding: 380px 50px 0;
+    padding: 310px 50px 0;
   }
   .stage__slider--box {
     margin-left: -20px;
@@ -1842,7 +1856,7 @@ a:focus {
   /* I N T E N T    S T Y L E                 */
   /* ---------------------------------------- */
   .intent {
-    padding: 244px 0;
+    padding: 230px 0 130px;
     margin-top: -105px;
   }
 
@@ -1851,6 +1865,7 @@ a:focus {
   /* ---------------------------------------- */
   .sale {
     padding: 0 0 180px;
+    background-position: center 40px;
   }
   .sale__spoiler {
     position: absolute;
@@ -1859,10 +1874,16 @@ a:focus {
     transition: all 1s ease;
   }
   .sale__spoiler.in {
-    bottom: 45px;
+    bottom: 0;
+  }
+  .sale__col {
+    margin-top: 30px;
   }
   .sale__box {
-    padding: 25px;
+    padding: 20px;
+  }
+  .sale__box__info {
+    padding: 0 20px;
   }
 
   /* ---------------------------------------- */
@@ -1872,13 +1893,13 @@ a:focus {
     padding: 100px 0;
   }
   .advantage__list {
-    padding: 65px 35px 35px;
+    padding: 60px 35px 30px;
   }
   .advantage__list ul li {
     font: 400 22px/36px "Roboto", sans-serif;
   }
   .advantage__list--text {
-    padding-left: 95px;
+    padding-left: 115px;
     text-align: left;
   }
   .advantage__content {
@@ -1888,14 +1909,14 @@ a:focus {
     font: 500 36px/40px "Roboto", sans-serif;
   }
   .advantage__content .modal__body {
-    padding: 50px 40px;
+    padding: 40px 35px;
   }
 
   /* ---------------------------------------- */
   /* W O R K    S T Y L E                     */
   /* ---------------------------------------- */
   .work {
-    background: url(../img/work.png) no-repeat center 65px;
+    background: url(../img/work.png) no-repeat center 0;
   }
   .work__info--text {
     font: 400 28px/40px "Roboto", sans-serif;
@@ -1903,24 +1924,26 @@ a:focus {
   }
   .work__advantage2, .work__advantage4 {
     margin-top: -155px;
+    padding-bottom: 50px;
   }
   .work__advantage2 .work__info, .work__advantage4 .work__info {
-    padding: 120px 0;
+    padding: 60px 0;
   }
   .work__advantage2 .offer__img, .work__advantage4 .offer__img {
-    margin-top: 50px;
+    margin-top: 0;
   }
   .work__advantage3 {
-    margin-top: -130px;
+    margin-top: -40px;
   }
   .work__advantage3 .work__info {
     padding: 0;
   }
   .work__advantage4 {
+    margin-top: -140px;
     padding: 252px 0 0;
   }
   .work__advantage4 .work__info {
-    padding: 100px 0;
+    padding: 0;
   }
   .work__advantage4 .mockup__img {
     padding: 0;
@@ -1930,14 +1953,14 @@ a:focus {
   /* F A Q    S T Y L E                       */
   /* ---------------------------------------- */
   .faq {
-    background: #f9f9f9 url(../img/faqbg.png) no-repeat center 420px;
+    background: #f9f9f9 url(../img/faqbg.png) no-repeat center 400px;
   }
   .faq__right {
     float: right;
   }
   .faq__bg {
-    height: 330px;
-    width: 330px;
+    height: 280px;
+    width: 280px;
     margin: 0;
   }
   .faq__row .img__right {

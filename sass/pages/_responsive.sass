@@ -223,10 +223,10 @@
         font: 400 16px/20px 'Roboto', sans-serif
   +comment("offer style") 
   .offer
-    padding: 160px 0 190px
+    padding: 130px 0 150px
     margin-top: -100px  
     .tag
-      transform: scale(1) 
+      transform: scale(0.9) 
     &__list
       padding-right: 0
       ul
@@ -303,6 +303,8 @@
       transition: all 1s ease
       &.in
         bottom: 30px
+    &__col
+      margin-top: 100px    
     &__box
       padding: 25px   
   +comment("advantage style")  
@@ -327,8 +329,9 @@
         padding: 50px 40px
   +comment("work style")  
   .work
-    background: url(../img/work.png) no-repeat center 65px
+    background: url(../img/work.png) no-repeat
     +cover 
+    background-position: center 40px
     &__info
       padding: 160px 0 140px
       text-align: right
@@ -342,24 +345,24 @@
     &__advantage2    
       background: url(../img/work2.png) no-repeat center 65px!important 
       +cover 
-      margin-top: -250px
+      margin-top: -175px
       padding-top: 175px
       .work__info
-        padding: 0 0 210px
+        padding: 70px 0 140px
       .offer__img
-        margin-top: 120px
+        margin-top: 20px
     &__advantage3 
-      margin-top: -200px
+      margin-top: -60px
     &__advantage4
       padding: 265px 0 0
       .mockup__img
         padding: 0
   +comment("faq style") 
   .faq
-    background-position: 220px 380px  
+    background-position: 250px 350px  
     &__bg
-      height: 280px
-      width: 280px 
+      height: 290px
+      width: 290px 
       margin: 0       
     &__row
       .img
@@ -430,13 +433,19 @@
         min-height: 430px
   +comment("offer style")   
   .offer
+    padding: 100px 0
+    .tag
+      bottom: -50px
+    .scroll
+      bottom: -70px  
     &__list
       padding-right: 30px    
   +comment("stage style")   
   .stage   
     background-size: auto
+    background-position: center 158px
     &__slider
-      padding: 380px 50px 0
+      padding: 310px 50px 0
       &--box
         margin-left: -20px
         padding: 30px 30px 20px
@@ -481,29 +490,34 @@
             top: -5px  
   +comment("intent style")  
   .intent
-    padding: 244px 0
+    padding: 230px 0 130px
     margin-top: -105px        
   +comment("sale style")     
   .sale
     padding: 0 0 180px
+    background-position: center 40px
     &__spoiler
       position: absolute
       bottom: 100%
       left: 0 
       transition: all 1s ease
       &.in
-        bottom: 45px
+        bottom: 0
+    &__col
+      margin-top: 30px    
     &__box
-      padding: 25px   
+      padding: 20px
+      &__info
+        padding: 0 20px  
   +comment("advantage style")  
   .advantage
     padding: 100px 0     
     &__list 
-      padding: 65px 35px 35px
+      padding: 60px 35px 30px
       ul li 
         font: 400 22px/36px 'Roboto', sans-serif  
       &--text
-        padding-left: 95px
+        padding-left: 115px
         text-align: left        
     &__content
       width: 400px
@@ -511,38 +525,40 @@
         p
           font: 500 36px/40px 'Roboto', sans-serif
       .modal__body
-        padding: 50px 40px
+        padding: 40px 35px
   +comment("work style")  
   .work
-    background: url(../img/work.png) no-repeat center 65px
+    background: url(../img/work.png) no-repeat center 0
     &__info
       &--text
         font: 400 28px/40px 'Roboto', sans-serif
         padding: 0
     &__advantage2
       margin-top: -155px
+      padding-bottom: 50px
       .work__info
-        padding: 120px 0
+        padding: 60px 0
       .offer__img
-        margin-top: 50px
+        margin-top: 0
     &__advantage3
-      margin-top: -130px
+      margin-top: -40px
       .work__info
         padding: 0  
     &__advantage4
+      margin-top: -140px
       padding: 252px 0 0
       .work__info
-        padding: 100px 0
+        padding: 0
       .mockup__img
         padding: 0  
   +comment("faq style") 
   .faq
-    background: #f9f9f9 url(../img/faqbg.png) no-repeat center 420px 
+    background: #f9f9f9 url(../img/faqbg.png) no-repeat center 400px 
     &__right
       float: right
     &__bg
-      height: 330px
-      width: 330px 
+      height: 280px
+      width: 280px 
       margin: 0       
     &__row
       .img
