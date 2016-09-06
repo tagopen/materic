@@ -341,11 +341,25 @@ a:focus
               top: -2px  
     &--small
       margin-top: 270px
+      .slick 
+        &-prev,
+        &-next
+          top: 45px 
+          opacity: 1
+          background-color: #006bb3
+          .fa
+            font-size: 20px
+            color: #fff
+            text-align: center
+        &-prev
+          left: 10px
+        &-next
+          right: 10px    
       .slider__small--info
         border: 5px solid #006bb3
+        .stage__slider__heading
+          padding: 0 15px
         .stage__slider
-          &__heading
-            padding: 0 10px
           &--box
             padding: 0 20px
     &--marker

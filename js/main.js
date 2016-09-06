@@ -76,8 +76,10 @@ $('.sale__spoiler--btn').click( function () {
 $('.stage__slider--small').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false,
+  arrows: true,
   fade: true,
+  prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button">Previous<i class="fa fa-angle-double-left" aria-hidden="true"></i></button>',
+  nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button">Next<i class="fa fa-angle-double-right" aria-hidden="true"></i></button>',
   adaptiveHeight: true,
   centerMode: true,
   asNavFor: '.stage__slider--marker'
@@ -90,5 +92,5 @@ $('.stage__slider--marker').slick({
   centerPadding: '10px',
   arrows: false,
   centerMode: true,
-  focusOnSelect: true,
+  focusOnSelect: true
 });

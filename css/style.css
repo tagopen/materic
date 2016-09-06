@@ -679,11 +679,27 @@ a:focus {
 .stage__slider--small {
   margin-top: 270px;
 }
+.stage__slider--small .slick-prev, .stage__slider--small .slick-next {
+  top: 45px;
+  opacity: 1;
+  background-color: #006bb3;
+}
+.stage__slider--small .slick-prev .fa, .stage__slider--small .slick-next .fa {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+.stage__slider--small .slick-prev {
+  left: 10px;
+}
+.stage__slider--small .slick-next {
+  right: 10px;
+}
 .stage__slider--small .slider__small--info {
   border: 5px solid #006bb3;
 }
 .stage__slider--small .slider__small--info .stage__slider__heading {
-  padding: 0 10px;
+  padding: 0 15px;
 }
 .stage__slider--small .slider__small--info .stage__slider--box {
   padding: 0 20px;
