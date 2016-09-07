@@ -677,7 +677,7 @@ a:focus {
   top: -2px;
 }
 .stage__slider--small {
-  margin-top: 270px;
+  margin-top: 240px;
 }
 .stage__slider--small .slick-prev, .stage__slider--small .slick-next {
   top: 45px;
@@ -1155,9 +1155,9 @@ a:focus {
 }
 .footer__heading img {
   position: absolute;
-  right: -90px;
+  right: -80px;
   z-index: 10;
-  top: 70px;
+  top: 45px;
 }
 .footer__row {
   background-color: white;
@@ -1277,7 +1277,7 @@ a:focus {
     line-height: 60px;
   }
   .nav__right {
-    padding: 0 8px;
+    padding: 0 7px;
   }
   .nav__center {
     float: right;
@@ -1506,6 +1506,11 @@ a:focus {
   /* ---------------------------------------- */
   /* F O O T E R    S T Y L E                 */
   /* ---------------------------------------- */
+  .footer__heading img {
+    right: -20px;
+    top: 0px;
+    transform: scale(0.6);
+  }
   .footer__img {
     transform: scale(0.7);
     top: -100px;
@@ -1921,7 +1926,7 @@ a:focus {
   /* I N T E N T    S T Y L E                 */
   /* ---------------------------------------- */
   .intent {
-    padding: 230px 0 130px;
+    padding: 230px 0 160px;
     margin-top: -105px;
   }
 
@@ -1989,7 +1994,7 @@ a:focus {
   }
   .work__advantage2, .work__advantage4 {
     margin-top: -155px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
   }
   .work__advantage2 .work__info, .work__advantage4 .work__info {
     padding: 60px 0;
@@ -2085,6 +2090,11 @@ a:focus {
   }
   .footer__heading {
     padding-right: 0;
+  }
+  .footer__heading img {
+    right: -80px;
+    top: 45px;
+    transform: scale(1);
   }
   .footer__heading p {
     font: 400 30px/38px "Roboto", sans-serif;
