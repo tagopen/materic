@@ -62,8 +62,13 @@ $('#carousel-example-generic, #carousel-example-generic2').hover(function () {
 
 // Set equial height
 $('.sale__box .ic').equialHeight();
+$('.sale__box__heading').equialHeight();
 $('.sale__box__info--col1').equialHeight();
 $('.sale__box__info--col2').equialHeight();
+
+if( $( window ).width() >= 768 ) {
+ $('.map-box').equialHeight();
+}
 
 // 
 $('.sale__spoiler--btn').click( function () {
@@ -94,3 +99,12 @@ $('.stage__slider--marker').slick({
   centerMode: true,
   focusOnSelect: true
 });
+
+$(document).ready(function() {  
+  $(".carousel__swiper").swiperight(function() {  
+    $(this).carousel('prev');  
+  });  
+  $(".carousel__swiper").swipeleft(function() {  
+    $(this).carousel('next');  
+  });  
+});  
