@@ -124,9 +124,17 @@ $(document).ready( function () {
   
   $(document).on("click", ".next_1", (function(e) {
     e.preventDefault();
-    var name = $form.find("input[name='name']").val();
+    var name            = $form.find("input[name='name']").val(),
+        formgroup__item = 0
+        aria_valuenow   = 0;
 
     if (name != "") {
+      formgroup__item = $form.find('.form-group:visible').length;
+      aria_valuenow = $('.progress .progress-bar').attr('aria_valuenow');
+      formgroup__item = Math.round(formgroup__item / $form.find('.form-group').size() * 100);
+      $('.progress .progress-bar').attr('aria_valuenow', aria_valuenow + formgroup__item);
+      $('.progress .progress-bar').css({width: formgroup__item + '%'});
+      $('.progress .progress-bar').text(formgroup__item + '%');
       $(".next_" + next_index).addClass("next_" + (next_index + 1));
       $(".next_" + (next_index + 1)).removeClass("next_" + next_index);
       $form.find(".form__group--name").fadeOut();
@@ -134,10 +142,17 @@ $(document).ready( function () {
       next_index ++;
     }
   }));
+
   $(document).on("click", ".next_2", (function(e) {
     e.preventDefault();
     var phone = $form.find("input[name='phone']").val();
     if (phone != "") {
+      formgroup__item = $form.find('.form-group:visible').length;
+      formgroup__item = Math.round(formgroup__item / $form.find('.form-group').size() * 100);
+      aria_valuenow = $('.progress .progress-bar').attr('aria_valuenow');
+      $('.progress .progress-bar').attr('aria_valuenow', aria_valuenow + formgroup__item);
+      $('.progress .progress-bar').css({width: formgroup__item + '%'});
+      $('.progress .progress-bar').text(formgroup__item + '%');
       $(".next_" + next_index).addClass("next_" + (next_index + 1));
       $(".next_" + (next_index + 1)).removeClass("next_" + next_index);
       $form.find(".form__group--phone").fadeOut();
@@ -150,6 +165,12 @@ $(document).ready( function () {
     e.preventDefault();
     var email = $form.find("input[name='email']").val();
     if (email != "") {
+      formgroup__item = $form.find('.form-group:visible').length;
+      formgroup__item = Math.round(formgroup__item / $form.find('.form-group').size() * 100);
+      aria_valuenow = $('.progress .progress-bar').attr('aria_valuenow');
+      $('.progress .progress-bar').attr('aria_valuenow', aria_valuenow + formgroup__item);
+      $('.progress .progress-bar').css({width: formgroup__item + '%'});
+      $('.progress .progress-bar').text(formgroup__item + '%');
       $(".next_" + next_index).addClass("next_" + (next_index + 1));
       $(".next_" + (next_index + 1)).removeClass("next_" + next_index);
       $form.find(".form__group--email").fadeOut();
