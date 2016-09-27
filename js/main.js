@@ -94,3 +94,86 @@ $('.stage__slider--marker').slick({
   centerMode: true,
   focusOnSelect: true
 });
+$(document).ready(function() {
+  var next_index = 1;
+  //hide inputs and btns submit
+  $(".form-group").children('.form-control').slice(1).hide();
+  
+  $(document).on("click", ".next_1", (function(e) {
+    e.preventDefault();
+    var name = $("input[name='name']").val();
+
+    if (name != "") {
+      $(".next_" + next_index).addClass("next_" + (next_index + 1));
+      $(".next_" + (next_index + 1)).removeClass("next_" + next_index);
+      $("input[name='name']").fadeOut();
+      $("input[name='email']").fadeIn();
+      next_index ++;
+    }
+  }));
+  $(document).on("click", ".next_2", (function(e) {
+    e.preventDefault();
+    var email = $("input[name='email']").val();
+    if (email != "") {
+      $(".next_" + next_index).addClass("next_" + (next_index + 1));
+      $(".next_" + (next_index + 1)).removeClass("next_" + next_index);
+      $("input[name='email']").fadeOut();
+      $("input[name='phone']").fadeIn();
+      next_index ++;
+    }
+  }));
+  $(document).on("click", ".next_3", (function(e) {
+    e.preventDefault();
+    var phone = $("input[name='phone']").val();
+    if (name != "") {
+      $(".next_" + next_index).addClass("next_" + (next_index + 1));
+      $(".next_" + (next_index + 1)).removeClass("next_" + next_index);
+      $("input[name='phone']").fadeOut();
+      $("textarea[name='message']").fadeIn();
+      next_index ++;
+    }
+  }));
+
+  $(document).on("click", ".next_4", (function(e) {
+    e.preventDefault();
+    message = $("textarea[name='message']").val();
+    if (message != "") {
+      $('.contactForm .btn').submit();
+
+            // $( ".good" ).animate({
+            //         opacity: 1
+            //       }, 500, function() {
+
+            //       });
+            $(this).fadeOut();
+            $(".loader").fadeIn();
+            term = $("input[name='term']").val();
+            source = $("input[name='source']").val();
+            campaign = $("input[name='campaign']").val();
+            medium = $("input[name='medium']").val();
+            params = {
+              name: name,
+              phone: phone,
+              pass: pass,
+              country: country,
+              city: city,
+              term: term,
+              source: source,
+              campaign: campaign,
+              medium: medium
+            };
+            jQuery.ajax({
+              type: "POST",
+              url: "ajax.php",
+              data: {
+                function: "addNewUser",
+                params: params
+              }
+            }).done(function(msg) {
+              console.log(msg);
+              registerComments.open();
+            });
+          }
+        }));
+
+});
