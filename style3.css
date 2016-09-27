@@ -318,7 +318,8 @@
 .modal__body__form .form-group .form-control::-webkit-input-placeholder {
   color: #585858;
 }
-.modal__body__form .form__btn {
+.modal__body__form .form__btn,
+.form__btn--start {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -334,7 +335,8 @@
   box-shadow: inset 0 0 10px rgba(252, 208, 0, 0.75);
   margin-bottom: 15px;
 }
-.modal__body__form .form__btn span {
+.modal__body__form .form__btn span,
+.form__btn--start span {
   color: #fff;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
   font: 400 18px/20px "Roboto", sans-serif;
@@ -391,7 +393,7 @@ a:focus {
 }
 
 .header {
-  background: #fff;
+  background-color: #fff;
   padding: 20px 0 0;
 }
 .header .logo {
@@ -421,10 +423,13 @@ a:focus {
 }
 .nav__center .fa, .nav__right .fa {
   color: #006bb3;
-  font-size: 60px;
-  margin-right: 10px;
+  font-size: 58px;
+}
+.nav__center .fa {
+  margin-right: 5px;
 }
 .nav__right .fa-phone {
+  margin-right: 10px;
   -ms-transform: rotate(40deg);
   -webkit-transform: rotate(40deg);
   transform: rotate(40deg);
@@ -751,6 +756,9 @@ a:focus {
   position: relative;
   overflow: hidden;
 }
+.sale > .container{
+  position: relative;
+}
 .sale__heading.in, .sale__separator.in {
   opacity: 0;
   transition: all 1s ease;
@@ -818,14 +826,22 @@ a:focus {
 .sale__box__heading p, .sale__box__info p {
   margin-bottom: 0;
 }
+.sale__box__info p span{
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff9300;
+}
+.sale__box__info p .fa.mod{
+  color: #ff9300;
+}
 .sale__box__heading {
-  padding: 0 50px;
+  padding: 0 25px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 15px;
 }
 .sale__box__heading p {
   font-size: 24px;
   padding-bottom: 10px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #fff;
 }
 
 /* ---------------------------------------- */
@@ -977,7 +993,7 @@ a:focus {
   z-index: 20;
 }
 .work__advantage4 {
-  padding: 180px 0 0;
+  padding: 240px 0 0;
 }
 .work__advantage4 .work__info {
   padding: 0;
@@ -1021,6 +1037,22 @@ a:focus {
   color: #000;
   display: inline-block;
   vertical-align: middle;
+}
+.faq__box {
+  border: 5px dashed #006bb3;
+  padding: 25px;
+}
+.faq__box--cont{
+  background: url(../img/faqq.png) no-repeat center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding: 30px 15px;
+  color: #fff;
+  font: 400 14px/18px "Roboto", sans-serif;
 }
 
 /* ---------------------------------------- */
@@ -1124,7 +1156,6 @@ a:focus {
 /* ---------------------------------------- */
 .map {
   background: #f9f9f9;
-  margin-top: 50px;
 }
 .map .container-fluid {
   padding: 0;
@@ -1134,8 +1165,12 @@ a:focus {
 /* F O O T E R    S T Y L E                 */
 /* ---------------------------------------- */
 .footer {
-  background: #f9f9f9 url(../img/footerbg.png) no-repeat center bottom;
+  background: #f9f9f9;
   padding: 50px 0 100px;
+}
+.footer > .container {
+  position: relative;
+  z-index: 30;
 }
 .footer__img {
   position: absolute;
@@ -1179,19 +1214,26 @@ a:focus {
   text-align: center;
   margin-bottom: 20px;
 }
-.footer__callback .nav__right .fa {
+.footer__callback .nav__right .fa-phone {
   vertical-align: top;
   margin-right: -60px;
   font-size: 70px;
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  margin: 0 auto;
+}
+.footer__callback .nav__phone {
+  margin-bottom: 50px;
 }
 .footer__callback .nav__phone > span {
   display: inline-block;
-  width: 60%;
 }
-.footer__callback .nav__phone a {
+.footer__callback .nav__phone .nav__phone--number {
   margin-bottom: 5px;
+  text-align: center;
 }
-.footer__callback .nav__phone a span {
+.footer__callback .nav__phone .nav__phone--number span {
   color: #006bb3;
   font: 400 18px/24px "Roboto", sans-serif;
 }
@@ -1227,6 +1269,21 @@ a:focus {
   position: absolute;
 }
 
+.map-separator {
+  background: transparent url(../img/footerbg.png) no-repeat center top;
+  height: 270px;
+  margin: -310px 0 0;
+  z-index: 20;
+  position: relative;
+}
+.download__btn{
+  display: inline-block;
+}
+.creater{
+  padding: 20px 0 40px;
+  background-color: #d8d8d8;
+  text-align: right;
+}
 /* ---------------------------------------- */
 /* 3 2 0 - 7 6 7    S T Y L E               */
 /* ---------------------------------------- */
@@ -1438,7 +1495,7 @@ a:focus {
     transition: all 1s ease;
   }
   .sale__spoiler.in {
-    bottom: 35px;
+    bottom: -170px;
   }
   .sale__box {
     padding: 25px;
@@ -1467,8 +1524,11 @@ a:focus {
   .work__advantage3 .work__info--text {
     padding-top: 200px;
   }
+  .work__advantage4 .work__info--text{
+    padding-top: 100px;
+  }
   .work__advantage4 .mockup__img {
-    padding-top: 240px;
+    padding-top: 100px;
   }
 
   /* ---------------------------------------- */
@@ -1486,7 +1546,14 @@ a:focus {
   .faq__text p {
     font: 400 18px/24px "Roboto", sans-serif;
   }
-
+  .faq__box{
+    padding: 40px;
+  }
+  .faq__box--cont{
+    padding: 40px 25px;
+    color: #fff;
+    font: 400 18px/22px "Roboto", sans-serif;
+  }
   /* ---------------------------------------- */
   /* C O M P L E T E D    S T Y L E           */
   /* ---------------------------------------- */
@@ -1515,6 +1582,17 @@ a:focus {
     transform: scale(0.7);
     top: -100px;
     left: -60px;
+  }
+
+  /* ---------------------------------------- */
+  /* M A P    S T Y L E                       */
+  /* ---------------------------------------- */
+  .mapper > .container-fluid {
+    border-bottom: 3px dashed #006bb3;
+  }
+
+  .map-responsive {
+    border-left: 3px dashed #006bb3;
   }
 }
 @media only screen and (min-width: 968px) {
@@ -1551,7 +1629,7 @@ a:focus {
   /* ---------------------------------------- */
   .offer {
     padding: 130px 0 150px;
-    margin-top: -100px;
+    margin-top: -80px;
   }
   .offer .tag {
     transform: scale(0.9);
@@ -1655,7 +1733,7 @@ a:focus {
     transition: all 1s ease;
   }
   .sale__spoiler.in {
-    bottom: 30px;
+    bottom: -235px;
   }
   .sale__col {
     margin-top: 100px;
@@ -1714,6 +1792,9 @@ a:focus {
     font: 400 20px/30px "Roboto", sans-serif;
     padding: 0;
   }
+  .work__advantage1 {
+    padding-bottom: 5px;
+  }
   .work__advantage1 .ignat__img img {
     margin: 0 auto;
   }
@@ -1738,7 +1819,10 @@ a:focus {
     margin-top: -60px;
   }
   .work__advantage4 {
-    padding: 265px 0 0;
+    padding: 280px 0 0;
+  }
+  .work__advantage4 .work__info--text{
+    padding-top: 0;
   }
   .work__advantage4 .mockup__img {
     padding: 0;
@@ -1807,8 +1891,6 @@ a:focus {
   /* M A P    S T Y L E                       */
   /* ---------------------------------------- */
   .map-responsive {
-    height: 400px;
-    margin-top: 100px;
     overflow: hidden;
   }
 
@@ -1817,6 +1899,9 @@ a:focus {
   /* ---------------------------------------- */
   .footer {
     padding: 50px 0 100px;
+  }
+  .footer__callback .nav__1{
+    display: inline-block;
   }
   .footer__row {
     padding: 15px;
@@ -1830,9 +1915,6 @@ a:focus {
   .footer__heading p {
     font: 400 30px/38px "Roboto", sans-serif;
     padding-left: 30px;
-  }
-  .footer__callback p {
-    text-align: right;
   }
   .footer__img {
     top: -50px;
@@ -1944,7 +2026,7 @@ a:focus {
     transition: all 1s ease;
   }
   .sale__spoiler.in {
-    bottom: 0;
+    bottom: -205px;
   }
   .sale__col {
     margin-top: 30px;
@@ -1993,7 +2075,7 @@ a:focus {
     padding: 0;
   }
   .work__advantage2, .work__advantage4 {
-    margin-top: -155px;
+    margin-top: -150px;
     padding-bottom: 60px;
   }
   .work__advantage2 .work__info, .work__advantage4 .work__info {
@@ -2010,7 +2092,10 @@ a:focus {
   }
   .work__advantage4 {
     margin-top: -140px;
-    padding: 252px 0 0;
+    padding: 272px 0 0;
+  }
+  .work__advantage4 .work__info--text{
+    padding-top: 0;
   }
   .work__advantage4 .work__info {
     padding: 0;
@@ -2041,6 +2126,14 @@ a:focus {
   }
   .faq__text p {
     font: 400 26px/36px "Roboto", sans-serif;
+  }
+  .faq__box{
+    padding: 50px;
+  }
+  .faq__box--cont{
+    padding: 50px 35px;
+    color: #fff;
+    font: 400 20px/22px "Roboto", sans-serif;
   }
 
   /* ---------------------------------------- */
@@ -2100,7 +2193,19 @@ a:focus {
     font: 400 30px/38px "Roboto", sans-serif;
     padding-left: 30px;
   }
+  .footer__callback {
+    padding: 150px 0 0;
+  }
   .footer__callback p {
-    text-align: right;
+    font: 400 24px/28px "Roboto", sans-serif;
+    padding: 0 50px;
+    margin-bottom: 40px;
+  }
+
+  /* ---------------------------------------- */
+  /* M A P    S T Y L E                       */
+  /* ---------------------------------------- */
+  .map-separator {
+    margin: -220px 0 -150px;
   }
 }

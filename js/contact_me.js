@@ -10,9 +10,9 @@ $(function() {
             $("[type=submit]").prop("disabled", true); //prevent submit behaviour
             // get values from FORM
             var form = $form.attr('name');
-            var name = $form.find("input[name=name]").val();
-            var email = $form.find("input[name=email]").val();
-            var phone = $form.find("input[name=phone]").val();
+            var name = $form.find("[name=name]").val();
+            var email = $form.find("[name=email]").val();
+            var phone = $form.find("[name=phone]").val();
             var message = $form.find("[name=message]").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
@@ -41,7 +41,12 @@ $(function() {
                         .append('</div>');
 
                     // Redirect success
-                    document.location.href='./thanks.html';
+                    if (form == 'Статья') {
+                      document.location.href='./pdf.html';
+                    } else {
+                      document.location.href='./thanks.html';
+                    }
+
                     // remove prevent submit behaviour
                     $("[type=submit]").prop("disabled", false);  
 

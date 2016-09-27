@@ -15,7 +15,7 @@ if ($_POST["name"]) {
 if ($_POST["phone"]) {
   $user_phone = "Телефон: " . htmlspecialchars($_POST["phone"]) . "<br/>";
 } else {
-  $user_name = false;
+  $user_phone = false;
 }
 if ($_POST["email"]) {
 	$user_email = "Почта: " . htmlspecialchars($_POST["email"]) . "<br/>";
@@ -28,19 +28,16 @@ if ($_POST["message"]) {
   $user_message = false;
 }
 
-$source = $form . $user_name . $user_phone . $user_message . $user_email;
+$source =  $user_name . $user_phone . $user_message . $user_email;
 
 $headers = "MIME-Version: 1.0\r\n";
 
-$headers .= "Content-type: text/html; charset=utf-8\r\n"; 
-$result = mail('marchik88@rambler.ru, Artem2431@gmail.com', "Материк - " .$template, $source, $headers);
+$headers .= "Content-type: text/html; charset=utf-8\r\n";
+$result = mail('realtordnepr@gmail.com', "Материк_3 - " .$template, $source, $headers);
 
 if ($result) {
   header("Location: ../thanks.html");
 } else {
   header("Location:index.html?status=false");
 }
-
 ?>
-
-
