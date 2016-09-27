@@ -118,22 +118,24 @@ $(document).ready( function () {
     $form.fadeIn();
   }));
 
-  $form.find('.form__btn').hide();
+
+  $form.find('.form__btn--end').hide();
   $form.find(".form-group").slice(1).hide();
   $form.hide();
+
+  var pogressbar = function () {
+    formgroup__item = $form.find('.form-group:visible').index() + 1;
+    formgroup__item = Math.round(formgroup__item / $form.find('.form-group').size() * 100);
+    $('.progress .progress-bar').attr('aria_valuenow', formgroup__item);
+    $('.progress .progress-bar').css({width: formgroup__item + '%'});
+    $('.progress .progress-bar').text(formgroup__item + '%');
+  }
   
   $(document).on("click", ".next_1", (function(e) {
     e.preventDefault();
-    var name            = $form.find("input[name='name']").val(),
-        formgroup__item = 0
-        aria_valuenow   = 0;
-
+    var name = $form.find("input[name='name']").val();
     if (name != "") {
-      formgroup__item = $form.find('.form-group:visible').index() + 1;
-      formgroup__item = Math.round(formgroup__item / $form.find('.form-group').size() * 100);
-      $('.progress .progress-bar').attr('aria_valuenow', formgroup__item);
-      $('.progress .progress-bar').css({width: formgroup__item + '%'});
-      $('.progress .progress-bar').text(formgroup__item + '%');
+      pogressbar();
       $(".next_" + next_index).addClass("next_" + (next_index + 1));
       $(".next_" + (next_index + 1)).removeClass("next_" + next_index);
       $form.find(".form__group--name").fadeOut();
@@ -146,11 +148,7 @@ $(document).ready( function () {
     e.preventDefault();
     var phone = $form.find("input[name='phone']").val();
     if (phone != "") {
-      formgroup__item = $form.find('.form-group:visible').index() + 1;
-      formgroup__item = Math.round(formgroup__item / $form.find('.form-group').size() * 100);
-      $('.progress .progress-bar').attr('aria_valuenow', formgroup__item);
-      $('.progress .progress-bar').css({width: formgroup__item + '%'});
-      $('.progress .progress-bar').text(formgroup__item + '%');
+      pogressbar();
       $(".next_" + next_index).addClass("next_" + (next_index + 1));
       $(".next_" + (next_index + 1)).removeClass("next_" + next_index);
       $form.find(".form__group--phone").fadeOut();
@@ -163,16 +161,12 @@ $(document).ready( function () {
     e.preventDefault();
     var email = $form.find("input[name='email']").val();
     if (email != "") {
-      formgroup__item = $form.find('.form-group:visible').index() + 1;
-      formgroup__item = Math.round(formgroup__item / $form.find('.form-group').size() * 100);
-      $('.progress .progress-bar').attr('aria_valuenow', formgroup__item);
-      $('.progress .progress-bar').css({width: formgroup__item + '%'});
-      $('.progress .progress-bar').text(formgroup__item + '%');
+      pogressbar();
       $(".next_" + next_index).addClass("next_" + (next_index + 1));
       $(".next_" + (next_index + 1)).removeClass("next_" + next_index);
       $form.find(".form__group--email").fadeOut();
       $form.find(".btn--next").fadeOut();
-      $form.find(".form__btn").fadeIn();
+      $form.find(".form__btn--end").fadeIn();
     }
   }));
 
