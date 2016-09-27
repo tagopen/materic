@@ -129,10 +129,9 @@ $(document).ready( function () {
         aria_valuenow   = 0;
 
     if (name != "") {
-      formgroup__item = $form.find('.form-group:visible').length;
-      aria_valuenow = $('.progress .progress-bar').attr('aria_valuenow');
+      formgroup__item = $form.find('.form-group:visible').index() + 1;
       formgroup__item = Math.round(formgroup__item / $form.find('.form-group').size() * 100);
-      $('.progress .progress-bar').attr('aria_valuenow', aria_valuenow + formgroup__item);
+      $('.progress .progress-bar').attr('aria_valuenow', formgroup__item);
       $('.progress .progress-bar').css({width: formgroup__item + '%'});
       $('.progress .progress-bar').text(formgroup__item + '%');
       $(".next_" + next_index).addClass("next_" + (next_index + 1));
@@ -147,10 +146,9 @@ $(document).ready( function () {
     e.preventDefault();
     var phone = $form.find("input[name='phone']").val();
     if (phone != "") {
-      formgroup__item = $form.find('.form-group:visible').length;
+      formgroup__item = $form.find('.form-group:visible').index() + 1;
       formgroup__item = Math.round(formgroup__item / $form.find('.form-group').size() * 100);
-      aria_valuenow = $('.progress .progress-bar').attr('aria_valuenow');
-      $('.progress .progress-bar').attr('aria_valuenow', aria_valuenow + formgroup__item);
+      $('.progress .progress-bar').attr('aria_valuenow', formgroup__item);
       $('.progress .progress-bar').css({width: formgroup__item + '%'});
       $('.progress .progress-bar').text(formgroup__item + '%');
       $(".next_" + next_index).addClass("next_" + (next_index + 1));
@@ -165,10 +163,9 @@ $(document).ready( function () {
     e.preventDefault();
     var email = $form.find("input[name='email']").val();
     if (email != "") {
-      formgroup__item = $form.find('.form-group:visible').length;
+      formgroup__item = $form.find('.form-group:visible').index() + 1;
       formgroup__item = Math.round(formgroup__item / $form.find('.form-group').size() * 100);
-      aria_valuenow = $('.progress .progress-bar').attr('aria_valuenow');
-      $('.progress .progress-bar').attr('aria_valuenow', aria_valuenow + formgroup__item);
+      $('.progress .progress-bar').attr('aria_valuenow', formgroup__item);
       $('.progress .progress-bar').css({width: formgroup__item + '%'});
       $('.progress .progress-bar').text(formgroup__item + '%');
       $(".next_" + next_index).addClass("next_" + (next_index + 1));
